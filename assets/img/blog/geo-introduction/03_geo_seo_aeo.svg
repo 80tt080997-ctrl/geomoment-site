@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" font-family="Pretendard, 'Apple SD Gothic Neo', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="indigoG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D3DFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3D3DFF" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="violetG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="520" fill="#FFFFFF"/>
+
+  <!-- 타이틀 -->
+  <text x="600" y="48" font-size="26" font-weight="800" fill="#1B1B1F" text-anchor="middle" letter-spacing="-0.5">SEO와 GEO는 무엇이 같고, 무엇이 다른가</text>
+  <text x="600" y="78" font-size="14" fill="#6B7280" text-anchor="middle">같은 사이트에서 두 게임이 동시에 진행됩니다. 평가 기준이 다를 뿐.</text>
+
+  <!-- 왼쪽 원 (SEO) -->
+  <circle cx="450" cy="290" r="180" fill="url(#indigoG)" stroke="#3D3DFF" stroke-width="2.5"/>
+  <text x="370" y="170" font-size="15" font-weight="700" fill="#3D3DFF" font-family="Manrope, sans-serif" letter-spacing="1">SEO</text>
+  <text x="370" y="194" font-size="12" fill="#6B7280">전통 검색 최적화</text>
+
+  <!-- SEO 키워드 (왼쪽 원 안) -->
+  <g font-size="14" fill="#1B1B1F">
+    <text x="340" y="248">• 검색어 매칭</text>
+    <text x="340" y="276">• 백링크·DA</text>
+    <text x="340" y="304">• 기술 SEO</text>
+    <text x="340" y="332">• 1순위 랭킹</text>
+    <text x="340" y="360">• 클릭당 트래픽</text>
+  </g>
+
+  <!-- 오른쪽 원 (GEO/AEO) -->
+  <circle cx="750" cy="290" r="180" fill="url(#violetG)" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="730" y="170" font-size="15" font-weight="700" fill="#7C3AED" font-family="Manrope, sans-serif" letter-spacing="1">GEO / AEO</text>
+  <text x="730" y="194" font-size="12" fill="#6B7280">답변 엔진 최적화</text>
+
+  <!-- GEO 키워드 (오른쪽 원 안) -->
+  <g font-size="14" fill="#1B1B1F" text-anchor="end">
+    <text x="860" y="248">청크 적합도 •</text>
+    <text x="860" y="276">entity 신호 •</text>
+    <text x="860" y="304">권위 출처 •</text>
+    <text x="860" y="332">답변 인용 •</text>
+    <text x="860" y="360">AI 답변 노출 •</text>
+  </g>
+
+  <!-- 가운데 교집합 라벨 -->
+  <rect x="540" y="265" width="120" height="48" rx="24" fill="#FFFFFF" stroke="#1B1B1F" stroke-width="2"/>
+  <text x="600" y="285" font-size="11" font-weight="700" fill="#6B7280" text-anchor="middle" letter-spacing="0.5">공통 자산</text>
+  <text x="600" y="305" font-size="14" font-weight="700" fill="#1B1B1F" text-anchor="middle">좋은 콘텐츠</text>
+
+  <!-- 하단 비교 라벨 -->
+  <g font-size="13" fill="#1B1B1F">
+    <rect x="120" y="430" width="290" height="60" rx="10" fill="#F4F4F7" stroke="#E5E7EB"/>
+    <text x="135" y="455" font-size="11" font-weight="700" fill="#3D3DFF">SEO의 게임</text>
+    <text x="135" y="478" font-size="14" font-weight="700" fill="#1B1B1F">"우리 페이지가 1순위에 가는가?"</text>
+  </g>
+
+  <g font-size="13" fill="#1B1B1F">
+    <rect x="790" y="430" width="290" height="60" rx="10" fill="#F4F4F7" stroke="#E5E7EB"/>
+    <text x="805" y="455" font-size="11" font-weight="700" fill="#7C3AED">GEO/AEO의 게임</text>
+    <text x="805" y="478" font-size="14" font-weight="700" fill="#1B1B1F">"AI 답변에 우리 단락이 들어가는가?"</text>
+  </g>
+</svg>

@@ -15,6 +15,11 @@ summary: |
 
 처음에는 가벼운 호기심처럼 들렸지만, 업종이 전혀 다른 회사들에서 같은 질문이 반복되기 시작하면서 분명해졌습니다. **검색 환경이 포털에서 생성형 AI 답변으로 빠르게 이동하고 있다**는 것입니다. 그리고 이 변화에 답을 가진 한국 회사는 거의 없었습니다.
 
+<figure>
+  <img src="/assets/img/blog/geo-introduction/01_search_shift.png" alt="검색 환경이 AI 답변으로 빠르게 이동하는 추이 그래프">
+  <figcaption>글로벌·국내 검색 추이 — 전통 검색은 천천히 감소하고 AI 답변 점유율은 가파르게 증가하는 중입니다.</figcaption>
+</figure>
+
 이 글에서는 GEO(Generative Engine Optimization)가 무엇인지, 전통 SEO와 어떻게 다른지, 그리고 한국 중소·중견 기업이 왜 지금 시작해야 하는지를 정리합니다.
 
 ## GEO란 무엇인가
@@ -22,6 +27,11 @@ summary: |
 GEO는 _Generative Engine Optimization_ 의 약자로, **ChatGPT·Gemini·Claude·Perplexity 같은 생성형 AI 답변 엔진에서 우리 브랜드가 어떻게 노출되고 인용되는지를 측정·최적화하는 마케팅 영역**입니다. 일부 자료에서는 _AEO(Answer Engine Optimization)_ 라고도 부르지만, 본질적으로 같은 개념을 다룹니다.
 
 기존 검색에서 사용자는 _검색어_ 를 입력하고 _10개의 링크_ 중 하나를 골랐습니다. 생성형 AI 답변 엔진에서는 사용자가 _질문_ 을 던지고 _하나의 답변_ 을 받습니다. 그 답변에 우리 브랜드가 들어가느냐 빠지느냐가 결과의 전부입니다.
+
+<figure>
+  <img src="/assets/img/blog/geo-introduction/03_geo_seo_aeo.svg" alt="SEO와 GEO/AEO의 관계를 보여주는 다이어그램">
+  <figcaption>SEO와 GEO/AEO는 같은 사이트에서 <strong>두 게임이 동시에</strong> 진행되는 구조입니다. 공통 자산은 좋은 콘텐츠지만, 평가 기준은 완전히 다릅니다.</figcaption>
+</figure>
 
 ## SEO와 무엇이 다른가
 
@@ -38,6 +48,11 @@ GEO는 _Generative Engine Optimization_ 의 약자로, **ChatGPT·Gemini·Claude
 
 AI는 페이지 전체를 보지 않습니다. _청크(chunk)_ 라고 부르는 200~500자 단위로 본문을 잘게 쪼개고, 그중 _질문에 직접 답하는 청크_ 를 골라 답변에 인용합니다. 따라서 GEO에서 중요한 것은 _페이지 순위_ 가 아니라 _청크의 답변 적합도_ 입니다.
 
+<figure>
+  <img src="/assets/img/blog/geo-introduction/04_page_to_chunks.svg" alt="페이지가 청크로 분할되고 점수가 매겨지는 과정 다이어그램">
+  <figcaption>한 페이지(왼쪽)가 5개 청크로 잘리고, AI는 청크별로 답변 적합도 점수를 매깁니다. <strong>점수 50점 이상 청크만 인용 적격</strong>이라, 페이지 전체 품질이 좋아도 청크 구조가 약하면 답변에 들어가지 못합니다.</figcaption>
+</figure>
+
 또 한 가지 결정적 차이는 _entity 인식_ 입니다. AI는 "우리 회사가 어떤 분야의 어떤 브랜드인지" 를 _entity_ 로 인식해야 답변에 등장시킵니다. 사이트에 콘텐츠는 많지만 _entity 신호_ 가 약하면, AI는 우리 회사를 _그냥 일반 회사_ 로 분류해 답변에서 빼버립니다.
 
 <div class="callout callout--note">
@@ -50,6 +65,11 @@ AI는 페이지 전체를 보지 않습니다. _청크(chunk)_ 라고 부르는 
 ## 왜 지금 시작해야 하는가
 
 세 가지 신호가 동시에 잡힙니다.
+
+<figure>
+  <img src="/assets/img/blog/geo-introduction/02_why_now_3signals.png" alt="GEO를 지금 시작해야 하는 3가지 신호 — 사용자 행동·인용 자리·한국 시장 공백">
+  <figcaption>세 신호가 동시에 잡히는 지금이 GEO의 진입 기회입니다. 각 신호의 디테일은 아래에서 풀어 설명합니다.</figcaption>
+</figure>
 
 **첫째, 사용자 행동이 바뀌고 있습니다.** 한국에서도 ChatGPT, Perplexity, Claude 사용자가 빠르게 늘고 있습니다. 특히 _제품 추천_, _서비스 비교_, _전문 분야 질문_ 같은 _상업적 의도_ 검색이 AI 쪽으로 이동하는 속도가 빠릅니다.
 
@@ -70,6 +90,28 @@ AI는 페이지 전체를 보지 않습니다. _청크(chunk)_ 라고 부르는 
 GEO는 _큰 프로젝트_ 처럼 들리지만, 실은 작은 액션부터 시작할 수 있습니다.
 
 **1. Schema.org 마크업을 점검하세요.** 최소한 `Organization`, `Product`(또는 `Service`), `FAQPage` 세 가지는 박는 게 좋습니다. AI 크롤러가 _이 회사는 무엇을 하는 곳인지_ entity로 인식하는 가장 빠른 신호입니다. [Google Rich Results Test](https://search.google.com/test/rich-results) 로 검증할 수 있습니다.
+
+가장 기본이 되는 `Organization` 마크업은 사이트 `<head>` 안에 다음 형태로 넣으면 됩니다.
+
+```html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "(우리 회사 정식 명칭)",
+  "url": "https://(우리 도메인)",
+  "logo": "https://(도메인)/logo.png",
+  "description": "한 줄로 우리 회사를 설명하는 문장",
+  "sameAs": [
+    "https://www.instagram.com/(계정)",
+    "https://blog.naver.com/(아이디)",
+    "https://www.youtube.com/@(채널)"
+  ]
+}
+</script>
+```
+
+여기서 `sameAs` 배열이 핵심입니다. AI 크롤러는 이 필드를 보고 _이 회사가 _저 인스타·블로그·유튜브와 같은 곳_이라고 entity를 묶어 인식_하기 시작합니다. 회사 SNS·블로그·외부 디렉터리 URL을 5~10개 정도 채워두면 entity 신호가 즉시 올라갑니다.
 
 **2. `llms.txt` 파일을 만드세요.** 사이트 루트에 _AI 크롤러용 마크다운 안내 파일_ 을 둡니다. AI가 우리 브랜드의 핵심 정보를 _요약된 형태_ 로 빠르게 파악하게 해주는 비공식 표준입니다. [llmstxt.org](https://llmstxt.org/) 에 형식이 정리돼 있습니다.
 
