@@ -1,25 +1,62 @@
 ---
 layout: default
 ---
-<article class="blog-post">
-  <div class="container container--narrow">
+{% assign author = site.data.authors[page.author_id] | default: site.data.authors.jace %}
+{% assign words_per_min = 350 %}
+{% assign word_count = content | strip_html | strip_newlines | size %}
+{% assign read_time = word_count | divided_by: words_per_min | plus: 1 %}
 
-    <header class="post-header">
+<article class="blog-post">
+
+  <!-- Hero band: 카테고리 + 제목 + 부제 + 메타 -->
+  <header class="post-hero">
+    <div class="container container--narrow">
       {% if page.category %}<span class="post-cat">{{ page.category }}</span>{% endif %}
       <h1 class="post-title">{{ page.title }}</h1>
       {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
       <div class="post-meta">
-        <span class="post-author">{{ page.author | default: site.author.name }}</span>
-        <span class="post-dot">·</span>
-        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+        <span class="post-meta-author">
+          <img src="{{ author.avatar }}" alt="{{ author.name }}" class="post-meta-avatar">
+          <span>
+            <strong>{{ author.name }}</strong>
+            <em>{{ author.role }}</em>
+          </span>
+        </span>
+        <span class="post-meta-divider"></span>
+        <time class="post-meta-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+        <span class="post-meta-divider"></span>
+        <span class="post-meta-read">{{ read_time }}분 읽기</span>
       </div>
-    </header>
-
-    <div class="post-body">
-      {{ content }}
     </div>
+  </header>
 
-    <footer class="post-footer">
+  <!-- Body grid: 본문 + sticky TOC sidebar -->
+  <div class="post-grid">
+
+    <div class="post-main">
+      <div class="post-body">
+        {{ content }}
+      </div>
+
+      <!-- Share row -->
+      <div class="post-share">
+        <span class="post-share-label">공유</span>
+        <button type="button" class="post-share-btn" data-share="twitter" aria-label="X에 공유">X</button>
+        <button type="button" class="post-share-btn" data-share="facebook" aria-label="페이스북에 공유">Facebook</button>
+        <button type="button" class="post-share-btn" data-share="kakao" aria-label="카카오스토리에 공유">Kakao</button>
+        <button type="button" class="post-share-btn" data-share="copy" aria-label="링크 복사">링크 복사</button>
+      </div>
+
+      <!-- Author bio box -->
+      <div class="post-author-box">
+        <img src="{{ author.avatar }}" alt="{{ author.name }}" class="post-author-avatar">
+        <div class="post-author-info">
+          <div class="post-author-name">{{ author.name }} <span>{{ author.role }}</span></div>
+          <p class="post-author-bio">{{ author.bio }}</p>
+        </div>
+      </div>
+
+      <!-- CTA card -->
       <div class="post-cta-card">
         <h3>우리 회사는 ChatGPT 답변에 얼마나 노출되고 있을까요?</h3>
         <p>URL 하나만 입력하면 Gemini 가시성 점수와 핵심 약점 3가지를 1페이지 PDF로 무료 발송해 드립니다.</p>
@@ -29,7 +66,17 @@ layout: default
       <nav class="post-nav">
         <a href="/blog/" class="post-back">← 블로그 전체 보기</a>
       </nav>
-    </footer>
+    </div>
+
+    <!-- Right sticky sidebar -->
+    <aside class="post-sidebar" aria-label="목차">
+      <div class="post-toc">
+        <div class="post-toc-head">목차</div>
+        <ol class="post-toc-list"></ol>
+      </div>
+    </aside>
 
   </div>
 </article>
+
+<script src="/assets/js/blog.js" defer></script>

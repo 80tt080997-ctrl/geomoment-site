@@ -13,15 +13,27 @@ layout: default
     {% if site.posts.size > 0 %}
     <div class="blog-grid">
       {% for post in site.posts %}
+      {% assign author = site.data.authors[post.author_id] | default: site.data.authors.jace %}
+      {% assign word_count = post.content | strip_html | strip_newlines | size %}
+      {% assign read_time = word_count | divided_by: 350 | plus: 1 %}
       <article class="blog-card">
         <a href="{{ post.url }}">
-          {% if post.category %}<span class="blog-card-cat">{{ post.category }}</span>{% endif %}
-          <h2 class="blog-card-title">{{ post.title }}</h2>
-          {% if post.description %}<p class="blog-card-desc">{{ post.description }}</p>{% endif %}
-          <div class="blog-card-meta">
-            <span>{{ post.author | default: site.author.name }}</span>
-            <span class="blog-card-dot">·</span>
-            <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+          <div class="blog-card-thumb" aria-hidden="true">
+            <span class="blog-card-thumb-label">{{ post.category | default: 'GEO' }}</span>
+            <span class="blog-card-thumb-mono">G</span>
+          </div>
+          <div class="blog-card-body">
+            {% if post.category %}<span class="blog-card-cat">{{ post.category }}</span>{% endif %}
+            <h2 class="blog-card-title">{{ post.title }}</h2>
+            {% if post.description %}<p class="blog-card-desc">{{ post.description }}</p>{% endif %}
+            <div class="blog-card-meta">
+              <img src="{{ author.avatar }}" alt="{{ author.name }}" class="blog-card-avatar">
+              <span class="blog-card-author">{{ author.name }}</span>
+              <span class="blog-card-dot">·</span>
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-read">{{ read_time }}분</span>
+            </div>
           </div>
         </a>
       </article>
