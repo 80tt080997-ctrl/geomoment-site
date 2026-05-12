@@ -42,6 +42,18 @@ layout: default
   <div class="post-grid">
 
     <div class="post-main">
+      {% if page.summary %}
+      <aside class="post-summary" aria-label="마케터를 위한 핵심 요약">
+        <div class="post-summary-head">
+          <span class="post-summary-icon">📌</span>
+          <span class="post-summary-label">마케터를 위한 핵심 요약</span>
+        </div>
+        <div class="post-summary-body">
+          {{ page.summary | markdownify }}
+        </div>
+      </aside>
+      {% endif %}
+
       <div class="post-body">
         {{ content }}
       </div>

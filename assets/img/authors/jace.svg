@@ -4,45 +4,54 @@
       <stop offset="0%" stop-color="#3D3DFF"/>
       <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="50" cy="50" r="50"/>
+    </clipPath>
   </defs>
 
   <!-- 배경 원 -->
   <rect width="100" height="100" rx="50" fill="url(#jaceBg)"/>
 
-  <!-- 왼쪽 날개 -->
-  <ellipse cx="26" cy="62" rx="7" ry="15" fill="#1F2937" transform="rotate(-15 26 62)"/>
-  <!-- 오른쪽 날개 -->
-  <ellipse cx="74" cy="62" rx="7" ry="15" fill="#1F2937" transform="rotate(15 74 62)"/>
+  <g clip-path="url(#circleClip)">
+    <!-- 어깨·상의 (티셔츠) -->
+    <path d="M 12 100 Q 18 78 32 73 Q 50 70 68 73 Q 82 78 88 100 Z" fill="#F5F5F7"/>
+    <!-- 옷 깃 살짝 -->
+    <path d="M 42 73 Q 50 78 58 73 L 56 80 Q 50 82 44 80 Z" fill="#E5E7EB"/>
 
-  <!-- 펭귄 몸통 (검은 외곽) -->
-  <ellipse cx="50" cy="58" rx="26" ry="30" fill="#1F2937"/>
+    <!-- 목 -->
+    <rect x="44" y="64" width="12" height="11" rx="3" fill="#EFC9A8"/>
+    <!-- 목 그림자 -->
+    <path d="M 44 66 Q 50 70 56 66 L 56 70 L 44 70 Z" fill="#D9A77F" opacity="0.6"/>
 
-  <!-- 흰 배 -->
-  <ellipse cx="50" cy="62" rx="17" ry="22" fill="#FFFFFF"/>
+    <!-- 얼굴 (피부톤) -->
+    <ellipse cx="50" cy="45" rx="20" ry="22" fill="#F7D4B1"/>
 
-  <!-- 왼쪽 눈 흰자위 -->
-  <circle cx="42" cy="45" r="4" fill="white"/>
-  <!-- 왼쪽 눈동자 -->
-  <circle cx="42.5" cy="45.5" r="2" fill="#1F2937"/>
-  <!-- 왼쪽 눈 하이라이트 -->
-  <circle cx="43.2" cy="44.7" r="0.6" fill="white"/>
+    <!-- 머리 (단정한 단발) -->
+    <path d="M 30 38 Q 28 22 50 20 Q 72 22 70 38 Q 70 30 50 28 Q 30 30 30 38 Z" fill="#2D2A26"/>
+    <!-- 앞머리 살짝 -->
+    <path d="M 33 30 Q 40 24 50 26 Q 60 24 67 30 Q 60 32 50 31 Q 40 32 33 30 Z" fill="#1F1C18"/>
+    <!-- 옆머리 왼 -->
+    <path d="M 30 38 Q 28 50 32 56 Q 30 44 32 38 Z" fill="#2D2A26"/>
+    <!-- 옆머리 오 -->
+    <path d="M 70 38 Q 72 50 68 56 Q 70 44 68 38 Z" fill="#2D2A26"/>
 
-  <!-- 오른쪽 눈 흰자위 -->
-  <circle cx="58" cy="45" r="4" fill="white"/>
-  <!-- 오른쪽 눈동자 -->
-  <circle cx="57.5" cy="45.5" r="2" fill="#1F2937"/>
-  <!-- 오른쪽 눈 하이라이트 -->
-  <circle cx="58.2" cy="44.7" r="0.6" fill="white"/>
+    <!-- 안경 (까만 둥근 테) -->
+    <circle cx="41" cy="46" r="6" stroke="#1F2937" stroke-width="1.8" fill="rgba(255,255,255,0.15)"/>
+    <circle cx="59" cy="46" r="6" stroke="#1F2937" stroke-width="1.8" fill="rgba(255,255,255,0.15)"/>
+    <line x1="47" y1="46" x2="53" y2="46" stroke="#1F2937" stroke-width="1.8"/>
 
-  <!-- 부리 -->
-  <path d="M 45 52 L 55 52 L 50 58 Z" fill="#F59E0B"/>
-  <path d="M 47 52.5 L 53 52.5 L 50 56 Z" fill="#FBBF24"/>
+    <!-- 눈동자 (안경 안) -->
+    <circle cx="41" cy="46.5" r="1.6" fill="#1F2937"/>
+    <circle cx="59" cy="46.5" r="1.6" fill="#1F2937"/>
 
-  <!-- 발 (둥근 주황) -->
-  <ellipse cx="42" cy="88" rx="6" ry="2.5" fill="#F59E0B"/>
-  <ellipse cx="58" cy="88" rx="6" ry="2.5" fill="#F59E0B"/>
+    <!-- 볼터치 (살짝 분홍) -->
+    <ellipse cx="36" cy="54" rx="3.5" ry="2" fill="rgba(244, 114, 182, 0.32)"/>
+    <ellipse cx="64" cy="54" rx="3.5" ry="2" fill="rgba(244, 114, 182, 0.32)"/>
 
-  <!-- 볼터치 (살짝) -->
-  <circle cx="36" cy="52" r="2.5" fill="rgba(244, 114, 182, 0.4)"/>
-  <circle cx="64" cy="52" r="2.5" fill="rgba(244, 114, 182, 0.4)"/>
+    <!-- 미소 (살짝 올라간 입꼬리) -->
+    <path d="M 44 58 Q 50 62 56 58" stroke="#7C2D12" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+    <!-- 코 (얇은 선) -->
+    <path d="M 50 50 L 49 54" stroke="#D9A77F" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </g>
 </svg>
