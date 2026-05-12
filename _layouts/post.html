@@ -6,9 +6,20 @@ layout: default
 {% assign word_count = content | strip_html | strip_newlines | size %}
 {% assign read_time = word_count | divided_by: words_per_min | plus: 1 %}
 
-<!-- Reading progress bar -->
-<div class="post-progress" aria-hidden="true">
-  <div class="post-progress-fill"></div>
+<!-- Reading progress widget — 카드형 도넛 -->
+<div class="reading-widget" data-reading-widget aria-hidden="true">
+  <svg class="reading-widget-donut" viewBox="0 0 36 36" aria-hidden="true">
+    <defs>
+      <linearGradient id="readingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#3D3DFF"/>
+        <stop offset="100%" stop-color="#7C3AED"/>
+      </linearGradient>
+    </defs>
+    <circle class="reading-widget-track" cx="18" cy="18" r="15"></circle>
+    <circle class="reading-widget-arc" cx="18" cy="18" r="15"></circle>
+  </svg>
+  <span class="reading-widget-pct" data-reading-pct>0%</span>
+  <button type="button" class="reading-widget-top" data-reading-top aria-label="맨 위로 가기" title="맨 위로 가기">↑</button>
 </div>
 
 <article class="blog-post">

@@ -46,25 +46,48 @@
     }
   }
 
-  // ===== 1.5) Reading progress bar =====
-  const progressFill = document.querySelector('.post-progress-fill');
-  if (progressFill) {
+  // ===== 1.5) Reading progress widget (도넛 카드) =====
+  const widget = document.querySelector('[data-reading-widget]');
+  if (widget) {
+    const arc = widget.querySelector('.reading-widget-arc');
+    const pctEl = widget.querySelector('[data-reading-pct]');
+    const topBtn = widget.querySelector('[data-reading-top]');
     const article = document.querySelector('.blog-post .post-body') || document.querySelector('.blog-post');
-    if (article) {
+    const circumference = 94.25; // 2 * PI * 15
+
+    if (article && arc && pctEl) {
       const onProgress = () => {
         const rect = article.getBoundingClientRect();
         const articleTop = rect.top + window.scrollY;
-        const articleBottom = articleTop + article.offsetHeight;
+        const total = article.offsetHeight - window.innerHeight;
         const viewportBottom = window.scrollY + window.innerHeight;
-        const total = articleBottom - articleTop - window.innerHeight;
         const scrolled = viewportBottom - articleTop - window.innerHeight;
         let pct = total > 0 ? (scrolled / total) * 100 : 0;
         pct = Math.max(0, Math.min(100, pct));
-        progressFill.style.width = pct + '%';
+
+        // Arc 채우기
+        const offset = circumference - (circumference * pct) / 100;
+        arc.style.strokeDashoffset = offset;
+        pctEl.textContent = Math.round(pct) + '%';
+
+        // 일정 스크롤 후 widget 보이기 (hero 영역 지나면)
+        const showThreshold = articleTop - 100;
+        if (window.scrollY > showThreshold) {
+          widget.classList.add('is-visible');
+        } else {
+          widget.classList.remove('is-visible');
+        }
       };
       window.addEventListener('scroll', onProgress, { passive: true });
       window.addEventListener('resize', onProgress, { passive: true });
       onProgress();
+    }
+
+    if (topBtn) {
+      topBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (window.gtag) window.gtag('event', 'scroll_to_top', { article: document.title });
+      });
     }
   }
 
