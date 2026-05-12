@@ -12,54 +12,103 @@
   <!-- 배경 -->
   <rect width="100" height="100" rx="50" fill="url(#jaceBg)"/>
 
-  <g clip-path="url(#jaceClip)" stroke="#1F1C18" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round">
+  <g clip-path="url(#jaceClip)">
 
-    <!-- 어깨·파란 셔츠 -->
-    <path d="M 8 100 Q 18 76, 35 72 Q 50 70, 65 72 Q 82 76, 92 100 Z" fill="#5B8DEF"/>
+    <!-- ============ 어깨·셔츠 (진한 파랑) ============ -->
+    <path d="M 4 100 Q 12 76, 28 71 Q 50 67, 72 71 Q 88 76, 96 100 Z"
+          fill="#2C5AA0" stroke="#0F1419" stroke-width="2.8" stroke-linejoin="round"/>
     <!-- 셔츠 V 깃 -->
-    <path d="M 42 72 L 50 80 L 58 72" fill="none"/>
+    <path d="M 41 71 L 50 81 L 59 71" fill="none" stroke="#0F1419" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <!-- 셔츠 가슴 라벨 (흰 포켓 디테일) -->
+    <rect x="36" y="86" width="5" height="6" rx="0.8" fill="#F1F5F9" stroke="#0F1419" stroke-width="1.3"/>
+    <!-- 어깨 음영 (왼쪽) -->
+    <path d="M 4 100 Q 12 76, 28 71 L 32 78 Q 18 84, 12 100 Z" fill="#1F4D8F" opacity="0.5" stroke="none"/>
 
-    <!-- 목 -->
-    <path d="M 44 64 L 44 74 Q 50 77, 56 74 L 56 64 Z" fill="#F4C9A0"/>
+    <!-- ============ 목 ============ -->
+    <path d="M 43 60 L 43 74 Q 50 77, 57 74 L 57 60 Z"
+          fill="#F2C99B" stroke="#0F1419" stroke-width="2.6" stroke-linejoin="round"/>
+    <!-- 목 음영 -->
+    <path d="M 43 64 Q 50 68, 57 64 L 57 68 L 43 68 Z" fill="#D9A576" opacity="0.55" stroke="none"/>
 
-    <!-- 얼굴 (남성 — 약간 각진 턱) -->
-    <path d="M 30 42 Q 29 24, 50 22 Q 71 24, 70 42 Q 70 58, 62 65 Q 56 70, 50 70 Q 44 70, 38 65 Q 30 58, 30 42 Z" fill="#F4C9A0"/>
+    <!-- ============ 얼굴 (자연스러운 턱선) ============ -->
+    <path d="M 28 41 Q 27 22, 50 20 Q 73 22, 72 41 Q 72 56, 64 63 Q 58 69, 50 69 Q 42 69, 36 63 Q 28 56, 28 41 Z"
+          fill="#F2C99B" stroke="#0F1419" stroke-width="2.8" stroke-linejoin="round"/>
+    <!-- 얼굴 음영 (왼쪽 contour) -->
+    <path d="M 28 41 Q 28 56, 36 63 L 33 60 Q 28 50, 28 41 Z" fill="#D9A576" opacity="0.28" stroke="none"/>
+    <!-- 얼굴 음영 (턱 아래) -->
+    <path d="M 36 63 Q 50 70, 64 63 L 60 66 Q 50 70, 40 66 Z" fill="#D9A576" opacity="0.4" stroke="none"/>
 
-    <!-- 머리 (짧은 단정한 검정 — 캡 형태) -->
-    <path d="M 28 40 Q 24 21, 50 19 Q 76 21, 72 40 Q 72 36, 66 34 Q 58 30, 50 30 Q 42 30, 34 34 Q 28 36, 28 40 Z" fill="#1F1C18"/>
-    <!-- 옆머리 짧게 (귀 위) -->
-    <path d="M 28 40 Q 28 48, 31 47 L 32 40 Z" fill="#1F1C18"/>
-    <path d="M 72 40 Q 72 48, 69 47 L 68 40 Z" fill="#1F1C18"/>
-    <!-- 사이드 파트 (앞머리 살짝 흐름) -->
-    <path d="M 38 33 Q 44 30, 52 31 Q 48 35, 42 35 Z" fill="#1F1C18"/>
+    <!-- ============ 머리 (검정 단정 + 자연 흐름) ============ -->
+    <!-- 메인 헤어 매스 -->
+    <path d="M 24 38 Q 21 15, 50 14 Q 79 15, 76 38 Q 78 32, 72 28 Q 60 22, 50 22 Q 40 22, 28 28 Q 22 32, 24 38 Z"
+          fill="#1F1A15" stroke="#0F1419" stroke-width="2.8" stroke-linejoin="round"/>
+    <!-- 옆 짧은 머리 (왼쪽 귀까지) -->
+    <path d="M 24 38 Q 23 46, 26 50 Q 29 47, 30 41 Z"
+          fill="#1F1A15" stroke="#0F1419" stroke-width="2.5"/>
+    <!-- 옆 짧은 머리 (오른쪽 귀까지) -->
+    <path d="M 76 38 Q 77 46, 74 50 Q 71 47, 70 41 Z"
+          fill="#1F1A15" stroke="#0F1419" stroke-width="2.5"/>
+    <!-- 사이드 파트 (앞머리 옆으로 흐름) -->
+    <path d="M 32 30 Q 42 24, 54 27 Q 50 33, 42 34 Q 36 33, 32 30 Z"
+          fill="#0F0C08" stroke="#0F1419" stroke-width="1.6"/>
+    <!-- 헤어 결 라인 1 -->
+    <path d="M 34 24 Q 42 21, 50 23" fill="none" stroke="#3A3128" stroke-width="0.9" opacity="0.6" stroke-linecap="round"/>
+    <!-- 헤어 결 라인 2 -->
+    <path d="M 52 24 Q 62 21, 70 26" fill="none" stroke="#3A3128" stroke-width="0.9" opacity="0.6" stroke-linecap="round"/>
+    <!-- 헤어 결 라인 3 (앞머리 흐름) -->
+    <path d="M 36 32 Q 44 30, 50 32" fill="none" stroke="#3A3128" stroke-width="0.9" opacity="0.5" stroke-linecap="round"/>
 
-    <!-- 귀 (양옆 살짝) -->
-    <ellipse cx="29" cy="48" rx="2" ry="3" fill="#F4C9A0"/>
-    <ellipse cx="71" cy="48" rx="2" ry="3" fill="#F4C9A0"/>
+    <!-- ============ 귀 (양옆 — 얼굴 옆) ============ -->
+    <path d="M 26 47 Q 23 51, 25 55 Q 28 53, 28 49 Z"
+          fill="#F2C99B" stroke="#0F1419" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M 74 47 Q 77 51, 75 55 Q 72 53, 72 49 Z"
+          fill="#F2C99B" stroke="#0F1419" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- 귀 안쪽 라인 (얇게) -->
+    <path d="M 26 50 Q 27 52, 27 53" fill="none" stroke="#0F1419" stroke-width="1.3" opacity="0.6" stroke-linecap="round"/>
+    <path d="M 74 50 Q 73 52, 73 53" fill="none" stroke="#0F1419" stroke-width="1.3" opacity="0.6" stroke-linecap="round"/>
 
-    <!-- 안경 (검은 둥근 테) -->
-    <circle cx="40" cy="46" r="7" fill="rgba(255,255,255,0.18)" stroke="#1F1C18" stroke-width="2.4"/>
-    <circle cx="60" cy="46" r="7" fill="rgba(255,255,255,0.18)" stroke="#1F1C18" stroke-width="2.4"/>
-    <!-- 안경 다리 (가로 막대) -->
-    <line x1="47" y1="46" x2="53" y2="46" stroke="#1F1C18" stroke-width="2.4"/>
+    <!-- ============ 눈썹 (자연스러운 곡선) ============ -->
+    <path d="M 34 38 Q 39 35, 44 38" fill="none" stroke="#0F1419" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M 56 38 Q 61 35, 66 38" fill="none" stroke="#0F1419" stroke-width="2.6" stroke-linecap="round"/>
 
-    <!-- 눈동자 (큰 둥근 점) -->
-    <ellipse cx="40" cy="46.5" rx="2.6" ry="3" fill="#1F1C18" stroke="none"/>
-    <ellipse cx="60" cy="46.5" rx="2.6" ry="3" fill="#1F1C18" stroke="none"/>
-    <!-- 눈 하이라이트 -->
-    <circle cx="40.8" cy="45.6" r="0.9" fill="white" stroke="none"/>
-    <circle cx="60.8" cy="45.6" r="0.9" fill="white" stroke="none"/>
+    <!-- ============ 안경 (둥근 테 + 옆다리) ============ -->
+    <!-- 안경 다리 (귀까지) -->
+    <path d="M 32 47 L 28 49" stroke="#0F1419" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M 68 47 L 72 49" stroke="#0F1419" stroke-width="2.4" stroke-linecap="round"/>
+    <!-- 안경 렌즈 (왼쪽) -->
+    <circle cx="40" cy="46" r="7.5" fill="rgba(255,255,255,0.08)" stroke="#0F1419" stroke-width="2.8"/>
+    <!-- 안경 렌즈 (오른쪽) -->
+    <circle cx="60" cy="46" r="7.5" fill="rgba(255,255,255,0.08)" stroke="#0F1419" stroke-width="2.8"/>
+    <!-- 안경 다리 가운데 (코 위) -->
+    <path d="M 47.5 46 L 52.5 46" stroke="#0F1419" stroke-width="2.6" stroke-linecap="round"/>
+    <!-- 렌즈 하이라이트 (반사) -->
+    <path d="M 36 43 Q 38 42, 40 43" fill="none" stroke="white" stroke-width="1.2" opacity="0.45" stroke-linecap="round"/>
+    <path d="M 56 43 Q 58 42, 60 43" fill="none" stroke="white" stroke-width="1.2" opacity="0.45" stroke-linecap="round"/>
 
-    <!-- 눈썹 (짧고 두꺼운 라인 — 남성 톤) -->
-    <path d="M 35 39 L 44 39" fill="none" stroke-width="2.2"/>
-    <path d="M 56 39 L 65 39" fill="none" stroke-width="2.2"/>
+    <!-- ============ 눈 (큰 둥근 점 + 흰 하이라이트) ============ -->
+    <ellipse cx="40" cy="47" rx="2.9" ry="3.3" fill="#0F1419"/>
+    <ellipse cx="60" cy="47" rx="2.9" ry="3.3" fill="#0F1419"/>
+    <!-- 큰 하이라이트 -->
+    <ellipse cx="41" cy="45.8" rx="1.1" ry="1.3" fill="white"/>
+    <ellipse cx="61" cy="45.8" rx="1.1" ry="1.3" fill="white"/>
+    <!-- 작은 하이라이트 (반대편) -->
+    <circle cx="39.2" cy="48.2" r="0.5" fill="white" opacity="0.85"/>
+    <circle cx="59.2" cy="48.2" r="0.5" fill="white" opacity="0.85"/>
 
-    <!-- 분홍 볼터치 (또렷한 디스크) -->
-    <circle cx="33" cy="55" r="5" fill="#F8A8C0" stroke="none"/>
-    <circle cx="67" cy="55" r="5" fill="#F8A8C0" stroke="none"/>
+    <!-- ============ 코 (V 곡선) ============ -->
+    <path d="M 49 51 Q 48.6 54, 50 55 Q 51.4 54, 51 51"
+          fill="none" stroke="#0F1419" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
 
-    <!-- 미소 (살짝 올라간 입) -->
-    <path d="M 44 59 Q 50 63, 56 59" fill="none" stroke-width="2"/>
+    <!-- ============ 분홍 볼터치 ============ -->
+    <ellipse cx="33" cy="55" rx="6.5" ry="4.5" fill="#F8A0BC" opacity="0.82"/>
+    <ellipse cx="67" cy="55" rx="6.5" ry="4.5" fill="#F8A0BC" opacity="0.82"/>
+
+    <!-- ============ 입 (살짝 비대칭 미소) ============ -->
+    <path d="M 43 60 Q 47 64, 50 63.2 Q 53 64, 57 60.2"
+          fill="none" stroke="#0F1419" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 입술 (살짝 분홍) -->
+    <path d="M 44 60.5 Q 47 63, 50 62.8 Q 53 63, 56 60.5"
+          fill="#E97A99" opacity="0.45" stroke="none"/>
 
   </g>
 </svg>
