@@ -1,0 +1,34 @@
+title: GeoMoment 블로그
+description: 한국형 답변 엔진 최적화(GEO) 인사이트 — 4 AI 동시 측정 + 9 KPI 다축 진단 + 청크 단위 처방
+url: https://geomoment.me
+lang: ko-KR
+timezone: Asia/Seoul
+
+author:
+  name: 김승재
+  email: contact@geomoment.me
+
+permalink: /blog/:slug/
+
+paginate: 10
+paginate_path: /blog/page:num/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - "_video_assets_gen.py"
+  - "_schema_inject.ps1"
+  - "*.md"
+  - "README*"
+  - "HANDOFF*"
+  - "Gemfile*"
+  - vendor/

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="blog-post">
+  <div class="container container--narrow">
+
+    <header class="post-header">
+      {% if page.category %}<span class="post-cat">{{ page.category }}</span>{% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
+      {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
+      <div class="post-meta">
+        <span class="post-author">{{ page.author | default: site.author.name }}</span>
+        <span class="post-dot">·</span>
+        <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+      </div>
+    </header>
+
+    <div class="post-body">
+      {{ content }}
+    </div>
+
+    <footer class="post-footer">
+      <div class="post-cta-card">
+        <h3>우리 회사는 ChatGPT 답변에 얼마나 노출되고 있을까요?</h3>
+        <p>URL 하나만 입력하면 Gemini 가시성 점수와 핵심 약점 3가지를 1페이지 PDF로 무료 발송해 드립니다.</p>
+        <a href="/geo-diagnose.html" class="btn-primary">30초 무료 진단 받기 →</a>
+      </div>
+
+      <nav class="post-nav">
+        <a href="/blog/" class="post-back">← 블로그 전체 보기</a>
+      </nav>
+    </footer>
+
+  </div>
+</article>
