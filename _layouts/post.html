@@ -6,27 +6,35 @@ layout: default
 {% assign word_count = content | strip_html | strip_newlines | size %}
 {% assign read_time = word_count | divided_by: words_per_min | plus: 1 %}
 
+<!-- Reading progress bar -->
+<div class="post-progress" aria-hidden="true">
+  <div class="post-progress-fill"></div>
+</div>
+
 <article class="blog-post">
 
-  <!-- Hero band: 카테고리 + 제목 + 부제 + 메타 -->
+  <!-- Hero band: 카테고리 + 제목 + 부제 + 메타 (post-grid와 같은 그리드라 정렬 일치) -->
   <header class="post-hero">
-    <div class="container container--narrow">
-      {% if page.category %}<span class="post-cat">{{ page.category }}</span>{% endif %}
-      <h1 class="post-title">{{ page.title }}</h1>
-      {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
-      <div class="post-meta">
-        <span class="post-meta-author">
-          <img src="{{ author.avatar }}" alt="{{ author.name }}" class="post-meta-avatar">
-          <span>
-            <strong>{{ author.name }}</strong>
-            <em>{{ author.role }}</em>
+    <div class="post-grid post-grid--hero">
+      <div class="post-main">
+        {% if page.category %}<span class="post-cat">{{ page.category }}</span>{% endif %}
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.description %}<p class="post-lede">{{ page.description }}</p>{% endif %}
+        <div class="post-meta">
+          <span class="post-meta-author">
+            <img src="{{ author.avatar }}" alt="{{ author.name }}" class="post-meta-avatar">
+            <span>
+              <strong>{{ author.name }}</strong>
+              <em>{{ author.role }}</em>
+            </span>
           </span>
-        </span>
-        <span class="post-meta-divider"></span>
-        <time class="post-meta-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
-        <span class="post-meta-divider"></span>
-        <span class="post-meta-read">{{ read_time }}분 읽기</span>
+          <span class="post-meta-divider"></span>
+          <time class="post-meta-date" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+          <span class="post-meta-divider"></span>
+          <span class="post-meta-read">{{ read_time }}분 읽기</span>
+        </div>
       </div>
+      <aside class="post-sidebar post-sidebar--hero" aria-hidden="true"></aside>
     </div>
   </header>
 
@@ -68,7 +76,7 @@ layout: default
       </nav>
     </div>
 
-    <!-- Right sticky sidebar -->
+    <!-- Right sticky sidebar (TOC) -->
     <aside class="post-sidebar" aria-label="목차">
       <div class="post-toc">
         <div class="post-toc-head">목차</div>

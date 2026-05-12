@@ -3,15 +3,16 @@
    ========================================================================== */
 
 (function () {
-  // ===== 1) Auto TOC from .post-body h2, h3 =====
+  // ===== 1) Auto TOC from .post-body h2, h3, h4 =====
   const tocList = document.querySelector('.post-toc-list');
+  let tocHeadings = [];
   if (tocList) {
-    const headings = document.querySelectorAll('.post-body h2, .post-body h3');
-    if (headings.length === 0) {
+    tocHeadings = Array.from(document.querySelectorAll('.post-body h2, .post-body h3, .post-body h4'));
+    if (tocHeadings.length === 0) {
       const tocBox = document.querySelector('.post-toc');
       if (tocBox) tocBox.style.display = 'none';
     } else {
-      headings.forEach((h, i) => {
+      tocHeadings.forEach((h, i) => {
         if (!h.id) {
           const slug = h.textContent
             .toLowerCase()
@@ -33,7 +34,7 @@
       const onScroll = () => {
         let current = '';
         const scrollY = window.scrollY + 120;
-        headings.forEach((h) => {
+        tocHeadings.forEach((h) => {
           if (h.offsetTop <= scrollY) current = h.id;
         });
         tocLinks.forEach((a) => {
@@ -42,6 +43,28 @@
       };
       window.addEventListener('scroll', onScroll, { passive: true });
       onScroll();
+    }
+  }
+
+  // ===== 1.5) Reading progress bar =====
+  const progressFill = document.querySelector('.post-progress-fill');
+  if (progressFill) {
+    const article = document.querySelector('.blog-post .post-body') || document.querySelector('.blog-post');
+    if (article) {
+      const onProgress = () => {
+        const rect = article.getBoundingClientRect();
+        const articleTop = rect.top + window.scrollY;
+        const articleBottom = articleTop + article.offsetHeight;
+        const viewportBottom = window.scrollY + window.innerHeight;
+        const total = articleBottom - articleTop - window.innerHeight;
+        const scrolled = viewportBottom - articleTop - window.innerHeight;
+        let pct = total > 0 ? (scrolled / total) * 100 : 0;
+        pct = Math.max(0, Math.min(100, pct));
+        progressFill.style.width = pct + '%';
+      };
+      window.addEventListener('scroll', onProgress, { passive: true });
+      window.addEventListener('resize', onProgress, { passive: true });
+      onProgress();
     }
   }
 
