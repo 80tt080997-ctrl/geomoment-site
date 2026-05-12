@@ -120,7 +120,7 @@ button { font-family: inherit; }
 
 @media (max-width: 768px) {
   .header-nav { display: none; }
-  .header-cta .btn-secondary { display: none; }
+  .header-cta { display: none; }
   .header-menu-toggle { display: flex; }
 }
 
