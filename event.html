@@ -443,8 +443,9 @@
     </div>
 
     <div class="form-wrap reveal reveal-delay-1" style="margin-top: var(--sp-7);">
-      <form action="https://formspree.io/f/YOUR_ID" method="POST">
-        <!-- 이 페이지는 GEO 얼리버드 신청 페이지 — 관심 서비스를 GEO 로 자동 분류 -->
+      <form id="event-form" action="https://formspree.io/f/mqennpwe" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="[GeoMoment] 얼리버드 5명 신청">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
         <input type="hidden" name="service" value="geo">
 
         <div class="form-row">
@@ -490,7 +491,8 @@
           <input type="checkbox" id="commit_agree" name="commit_agree" required style="width: auto; margin-top: 4px;">
           <label for="commit_agree" style="margin: 0;">고객사 이행 사항(리뷰·자사 콘텐츠·인터뷰 등)에 협력하겠습니다. *</label>
         </div>
-        <button type="submit" class="btn-primary" style="width: 100%; padding: 16px; font-size: 16px;">얼리버드 신청하기</button>
+        <button type="submit" class="btn-primary form-submit" style="width: 100%; padding: 16px; font-size: 16px;">얼리버드 신청하기</button>
+        <div class="form-feedback" id="event-feedback" hidden></div>
       </form>
 
       <p style="text-align: center; margin-top: var(--sp-5); font-size: 13px; color: var(--ink-500);">

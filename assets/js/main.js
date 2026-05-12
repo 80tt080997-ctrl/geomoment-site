@@ -365,3 +365,68 @@ if (document.readyState === 'loading') {
     if (e.key === 'Escape') close();
   });
 })();
+
+// ===== Formspree AJAX submit =====
+(function () {
+  const forms = document.querySelectorAll('form[action*="formspree.io"]');
+  forms.forEach((form) => {
+    const submitBtn = form.querySelector('button[type="submit"], .form-submit');
+    let feedback = form.querySelector('.form-feedback');
+    if (!feedback) {
+      feedback = document.createElement('div');
+      feedback.className = 'form-feedback';
+      feedback.hidden = true;
+      form.appendChild(feedback);
+    }
+
+    function showFeedback(status, message) {
+      feedback.textContent = message;
+      feedback.dataset.status = status;
+      feedback.hidden = false;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (form.querySelector('input[name="_gotcha"]').value) return; // spam
+
+      if (typeof form.checkValidity === 'function' && !form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const originalLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = '전송 중…';
+      }
+
+      try {
+        const resp = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+
+        if (resp.ok) {
+          form.reset();
+          showFeedback('success', '✓ 접수되었습니다. 영업일 안에 회신드리겠습니다. 감사합니다!');
+          if (submitBtn) submitBtn.style.display = 'none';
+          if (window.gtag) {
+            window.gtag('event', 'form_submit', {
+              form_id: form.id || 'unknown',
+              form_action: form.action
+            });
+          }
+        } else {
+          const data = await resp.json().catch(() => ({}));
+          const msg = (data.errors && data.errors[0] && data.errors[0].message) || '전송에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+          showFeedback('error', '✕ ' + msg);
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalLabel; }
+        }
+      } catch (err) {
+        showFeedback('error', '✕ 네트워크 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
+        if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalLabel; }
+      }
+    });
+  });
+})();

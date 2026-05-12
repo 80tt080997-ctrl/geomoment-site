@@ -117,11 +117,9 @@
     </div>
 
     <div class="form-wrap reveal reveal-delay-1" style="margin-top: var(--sp-7);">
-      <!--
-        action 은 추후 아임웹에서 발급받은 form endpoint URL 로 교체:
-        예) action="https://forms.imweb.me/forms/XXXX"
-      -->
-      <form id="diagnose-form" action="" method="POST" novalidate>
+      <form id="diagnose-form" action="https://formspree.io/f/mykooelw" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="[GeoMoment] 무료 GEO 진단 신청">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
         <div class="form-row">
           <label for="company">회사·브랜드명 <span class="form-req">*</span></label>
           <input type="text" id="company" name="company" required maxlength="80" autocomplete="organization">
