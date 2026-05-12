@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEO — GeoMoment</title>
+<meta name="description" content="측정·진단·실행·검증을 한 회사가 책임집니다. 9 KPI 4축 분해 + 청크 단위 처방 + 매월 산출물 + 특허 출원 알고리즘으로 보호되는 한국 GEO 통합 컨설팅.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Sticky stack: 배너 + 헤더 -->
+<div class="sticky-stack">
+<div class="beta-banner">
+  <span class="banner-text-full">🎁 얼리버드 5명 한정 — 진단·실행 패키지 <strong>50% 할인</strong> (39.5만원부터)</span>
+  <span class="banner-text-short">🎁 얼리버드 5명 · <strong>50% 할인</strong></span>
+  <a href="event.html">자세히 →</a>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="header-logo" aria-label="GeoMoment 홈">
+      <object data="assets/logo/lockup-gradient.svg" type="image/svg+xml" style="height:40px; pointer-events:none;"></object>
+    </a>
+    <nav class="header-nav">
+      <a href="method.html">GEO</a>
+      <a href="seo.html">SEO</a>
+      <a href="contact.html">문의</a>
+    </nav>
+    <div class="header-cta">
+      <a href="geo-diagnose.html" class="btn-secondary">무료 진단</a>
+      <a href="contact.html" class="btn-primary">상담 신청</a>
+    </div>
+    <button class="header-menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" aria-hidden="true">
+    <a href="index.html">홈</a>
+    <a href="method.html">GEO</a>
+    <a href="seo.html">SEO (브랜드 블로그)</a>
+    <a href="event.html">얼리버드 5명</a>
+    <a href="geo-diagnose.html">무료 진단</a>
+    <a href="contact.html">문의·상담</a>
+  </nav>
+</header>
+</div><!-- /.sticky-stack -->
+
+<!-- ============ HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-eyebrow" style="color: var(--indigo);">METHOD · 4 STEPS · 한 회사가 책임</div>
+    <h1 class="hero-title">
+      측정·진단·실행·검증을<br>
+      <span class="text-gradient">한 회사가 책임집니다.</span>
+    </h1>
+    <p class="hero-sub kr-keep">
+      AI 답변에 우리가 안 나오면 —<br>
+      측정으로 약점을 찾고, 직접 콘텐츠 만들어 게시하고, 다음 회차에 검증합니다.
+    </p>
+    <div class="hero-cta">
+      <a href="geo-diagnose.html" class="btn-primary">30초 무료 진단</a>
+      <a href="#diagnose" class="btn-secondary">9 KPI 4축 보기 ↓</a>
+    </div>
+
+    <!-- Four Steps Flow — 컬러별 차별 + 아이콘 -->
+    <div class="four-steps reveal">
+      <div class="fs-step fs-step--m1">
+        <div class="fs-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+        </div>
+        <div class="fs-num">STEP 01</div>
+        <div class="fs-name">측정</div>
+        <div class="fs-stat">4 AI 동시</div>
+        <div class="fs-desc">6 카테고리 자동 측정</div>
+      </div>
+      <div class="fs-arrow">→</div>
+      <div class="fs-step fs-step--m2">
+        <div class="fs-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v3M11 14h.01"/></svg>
+        </div>
+        <div class="fs-num">STEP 02</div>
+        <div class="fs-name">진단</div>
+        <div class="fs-stat">9 KPI 4축</div>
+        <div class="fs-desc">Entity·EEAT·Topic·Chunk 분해</div>
+      </div>
+      <div class="fs-arrow">→</div>
+      <div class="fs-step fs-step--m3">
+        <div class="fs-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <div class="fs-num">STEP 03</div>
+        <div class="fs-name">실행</div>
+        <div class="fs-stat">자체 콘텐츠</div>
+        <div class="fs-desc">자사 콘텐츠 + PR + Schema</div>
+      </div>
+      <div class="fs-arrow">→</div>
+      <div class="fs-step fs-step--m4">
+        <div class="fs-icon-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        </div>
+        <div class="fs-num">STEP 04</div>
+        <div class="fs-name">검증</div>
+        <div class="fs-stat">다음 회차</div>
+        <div class="fs-desc">효과 자동 판정 + 액션 갱신</div>
+      </div>
+    </div>
+    <div class="fs-loop">↺ <strong>매달 닫히는 풀 사이클</strong> — 12개월 누적 효과로 +25~35점</div>
+  </div>
+</section>
+
+<!-- ============ ⭐ STEP 01 · MEASURE (신설) — Hero와 DIAGNOSE 사이 도약대 ============ -->
+<section id="measure" class="section-bare">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="fp-eyebrow" style="justify-content:center;">STEP 01 · 한 회사가 측정합니다 · 4 AI 동시</div>
+      <h2 class="fp-headline" style="text-align:center;">AI마다 답변이 다릅니다.<br><b>4 AI에서 동시에 측정합니다.</b></h2>
+      <p class="fp-sub kr-keep" style="text-align:center; max-width: 880px; margin-left:auto; margin-right:auto;">
+        ChatGPT · Gemini · Claude · Perplexity 4개 답변 엔진을 한 번에 측정. <strong>6 카테고리 × 4 플랫폼 매트릭스</strong>로 자동 수집됩니다.
+      </p>
+    </div>
+
+    <!-- 4 AI 로고 (index.html .ai-logo-row 재사용) -->
+    <div class="reveal reveal-delay-1" style="margin-top: var(--sp-7); display:flex; justify-content: center;">
+      <div class="ai-logo-row">
+        <span class="ai-logo" title="ChatGPT">
+          <img src="assets/logos/chatgpt.png" alt="ChatGPT">
+        </span>
+        <span class="ai-logo" title="Gemini">
+          <img src="assets/logos/gemini.png" alt="Gemini">
+        </span>
+        <span class="ai-logo" title="Claude">
+          <img src="assets/logos/claude.png" alt="Claude">
+        </span>
+        <span class="ai-logo" title="Perplexity">
+          <img src="assets/logos/perplexity.png" alt="Perplexity">
+        </span>
+      </div>
+    </div>
+
+    <!-- 6 카테고리 chip + 매트릭스 표시 -->
+    <div class="reveal reveal-delay-2" style="margin-top: var(--sp-5); text-align:center;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 800px; margin: 0 auto;">
+        <span class="kpi-chip on">정보형</span>
+        <span class="kpi-chip on">상업형</span>
+        <span class="kpi-chip on">비교형</span>
+        <span class="kpi-chip on">추천형</span>
+        <span class="kpi-chip on">가격형</span>
+        <span class="kpi-chip on">기타</span>
+      </div>
+      <p class="kr-keep" style="margin-top: var(--sp-4); color: var(--ink-500); font-size: 14px; max-width: 880px; margin-left:auto; margin-right:auto; line-height: 1.7;">
+        <strong style="color: var(--indigo);">6 카테고리 × 4 플랫폼 = 24셀 매트릭스</strong>로 자동 수집됩니다.<br>
+        같은 브랜드라도 카테고리별로 점수가 다르므로 — <strong>약점 카테고리 진단</strong>이 가능해집니다.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIAGNOSE · 9 KPI 4축 분해 ============ -->
+<section id="diagnose" class="section-bare">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="fp-eyebrow" style="justify-content:center;">STEP 02 · 한 회사가 진단합니다 · 9 KPI 4축</div>
+      <h2 class="fp-headline" style="text-align:center;">총점 대신 4축으로<br><b>약점을 정확히 짚습니다.</b></h2>
+      <p class="fp-sub kr-keep" style="text-align:center; max-width: 880px; margin-left:auto; margin-right:auto;">
+        총점 한 개는 약점을 가립니다. 9 KPI를 <strong>Entity · EEAT · Topic · Chunk 4축</strong>으로 분해해 어디가 약한지 봅니다.
+      </p>
+    </div>
+
+    <!-- Overall 점수 헤더 (슬림) — 4축 미니 제거됨, 깊이 카드와 중복 해소 -->
+    <div class="reveal reveal-delay-1">
+      <div class="overall-header">
+        <div class="oh-score">48.7<span class="of">/100</span></div>
+        <div class="oh-meta">
+          <div class="oh-label">노바스테이 · 가상 데모</div>
+          <div class="oh-name">9 KPI 다축 진단 — Overall</div>
+          <div class="oh-context">한국 호텔 평균 30~45점 · ↓ 4축 분해 결과 보기</div>
+        </div>
+        <div class="oh-live">실시간</div>
+      </div>
+    </div>
+
+    <!-- 4축 깊이 카드 -->
+    <div class="axis-deep-grid reveal reveal-delay-2">
+
+      <div class="axis-deep-card">
+        <div class="adc-tag">① ENTITY · 주제 인지</div>
+        <div class="adc-icon" style="background: rgba(61,61,255,0.10); color: var(--indigo);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg>
+        </div>
+        <h3 class="adc-name">엔티티 현저성</h3>
+        <div class="adc-bottom">
+          <div class="adc-score">54.2<span class="of">/100</span></div>
+          <div class="adc-gauge">
+            <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="adc-trend">▲ +1.8</div>
+        </div>
+        <p class="adc-desc">AI가 우리를 <strong>독립 주제</strong>로 인지하는지 측정합니다. 약점이면 답변에 경쟁사만 등장합니다.</p>
+        <p class="adc-example">"강남 비즈니스 호텔이라면?" 질문에 우리 회사가 떠오르는가</p>
+      </div>
+
+      <div class="axis-deep-card warn">
+        <div class="adc-tag">② EEAT · Authority</div>
+        <div class="adc-icon" style="background: rgba(123,91,255,0.10); color: var(--violet);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="adc-name">EEAT 권위</h3>
+        <div class="adc-bottom">
+          <div class="adc-score">62.8<span class="of">/100</span></div>
+          <div class="adc-gauge">
+            <span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span>
+          </div>
+          <div class="adc-trend">▲ +1.4</div>
+        </div>
+        <p class="adc-desc">외부 인용·전문성·신뢰 신호를 종합 평가합니다. 약점이면 답변 출처로 <strong>경쟁사 사이트</strong>가 우선됩니다.</p>
+        <p class="adc-example">"데일리호텔이 추천한 비즈니스 호텔"처럼 권위 매체가 우리를 인용하는가</p>
+      </div>
+
+      <div class="axis-deep-card">
+        <div class="adc-tag">③ TOPIC · 토픽 강약</div>
+        <div class="adc-icon" style="background: rgba(16,163,127,0.10); color: #10A37F;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7h4M10 17h4M7 10v4M17 10v4"/></svg>
+        </div>
+        <h3 class="adc-name">토픽 권위도</h3>
+        <div class="adc-bottom">
+          <div class="adc-score">48.6<span class="of">/100</span></div>
+          <div class="adc-gauge">
+            <span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="adc-trend">▲ +2.1</div>
+        </div>
+        <p class="adc-desc">토픽 클러스터별 강약을 측정합니다. <strong>T03 비즈니스/MICE 7.8 최저</strong> — 핵심 매출 토픽이 약점입니다.</p>
+        <p class="adc-example">"MICE 50인 패키지" 같은 핵심 매출 토픽에서 답변에 등장하는가</p>
+      </div>
+
+      <div class="axis-deep-card warn">
+        <div class="adc-tag">④ CHUNK · 단락 인용성</div>
+        <div class="adc-icon" style="background: rgba(218,119,86,0.12); color: #DA7756;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 5h18M3 12h18M3 19h12"/><circle cx="6" cy="5" r="0.8" fill="currentColor"/><circle cx="6" cy="12" r="0.8" fill="currentColor"/><circle cx="6" cy="19" r="0.8" fill="currentColor"/></svg>
+        </div>
+        <h3 class="adc-name">청크 추출 가능성</h3>
+        <div class="adc-bottom">
+          <div class="adc-score">38.1<span class="of">/100</span></div>
+          <div class="adc-gauge">
+            <span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <div class="adc-trend">▲ +0.9</div>
+        </div>
+        <p class="adc-desc">단락 단위 AI 인용성을 측정합니다. <strong>3개 페이지가 30점 미만</strong> — P1 우선 재작성 대상입니다.</p>
+        <p class="adc-example">객실 페이지의 한 단락이 AI 답변에 그대로 인용 가능한가</p>
+      </div>
+
+    </div>
+
+    <!-- 9 KPI 매핑 chip -->
+    <div class="kpi9-mapping reveal reveal-delay-3">
+      <div class="km-label">9 KPI 전체 매핑</div>
+      <div class="kpi9-row">
+        <span class="kpi-chip on">KPI 01 · 총점</span>
+        <span class="kpi-chip on">KPI 02 · ChatGPT</span>
+        <span class="kpi-chip on">KPI 03 · Gemini</span>
+        <span class="kpi-chip on">KPI 04 · Claude</span>
+        <span class="kpi-chip on">KPI 05 · Perplexity</span>
+      </div>
+      <div class="kpi9-row">
+        <span class="kpi-chip on" style="border-color: var(--indigo); color: var(--indigo); font-weight: 600;">KPI 06 · Entity</span>
+        <span class="kpi-chip on" style="border-color: var(--violet); color: var(--violet); font-weight: 600;">KPI 07 · EEAT</span>
+        <span class="kpi-chip on" style="border-color: #10A37F; color: #10A37F; font-weight: 600;">KPI 08 · Topic</span>
+        <span class="kpi-chip on" style="border-color: #DA7756; color: #DA7756; font-weight: 600;">KPI 09 · Chunk</span>
+      </div>
+      <div class="kpi9-summary">
+        기본 5 (총점 + 4 AI별) + <strong>깊이 4 (4축)</strong> = 총 <strong>9 KPI</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXECUTE · 매 회차 보고서 ============ -->
+<section id="execute" class="section-bare--bg">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="fp-eyebrow" style="justify-content:center;">STEP 03 · 한 회사가 실행합니다 · 외주 0%</div>
+      <h2 class="fp-headline" style="text-align:center;">진단으로 끝나지 않습니다.<br><b>매 회차, 산출물 한 묶음이 도착합니다.</b></h2>
+      <p class="fp-sub kr-keep" style="text-align:center; max-width: 880px; margin-left:auto; margin-right:auto;">
+        자체 운영팀이 <strong>직접</strong> 작성·검수·발행하고, 다음 회차에 효과를 검증합니다.<br>
+        <span class="execute-no-outsource">외주 0%</span> 자체 운영팀이 직접 깊이있게 작성합니다.
+      </p>
+    </div>
+
+    <!-- ⭐ EXECUTE V3 — 5종 산출물 명세 카드 (사장님 옵션 A 결정 · 건수 표시 없음) -->
+    <div class="deliverable-grid reveal reveal-delay-1">
+
+      <div class="deliverable-card dc--report">
+        <div class="dc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+        </div>
+        <div class="dc-label">REPORT</div>
+        <h3 class="dc-name">진단 보고서</h3>
+        <p class="dc-desc">AI 가시성 진단 PDF — 4축 인사이트, 액션 플랜, 매체 분배, 검증까지 한 권에.</p>
+        <span class="dc-foot">GeoMoment 작성</span>
+      </div>
+
+      <div class="deliverable-card dc--content">
+        <div class="dc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <div class="dc-label">CONTENT</div>
+        <h3 class="dc-name">자사 콘텐츠</h3>
+        <p class="dc-desc">GEO 친화 블로그. 티스토리·네이버 매체 비율을 진단 결과 기반으로 분배 발행.</p>
+        <span class="dc-foot">자체 운영팀 직접</span>
+      </div>
+
+      <div class="deliverable-card dc--pr">
+        <div class="dc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 11-5.8-1.6"/></svg>
+        </div>
+        <div class="dc-label">PR</div>
+        <h3 class="dc-name">PR 보도자료</h3>
+        <p class="dc-desc">권위 매체 게재. 한국언론진흥재단·매거진·뉴스 인덱싱으로 EEAT Authority 자산화.</p>
+        <span class="dc-foot">자체 운영팀 직접</span>
+      </div>
+
+      <div class="deliverable-card dc--schema">
+        <div class="dc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="dc-label">SCHEMA</div>
+        <h3 class="dc-name">사이트 보강 코드</h3>
+        <p class="dc-desc">Schema.org 마크업 · llms.txt · robots.txt — AI 크롤러 명시 허용 + 그대로 배포.</p>
+        <span class="dc-foot foot--auto">자동 갱신</span>
+      </div>
+
+      <div class="deliverable-card dc--external">
+        <div class="dc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+        </div>
+        <div class="dc-label">EXTERNAL</div>
+        <h3 class="dc-name">외부 인용 자산</h3>
+        <p class="dc-desc">나무위키 등재 · 매거진 협력 · 유튜브 인용. 회차마다 누적되어 자산화.</p>
+        <span class="dc-foot">GeoMoment 작업</span>
+      </div>
+
+    </div>
+
+    <!-- ⭐ 산출 프로세스 6단계 흐름도 (NEW · method-specific) -->
+    <div class="process-pipeline reveal reveal-delay-2">
+      <div class="pp-grid">
+        <div class="pp-step">
+          <div class="pp-num">01</div>
+          <div class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l3-3 4 4 8-8 3 3"/><path d="M21 21H3V3"/></svg>
+          </div>
+          <div class="pp-name">진단</div>
+          <div class="pp-who">GeoMoment</div>
+          <div class="pp-much">9 KPI PDF 작성</div>
+        </div>
+        <div class="pp-arrow">→</div>
+        <div class="pp-step">
+          <div class="pp-num">02</div>
+          <div class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+          </div>
+          <div class="pp-name">플랜</div>
+          <div class="pp-who">GeoMoment</div>
+          <div class="pp-much">P1~P5 우선순위</div>
+        </div>
+        <div class="pp-arrow">→</div>
+        <div class="pp-step">
+          <div class="pp-num">03</div>
+          <div class="pp-icon" style="background: rgba(123,91,255,0.10); color: var(--violet);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </div>
+          <div class="pp-name">집필</div>
+          <div class="pp-who">자사 운영팀</div>
+          <div class="pp-much">외주 0% · 깊이있게</div>
+        </div>
+        <div class="pp-arrow">→</div>
+        <div class="pp-step">
+          <div class="pp-num">04</div>
+          <div class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+          </div>
+          <div class="pp-name">검수</div>
+          <div class="pp-who">시니어 에디터</div>
+          <div class="pp-much">톤 일관성 · Schema</div>
+        </div>
+        <div class="pp-arrow">→</div>
+        <div class="pp-step">
+          <div class="pp-num">05</div>
+          <div class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l7-9 7 9-7 9-7-9z"/><path d="M9 12l3-4 3 4-3 4-3-4z"/></svg>
+          </div>
+          <div class="pp-name">발행</div>
+          <div class="pp-who">GeoMoment</div>
+          <div class="pp-much">티스토리·네이버·PR</div>
+        </div>
+        <div class="pp-arrow">→</div>
+        <div class="pp-step">
+          <div class="pp-num">06</div>
+          <div class="pp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 8v4l2 2"/></svg>
+          </div>
+          <div class="pp-name">추적</div>
+          <div class="pp-who outside">자동</div>
+          <div class="pp-much">인덱싱 + 답변 인용</div>
+        </div>
+      </div>
+      <div class="pp-summary">
+        자사 콘텐츠 + PR + Schema·llms.txt 갱신 — <strong>외주 0%, 자체 운영팀이 직접 작성합니다.</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VERIFY · 측정 알고리즘 (특허) ============ -->
+<section id="verify" class="section-bare">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="fp-eyebrow" style="justify-content:center;">STEP 04 · 한 회사가 검증합니다 · 특허 알고리즘</div>
+      <h2 class="fp-headline" style="text-align:center;">측정 자체를 검증하는<br><b>특허 알고리즘.</b></h2>
+      <p class="fp-sub kr-keep" style="text-align:center; max-width: 880px; margin-left:auto; margin-right:auto;">
+        AI는 같은 질문에도 다른 답을 합니다 — 이 비결정성을 <strong>5단계 정규화</strong>로 보정해 0~100 단일 점수로 환산합니다.
+      </p>
+    </div>
+
+    <!-- 특허 강조 박스 — 워크플로 _앞_에 배치 (사장님 피드백) -->
+    <div class="patent-emphasis reveal reveal-delay-1" style="margin-top: var(--sp-6);">
+      <div class="pe-icon">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <defs><linearGradient id="petg-top" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3D3DFF"/><stop offset="100%" stop-color="#7B5BFF"/></linearGradient></defs>
+          <rect x="12" y="6" width="40" height="46" rx="3" fill="url(#petg-top)" opacity="0.10"/>
+          <rect x="12" y="6" width="40" height="46" rx="3" fill="none" stroke="url(#petg-top)" stroke-width="2"/>
+          <rect x="18" y="13" width="22" height="3" rx="1" fill="url(#petg-top)" opacity="0.55"/>
+          <rect x="18" y="20" width="28" height="1.8" rx="1" fill="url(#petg-top)" opacity="0.30"/>
+          <rect x="18" y="25" width="28" height="1.8" rx="1" fill="url(#petg-top)" opacity="0.30"/>
+          <rect x="18" y="30" width="20" height="1.8" rx="1" fill="url(#petg-top)" opacity="0.30"/>
+          <circle cx="32" cy="44" r="8" fill="url(#petg-top)"/>
+          <path d="M32 38.6 L33.5 42 L37 42 L34.4 44.3 L35.5 48 L32 46 L28.5 48 L29.6 44.3 L27 42 L30.5 42 Z" fill="white"/>
+          <path d="M27 50 L26 58 L30 55.5 L32 58 L34 55.5 L38 58 L37 50" fill="url(#petg-top)" opacity="0.85"/>
+        </svg>
+      </div>
+      <div class="pe-content">
+        <div class="pe-label">한국 특허청 출원 완료</div>
+        <div class="pe-num">10-2026-0074396</div>
+        <div class="pe-desc">아래 5단계 정규화 알고리즘이 청구항으로 보호됩니다 — 측정 알고리즘 · LLM 심판 분류 · 차등 반복 · 시그널/노이즈 자동 판정.</div>
+      </div>
+    </div>
+
+    <!-- 5단계 → 3단계 압축 (Q1 사장님 결정 · Hero 4 STEPS와 시각 통일) -->
+    <div class="workflow-3 reveal reveal-delay-2">
+      <div class="w3-step">
+        <div class="w3-num">STEP 01</div>
+        <div class="w3-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="9" opacity="0.4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+        </div>
+        <h3 class="w3-title">샘플당 점수 + N회 평균</h3>
+        <p class="w3-desc">응답마다 멘션·위치 가중치로 0~1 점수. 동일 쿼리 복수 반복해 비결정성 보정.</p>
+        <div class="w3-detail">표준편차 임계값으로 시그널/노이즈 자동 판정</div>
+      </div>
+      <div class="w3-arrow">→</div>
+      <div class="w3-step">
+        <div class="w3-num">STEP 02</div>
+        <div class="w3-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <h3 class="w3-title">카테고리 × 플랫폼 매트릭스</h3>
+        <p class="w3-desc">6 카테고리 × 4 플랫폼 = 24셀. 구매 의도 강한 카테고리에 비즈니스 가중치 적용.</p>
+        <div class="w3-detail">구매 의도 강한 카테고리에 더 높은 가중</div>
+      </div>
+      <div class="w3-arrow">→</div>
+      <div class="w3-step">
+        <div class="w3-num">STEP 03</div>
+        <div class="w3-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <h3 class="w3-title">최종 0~100 점수</h3>
+        <p class="w3-desc">한국 시장 점유율 가중치로 4 플랫폼을 통합 → 0~100 단일 점수.</p>
+        <div class="w3-detail">ChatGPT 40% · Gemini 25% · Perplexity 20% · Claude 15%</div>
+      </div>
+    </div>
+
+    <!-- 5단계 expand — 관심 있는 사람만 클릭, 아닌 사람은 스킵 -->
+    <details class="workflow-details reveal reveal-delay-3">
+      <summary>
+        <span class="wd-icon">▼</span>
+        <span>5단계 정밀 정규화 알고리즘 — 자세히 보기</span>
+        <span class="wd-meta">5 STEPS · TECH</span>
+      </summary>
+
+      <div class="workflow">
+        <div class="wf-step">
+          <div class="wf-num-wrap"><div class="wf-num"><span>01</span></div></div>
+          <div class="wf-card">
+            <div class="wf-eyebrow">RAW SAMPLE SCORE</div>
+            <h3 class="wf-title">샘플당 점수</h3>
+            <p class="wf-desc">개별 AI 응답 1건의 우리 브랜드 등장 정도를 0~1로 정량화합니다.</p>
+            <div class="wf-formula">
+              <span class="wf-pill">멘션 가중치</span>
+              <span class="wf-op">×</span>
+              <span class="wf-pill">위치 가중치</span>
+              <span class="wf-op">=</span>
+              <span class="wf-result">0 ~ 1</span>
+            </div>
+            <ul class="wf-detail">
+              <li><b>멘션 분류</b> · Direct / Implied / Indirect / Absent 다단계 분류 — LLM 심판 자동</li>
+              <li><b>위치 감쇠</b> · 첫 문단 → 마지막 문단 위치별 가중치 감쇠</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wf-step">
+          <div class="wf-num-wrap"><div class="wf-num"><span>02</span></div></div>
+          <div class="wf-card">
+            <div class="wf-eyebrow">DETERMINISM CONTROL</div>
+            <h3 class="wf-title">N회 반복 평균</h3>
+            <p class="wf-desc">동일 쿼리를 여러 번 호출해 평균으로 비결정성을 보정합니다.</p>
+            <div class="wf-formula">
+              <span class="wf-pill">샘플 1</span>
+              <span class="wf-op">+</span>
+              <span class="wf-pill">샘플 N</span>
+              <span class="wf-op">÷ N =</span>
+              <span class="wf-result">테스트 점수</span>
+            </div>
+            <ul class="wf-detail">
+              <li><b>복수 반복 호출</b>, Direct 발견 시 자동 추가 측정 (차등 반복)</li>
+              <li><b>표준편차 임계값</b>으로 노이즈/시그널 자동 판정</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wf-step">
+          <div class="wf-num-wrap"><div class="wf-num"><span>03</span></div></div>
+          <div class="wf-card">
+            <div class="wf-eyebrow">CATEGORY × PLATFORM MATRIX</div>
+            <h3 class="wf-title">6 카테고리 × 4 플랫폼</h3>
+            <p class="wf-desc">24셀 매트릭스로 약점 카테고리·플랫폼을 진단합니다.</p>
+            <div class="wf-matrix-labels">
+              <span>ChatGPT</span><span>Gemini</span><span>Perplexity</span><span>Claude</span>
+            </div>
+            <div class="wf-matrix">
+              <div class="mx-cell">정보형</div><div class="mx-cell">정보형</div><div class="mx-cell dim">정보형</div><div class="mx-cell">정보형</div>
+              <div class="mx-cell">상업형</div><div class="mx-cell">상업형</div><div class="mx-cell dim">상업형</div><div class="mx-cell">상업형</div>
+              <div class="mx-cell dim">비교형</div><div class="mx-cell dim">비교형</div><div class="mx-cell dim">비교형</div><div class="mx-cell dim">비교형</div>
+              <div class="mx-cell">추천형</div><div class="mx-cell">추천형</div><div class="mx-cell dim">추천형</div><div class="mx-cell">추천형</div>
+              <div class="mx-cell dim">가격형</div><div class="mx-cell dim">가격형</div><div class="mx-cell dim">가격형</div><div class="mx-cell dim">가격형</div>
+              <div class="mx-cell">기타</div><div class="mx-cell">기타</div><div class="mx-cell dim">기타</div><div class="mx-cell">기타</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wf-step">
+          <div class="wf-num-wrap"><div class="wf-num"><span>04</span></div></div>
+          <div class="wf-card">
+            <div class="wf-eyebrow">WEIGHTED PLATFORM SCORE</div>
+            <h3 class="wf-title">플랫폼별 가중 점수</h3>
+            <p class="wf-desc">카테고리별 비즈니스 임팩트 가중을 적용합니다.</p>
+            <div class="wf-formula">
+              <span class="wf-pill">상업형</span>
+              <span class="wf-op">·</span>
+              <span class="wf-pill">추천형</span>
+              <span class="wf-op">·</span>
+              <span class="wf-pill">비교형</span>
+              <span class="wf-op">→</span>
+              <span class="wf-result">高 가중</span>
+            </div>
+            <ul class="wf-detail">
+              <li>구매 의도 강한 카테고리에 더 높은 가중 → 매출 직결성 반영</li>
+              <li>가중치는 회차마다 자동 조정됩니다</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="wf-step wf-step--final">
+          <div class="wf-num-wrap"><div class="wf-num"><span>05</span></div></div>
+          <div class="wf-card">
+            <div class="wf-eyebrow">FINAL VISIBILITY SCORE</div>
+            <h3 class="wf-title">최종 0~100 점수</h3>
+            <p class="wf-desc">한국 시장 점유율 기반 가중치로 4 플랫폼을 통합합니다.</p>
+            <div class="wf-weights">
+              <div class="wf-weight-row"><span class="wf-weight-name">ChatGPT</span><div class="wf-weight-bar"><div class="wf-weight-fill" style="width:40%"></div></div><span class="wf-weight-val">40%</span></div>
+              <div class="wf-weight-row"><span class="wf-weight-name">Gemini</span><div class="wf-weight-bar"><div class="wf-weight-fill" style="width:25%"></div></div><span class="wf-weight-val">25%</span></div>
+              <div class="wf-weight-row"><span class="wf-weight-name">Perplexity</span><div class="wf-weight-bar"><div class="wf-weight-fill" style="width:20%"></div></div><span class="wf-weight-val">20%</span></div>
+              <div class="wf-weight-row"><span class="wf-weight-name">Claude</span><div class="wf-weight-bar"><div class="wf-weight-fill" style="width:15%"></div></div><span class="wf-weight-val">15%</span></div>
+            </div>
+            <div class="wf-final-score">
+              <span class="lbl">Overall AI Visibility Score</span>
+              <span class="range">0 — 100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- 가격 섹션 제거됨 — 사장님 결정 -->
+<!-- 결론 strip 제거됨 — 사장님 결정 (어색해서 제거. FAQ가 verify와 CTA 사이 도약대 역할) -->
+
+<!-- ============ EARLY BIRD CTA — verify 다음 (회색 배경 도약대) ============ -->
+<section class="section-bare--bg" style="padding-top: var(--sp-7); padding-bottom: var(--sp-7);">
+  <div class="container">
+    <div class="cta-section">
+      <div class="section-eyebrow" style="color: var(--ink-300);">EARLY BIRD · 5 SLOTS ONLY</div>
+      <h2 class="section-title">측정만 하는 도구는<br>많습니다.</h2>
+      <p class="section-sub kr-keep">
+        진단 + 실행을 <strong>외주 없이</strong> 자체 운영팀이 직접 책임지는 곳 —<br>
+        얼리버드 5명 한정 <strong>50% 할인</strong>.
+      </p>
+      <div class="hero-cta">
+        <a href="event.html" class="btn-primary">얼리버드 자세히 보기 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ (페이지 맨 아래로 이동, 흰 배경) ============ -->
+<section id="faq" class="section-bare">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="fp-eyebrow" style="justify-content:center;">FAQ</div>
+      <h2 class="fp-headline" style="text-align:center;">자주 묻는<br><b>질문.</b></h2>
+    </div>
+
+    <div class="faq-list reveal reveal-delay-1" style="margin-top: var(--sp-7);">
+      <div class="faq-item">
+        <div class="faq-q">진단만 받고 자체 운영팀이 직접 실행해도 되나요?</div>
+        <div class="faq-a">가능합니다. <strong>1회 진단 패키지</strong>는 9 KPI PDF + P1~P5 처방까지 받고, 콘텐츠 작성·게시는 자체 운영팀이 직접 진행하시는 구조입니다. <strong>"우리 회사가 직접 작성·게시까지 책임지길 원한다"</strong>면 <strong>결과물 패키지(3개월)</strong>가 적합합니다. 자세한 가격은 <a href="event.html#tiers" style="color:var(--indigo);">얼리버드 페이지</a>에서.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">외주 0%면 더 느린 거 아닌가요?</div>
+        <div class="faq-a">자체 운영팀이 직접 깊이있게 작성합니다. 외주는 빠를 수 있으나 <em>깊이가 부족</em>합니다. GEO는 단락 깊이가 답변 인용 빈도를 결정하므로, 외주는 오히려 효과를 떨어뜨립니다. 외주 0% = <strong>품질에 투자</strong>한다는 의미입니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">영상·이미지 GEO 옵션은 어떤 회사에 필요한가요?</div>
+        <div class="faq-a">유튜브·인스타그램·자사몰 상품 페이지에 영상·이미지 콘텐츠가 많은 회사일수록 효과가 큽니다. AI는 텍스트만 잘 읽기 때문에 자막·transcript·schema(VideoObject·ImageObject)가 없으면 _본문이 통째로 안 보입니다_. <strong>건당 10만원 (10건 이상 8만원/건, −20%)</strong> — 10건 묶음부터 추천드립니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">몇 점까지 올라갈 수 있나요?</div>
+        <div class="faq-a"><strong>결과물 패키지(3개월)</strong> 기본 +8~15점, 협력 시 +15~25점. <strong>풀 컨설팅(12개월)</strong> 협력 시 +25~35점입니다. "50점 보장" 같은 곳은 과장 가능성을 의심해보세요 — 협력 사항(리뷰·자사 채널)이 따라야 점수가 오릅니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">한국 시장 다른 도구와 어떻게 다른가요?</div>
+        <div class="faq-a">측정만 하는 도구는 많습니다. GeoMoment는 측정 + 진단 + 콘텐츠 직접 제작 + 회차 검증까지 통합한 풀 컨설팅입니다. 한국형 도메인 매핑(네이버·카카오맵·나무위키)이 글로벌 도구 대비 정확도가 높고, 9 KPI 4축 분해(Entity·EEAT·Topic·Chunk)는 청크 단위까지 짚어줍니다.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">환불 정책은요?</div>
+        <div class="faq-a">계약 후 7일 내 미시작 시 <strong>100% 환불</strong>합니다. 시작 후엔 환불 불가이나, <strong>결과물 패키지(3개월)</strong> 약정 중 기본 시나리오 점수 미달성 시 <strong>4개월차 무상 제공</strong>으로 보완합니다(이행 사항 이행 전제). 풀 컨설팅(12개월)도 동일 원칙으로 13개월차 보완.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">이 기술이 특허로 보호되나요?</div>
+        <div class="faq-a">네. 한국 특허청 출원 완료 (<strong style="font-family: var(--font-mono); color: var(--indigo);">출원번호 10-2026-0074396</strong>). 5단계 정규화, LLM 심판 분류, 차등 반복, 시그널/노이즈 판정이 청구항으로 보호됩니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <object data="assets/logo/lockup-gradient.svg" type="image/svg+xml" style="height:40px; pointer-events:none;"></object>
+        </div>
+        <p>한국 브랜드를 ChatGPT부터 네이버까지 답변 1순위로 끌어올리는 통합 마케팅 파트너.</p>
+      </div>
+      <div class="footer-col">
+        <h4>서비스</h4>
+        <ul>
+          <li><a href="method.html">GEO</a></li>
+          <li><a href="seo.html">브랜드 블로그 (SEO)</a></li>
+          <li><a href="geo-diagnose.html">무료 진단</a></li>
+          <li><a href="event.html">얼리버드 5명 한정</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>안내</h4>
+        <ul>
+          <li><a href="contact.html">문의·상담</a></li>
+          <li><a href="method.html#faq">FAQ</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>연락처</h4>
+        <ul>
+          <li><a href="mailto:contact@geomoment.me">contact@geomoment.me</a></li>
+          <li><a href="tel:01056163926">010-5616-3926</a></li>
+          <li>카카오톡: GeoMoment</li>
+          <li>서울 종로구 종로3길 17<br>광화문D타워 지하2층</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 GeoMoment · 사업자등록번호 570-09-02719 · 대표 김승재</div>
+      <div><a href="#">이용약관</a> · <a href="#">개인정보처리방침</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

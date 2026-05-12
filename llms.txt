@@ -1,0 +1,63 @@
+# GeoMoment
+
+> 한국 브랜드를 ChatGPT·Gemini·Perplexity·Claude 답변과 네이버 검색 1페이지에 동시에 등장시키는 통합 마케팅 파트너. AI 검색 최적화(GEO)와 브랜드 블로그(SEO) 두 가지 서비스를 한 회사에서 책임집니다.
+
+## 핵심 서비스
+
+- **AI 검색 최적화 (GEO)** — ChatGPT·Gemini·Perplexity·Claude 4개 AI 답변 엔진에서 브랜드 가시성 측정·분석·개선
+- **브랜드 블로그 (SEO)** — 네이버·구글 검색 결과 1페이지 노출을 위한 콘텐츠 제작·운영. 5,000+ 키워드 운영 노하우
+
+## 차별화 포인트
+
+- **한국 특허 출원** GeoMoment 측정 알고리즘 (5단계 정규화 가중 평균)
+- **본업 5년+ 운영** 누적 블로그 콘텐츠 제작 경험
+- **한국 시장 특화** 네이버 블로그·카페·나무위키·카카오맵 도메인 매핑
+- **측정·실행·검증 통합** 다른 회사는 측정만, 우리는 직접 콘텐츠까지 제작
+
+## 패키지 (GEO 기준)
+
+| 등급 | 월 비용 | 포함 |
+|---|---|---|
+| Free | 무료 | 1회 진단·1페이지 PDF 리포트 |
+| Pro | 49만원 | 매월 측정·셀프 운영 |
+| Business | 89만원 | 측정 + 카카오톡 컨설팅 |
+| Enterprise | 149만원 | 풀 컨설팅 + 콘텐츠 제작 (블로그 8편/월) |
+
+## 베타 파트너 프로그램 (5곳 한정)
+
+- **AEO 무료 진단** + **풀 컨설팅 40% 할인 (월 89만원)**
+- 12개월 약정 · 사례 활용 동의 필수
+- 신청: contact@geomoment.me
+
+## 연락처
+
+- 웹사이트: https://geomoment.me
+- 이메일: contact@geomoment.me
+- 전화: 010-5616-3926
+- 카카오톡 채널: GeoMoment
+- 주소: 서울 종로구 종로3길 17 광화문D타워 지하2층
+
+## 주요 페이지
+
+- [홈](https://geomoment.me/)
+- [GEO 서비스](https://geomoment.me/geo.html)
+- [무료 GEO 진단](https://geomoment.me/geo-diagnose.html)
+- [베타 파트너 모집](https://geomoment.me/geo-beta.html)
+- [브랜드 블로그 SEO](https://geomoment.me/seo.html)
+- [사례](https://geomoment.me/cases.html)
+- [회사 소개](https://geomoment.me/about.html)
+- [문의](https://geomoment.me/contact.html)
+
+## 자주 묻는 질문
+
+### Q. AEO와 SEO의 차이는?
+A. SEO는 구글·네이버 검색 결과 1페이지 노출을 위한 최적화이고, AEO(또는 GEO)는 ChatGPT·Gemini 같은 AI 답변 엔진이 우리 브랜드를 답변에 인용하도록 만드는 최적화입니다. GeoMoment는 두 가지를 모두 한 곳에서 제공합니다.
+
+### Q. 무료 진단으로 무엇을 받을 수 있나요?
+A. 4개 AI 답변 엔진(ChatGPT·Gemini·Perplexity·Claude)에서 사장님 브랜드 가시성 점수(0~100), 카테고리·플랫폼 히트맵, 상위 3개 우선 액션을 1페이지 PDF로 받으실 수 있습니다.
+
+### Q. 풀 컨설팅 패키지에 무엇이 포함되나요?
+A. 매월 측정·분석, AEO 친화적 블로그 8편 제작, Schema.org 마크업 적용, llms.txt 작성, 분기 보도자료 1건, 카카오톡 1:1 응대, 분기 ZOOM 미팅 60분이 포함됩니다.
+
+### Q. 한국 회사인가요?
+A. 네, 서울 종로구에 본사를 둔 한국 회사입니다. 한국 시장 특화 도메인 매핑(네이버 블로그·카페·나무위키·카카오맵 등)과 한국어 프롬프트 측정에 강점이 있습니다.

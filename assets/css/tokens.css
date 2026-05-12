@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Geo Moment — Brand Tokens
+   v1.0
+   ========================================================================== */
+
+:root {
+  /* ---------- Brand ---------- */
+  --indigo: #3D3DFF;
+  --violet: #7B5BFF;
+  --grad-brand: linear-gradient(135deg, #3D3DFF 0%, #7B5BFF 100%);
+
+  /* ---------- Neutrals ---------- */
+  --ink-900: #0B0B0F;
+  --ink-700: #2A2A33;
+  --ink-500: #5A5A66;
+  --ink-300: #9A9AA3;
+  --ink-100: #E8E8EA;     /* 살짝 더 차가운 톤 */
+  --ink-50:  #F5F5F7;     /* 매우 옅은 그레이 (섹션 구분용) */
+  --bone:    #FFFFFF;     /* ⭐ 페이지 배경 → 순백 */
+  --snow:    #FFFFFF;
+
+  /* ---------- Accent tints ---------- */
+  --indigo-50: #EEEEFF;
+
+  /* ---------- Semantic ---------- */
+  --success: #16A34A;
+  --warning: #D97706;
+  --error:   #DC2626;
+  --info:    #3D3DFF;
+
+  /* ---------- Typography ---------- */
+  /* 한글 fallback에 Pretendard 명시 — 영문(Manrope/JetBrains Mono)은 한글 글리프 없음 */
+  --font-display: 'Manrope', 'Pretendard', system-ui, -apple-system, sans-serif;
+  --font-body:    'Pretendard', 'Inter', system-ui, sans-serif;
+  --font-korean:  'Pretendard', -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'IBM Plex Mono', 'Pretendard', ui-monospace, monospace;
+
+  /* ---------- Type scale ---------- */
+  --fs-display:  72px;
+  --fs-h1:       56px;
+  --fs-h2:       40px;
+  --fs-h3:       28px;
+  --fs-body-lg:  18px;
+  --fs-body:     16px;
+  --fs-caption:  14px;
+  --fs-micro:    12px;
+
+  /* ---------- Spacing ---------- */
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   24px;
+  --sp-6:   32px;
+  --sp-7:   48px;
+  --sp-8:   64px;
+  --sp-9:   96px;
+  --sp-10:  128px;
+  --sp-11:  192px;
+
+  /* ---------- Radius ---------- */
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 16px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-sm: 0 1px 2px rgba(11, 11, 15, 0.06);
+  --shadow-md: 0 4px 16px rgba(11, 11, 15, 0.08);
+  --shadow-lg: 0 12px 40px rgba(11, 11, 15, 0.12);
+
+  /* ---------- Layout ---------- */
+  --container: 1200px;
+  --section-py-desktop: 128px;
+  --section-py-mobile: 80px;
+}
+
+/* ==========================================================================
+   Base type styles
+   ========================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--ink-900);
+  background: var(--bone);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--ink-900);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  font-size: var(--fs-micro);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+/* ==========================================================================
+   Buttons (reference)
+   ========================================================================== */
+
+.btn-primary {
+  background: var(--grad-brand);
+  color: var(--snow);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 24px;
+  border-radius: var(--r-md);
+  border: 0;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink-900);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 24px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--ink-100);
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  border-color: var(--ink-900);
+}
+
+/* ==========================================================================
+   Dark section override
+   ========================================================================== */
+
+.dark {
+  background: var(--ink-900);
+  color: var(--bone);
+}
+.dark h1, .dark h2, .dark h3 { color: var(--bone); }
+.dark .eyebrow { color: var(--ink-300); }
+.dark .btn-secondary {
+  color: var(--bone);
+  border-color: rgba(245, 244, 240, 0.15);
+}
+.dark .btn-secondary:hover { border-color: var(--bone); }
+
+/* ==========================================================================
+   Gradient text (use sparingly — H1/Display only)
+   ========================================================================== */
+
+.text-gradient {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
