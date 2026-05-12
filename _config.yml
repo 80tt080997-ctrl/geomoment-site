@@ -27,8 +27,7 @@ defaults:
 exclude:
   - "_video_assets_gen.py"
   - "_schema_inject.ps1"
-  - "*.md"
-  - "README*"
-  - "HANDOFF*"
-  - "Gemfile*"
+  - "Gemfile"
+  - "Gemfile.lock"
   - vendor/
+  - node_modules/
