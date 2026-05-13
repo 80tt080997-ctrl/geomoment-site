@@ -1,131 +1,196 @@
 ---
-title: "GEO란 무엇인가 — 검색이 ChatGPT로 옮겨가는 시대의 새 마케팅 영역"
-description: "Generative Engine Optimization(GEO)의 정의, 전통 SEO와의 차이, 한국 기업이 지금 시작해야 하는 이유를 정리합니다."
+title: "GEO란 무엇인가 — AI가 인용하는 회사가 되는 법"
+description: "Generative Engine Optimization(GEO)의 정의, SEO와의 차이, 한국 기업이 지금 시작해야 하는 이유를 9개 1차 출처와 함께 정리합니다."
 date: 2026-05-12 10:00:00 +0900
 author_id: jace
 category: GEO 입문
 tags: [GEO, AEO, AI 검색, ChatGPT, SEO]
 summary: |
-  검색의 시작점이 포털에서 **ChatGPT·Gemini 같은 생성형 AI 답변**으로 빠르게 옮겨가고 있습니다. SEO가 _랭킹_ 게임이라면 GEO는 _인용_ 게임으로, **페이지 단위가 아닌 청크(200~500자) 단위**의 답변 적합도가 핵심 자산이 됩니다. 한국 시장에서 GEO 도구·컨설팅은 아직 빈 자리이며, **Schema.org와 llms.txt 적용**만으로도 entity 인식 신호를 즉시 끌어올릴 수 있습니다.
+  - AI 검색이 늘면서 **전통 검색 볼륨은 2026년까지 25%, 브랜드 오가닉 트래픽은 2028년까지 50% 이상 줄어들 전망**입니다 (Gartner).
+  - **AI Overview가 노출되면 1위 페이지의 CTR이 34.5% 낮아졌고, 2026년 들어 그 격차는 58%까지 벌어졌습니다** (Ahrefs).
+  - 한국 인터넷 이용자의 **생성형 AI 경험률은 1년 만에 17.6% → 33.3%로 두 배**, 가장 많이 쓰는 용도는 **단순 정보검색(81.9%)** 입니다 (NIA).
+  - 게임의 룰이 바뀐 만큼, 오늘 가장 먼저 점검할 두 가지는 **Schema.org Organization 마크업**과 **llms.txt 파일**입니다.
 ---
 
-지난 1년 사이 한국 마케팅 담당자들로부터 가장 자주 듣게 된 질문이 있습니다.
+> "ChatGPT한테 우리 회사 추천을 시켰는데, 한 번도 안 나오더라고요."
 
-> "우리 회사가 ChatGPT에서 검색하면 어떻게 나와요?"
+얼마 전 한 K뷰티 시그니처 브랜드의 마케팅 팀장님이 저에게 보낸 첫 메시지였어요. 5년째 SEO만 보고 달려와 카테고리 검색 2위까지 올라온 회사였는데, 정작 _AI 검색_에서는 회사 이름이 단 한 줄도 등장하지 않더라는 거예요. 더 당황스러운 건 ChatGPT가 _경쟁사 4곳_은 또박또박 추천하고 있었다는 점이었습니다.
 
-처음에는 가벼운 호기심처럼 들렸지만, 업종이 전혀 다른 회사들에서 같은 질문이 반복되기 시작하면서 분명해졌습니다. **검색 환경이 포털에서 생성형 AI 답변으로 빠르게 이동하고 있다**는 것입니다. 그리고 이 변화에 답을 가진 한국 회사는 거의 없었습니다.
+검색의 룰이 _조용히_ 바뀌고 있어요. _"검색되는 회사"_ 에서 _"AI가 인용하는 회사"_ 로. 이 글에서는 GEO(Generative Engine Optimization)가 무엇이고, 왜 _지금_ 한국 기업이 챙겨야 하는지, 그리고 _오늘 당장_ 무엇부터 시작할 수 있는지 정리해볼게요.
 
 <figure>
   <img src="/assets/img/blog/geo-introduction/01_search_shift.png" alt="검색 환경이 AI 답변으로 빠르게 이동하는 추이 그래프">
   <figcaption>글로벌·국내 검색 추이 — 전통 검색은 천천히 감소하고 AI 답변 점유율은 가파르게 증가하는 중입니다.</figcaption>
 </figure>
 
-이 글에서는 GEO(Generative Engine Optimization)가 무엇인지, 전통 SEO와 어떻게 다른지, 그리고 한국 중소·중견 기업이 왜 지금 시작해야 하는지를 정리합니다.
+## GEO가 도대체 뭔가요?
 
-## GEO란 무엇인가
+GEO는 _Generative Engine Optimization_, 한국어로는 _생성형 엔진 최적화_ 라고 해요. 한 문장으로 정리하면 — **AI가 답변을 만들 때 우리 회사의 콘텐츠를 출처로 인용하게 만드는 일**, 이게 GEO의 본질이에요.
 
-GEO는 _Generative Engine Optimization_ 의 약자로, **ChatGPT·Gemini·Claude·Perplexity 같은 생성형 AI 답변 엔진에서 우리 브랜드가 어떻게 노출되고 인용되는지를 측정·최적화하는 마케팅 영역**입니다. 일부 자료에서는 _AEO(Answer Engine Optimization)_ 라고도 부르지만, 본질적으로 같은 개념을 다룹니다.
-
-기존 검색에서 사용자는 _검색어_ 를 입력하고 _10개의 링크_ 중 하나를 골랐습니다. 생성형 AI 답변 엔진에서는 사용자가 _질문_ 을 던지고 _하나의 답변_ 을 받습니다. 그 답변에 우리 브랜드가 들어가느냐 빠지느냐가 결과의 전부입니다.
+<div class="callout callout--quote">
+  <div class="callout-title">📚 GEO 학술 원전</div>
+  <div class="callout-body">
+    <p>Aggarwal 외(Princeton 외, KDD 2024)는 <em>GEO 프레임워크가 생성형 엔진 응답에서의 가시성을 최대 40%까지 끌어올릴 수 있다</em>고 보고했어요.</p>
+    <blockquote>
+      <p><em>"Through rigorous evaluation, we demonstrate that GEO can boost visibility by up to 40% in generative engine responses."</em></p>
+      <p>— Aggarwal et al., <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">GEO: Generative Engine Optimization (arXiv:2311.09735)</a></p>
+    </blockquote>
+  </div>
+</div>
 
 <figure>
   <img src="/assets/img/blog/geo-introduction/03_geo_seo_aeo.svg" alt="SEO와 GEO/AEO의 관계를 보여주는 다이어그램">
   <figcaption>SEO와 GEO/AEO는 같은 사이트에서 <strong>두 게임이 동시에</strong> 진행되는 구조입니다. 공통 자산은 좋은 콘텐츠지만, 평가 기준은 완전히 다릅니다.</figcaption>
 </figure>
 
-## SEO와 무엇이 다른가
+조금 더 풀어볼게요. 우리가 알던 검색은 _10개의 파란 링크_였어요. 사용자가 직접 클릭해서 우리 사이트로 들어와야 마케팅이 시작됐죠. AI 검색은 다릅니다. _ChatGPT · Perplexity · Gemini · Claude_ 같은 생성형 엔진이 _답을 직접 만들어내고_, 그 답 안에 _어떤 회사·서비스를 인용할지_를 결정해요. 사용자가 우리 사이트에 들어오기 _전에_ 의사결정의 큰 부분이 이미 끝나는 거죠.
 
-표면적으로 비슷해 보이지만, 작동 원리는 완전히 다릅니다. 한눈에 비교하면 다음과 같습니다.
+즉, GEO의 목표는 한 줄로 — _"검색되는 회사"_ 에서 _"AI가 인용하는 회사"_ 로 옮겨가는 것입니다.
 
-| 항목 | SEO (전통 검색) | GEO (AI 답변) |
+## SEO랑 뭐가 다른가요?
+
+SEO와 GEO를 _완전히 다른 게임_으로 묘사하는 글이 많은데, 저는 그 표현이 살짝 위험하다고 봐요. _연속선상_으로 보는 게 더 정확합니다. Lily Ray는 최근 글에서 이렇게 말했어요.
+
+<div class="callout callout--quote">
+  <div class="callout-body">
+    <blockquote>
+      <p><em>"It worked every time because LLMs use search engines, and the articles were quickly indexed and ranked well in web search."</em></p>
+      <p>— LLM은 결국 검색엔진을 사용하고, 우리 글이 빠르게 색인되고 검색에서 상위노출됐기 때문에 매번 작동했다.</p>
+      <p>Lily Ray, <a href="https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search" target="_blank" rel="noopener"><em>A Reflection on SEO, GEO & AI Search in 2025</em></a></p>
+    </blockquote>
+  </div>
+</div>
+
+실제로 Similarweb 분석에 따르면 _ChatGPT 사용자의 약 95%는 여전히 Google을 병행 사용_해요 ([Similarweb 2025 Generative AI Report](https://www.similarweb.com/corp/reports/2025-generative-ai-landscape/)). SEO 기반은 살아 있고, GEO는 그 위에 _새로운 층_을 얹는 작업에 가깝습니다.
+
+다만 새 층은 분명히 _다른 규칙_으로 움직여요.
+
+| 항목 | SEO | GEO |
 |---|---|---|
-| 게임 종류 | **랭킹** 게임 | **인용** 게임 |
-| 단위 | 페이지 | 청크 (200~500자) |
-| 결과 | 10개 링크 중 선택 | 하나의 답변 + 3~5개 출처 |
-| 사용자 행동 | 검색어 입력 → 클릭 | 질문 입력 → 읽기 |
-| 핵심 자산 | 키워드·백링크·기술 SEO | 청크 적합도·entity 신호·권위 인용 |
-| 노출 임계점 | 1순위에 못 가도 클릭 있음 | 인용 안 되면 _존재 자체가 안 보임_ |
-
-AI는 페이지 전체를 보지 않습니다. _청크(chunk)_ 라고 부르는 200~500자 단위로 본문을 잘게 쪼개고, 그중 _질문에 직접 답하는 청크_ 를 골라 답변에 인용합니다. 따라서 GEO에서 중요한 것은 _페이지 순위_ 가 아니라 _청크의 답변 적합도_ 입니다.
+| 측정 단위 | 페이지·키워드 순위 | _청크_ — 문단·표·정의 한 덩어리 |
+| 평가 주체 | 구글 검색 알고리즘 | ChatGPT · Perplexity · Gemini · Claude |
+| 성공의 모습 | 1페이지 상위노출 → 클릭 | AI 답변 안에 _인용_ |
+| 측정 도구 | GA · 서치콘솔 · 키워드 도구 | _아직 표준 부재_ — 직접 측정 필요 |
 
 <figure>
   <img src="/assets/img/blog/geo-introduction/04_page_to_chunks.svg" alt="페이지가 청크로 분할되고 점수가 매겨지는 과정 다이어그램">
   <figcaption>한 페이지(왼쪽)가 5개 청크로 잘리고, AI는 청크별로 답변 적합도 점수를 매깁니다. <strong>점수 50점 이상 청크만 인용 적격</strong>이라, 페이지 전체 품질이 좋아도 청크 구조가 약하면 답변에 들어가지 못합니다.</figcaption>
 </figure>
 
-또 한 가지 결정적 차이는 _entity 인식_ 입니다. AI는 "우리 회사가 어떤 분야의 어떤 브랜드인지" 를 _entity_ 로 인식해야 답변에 등장시킵니다. 사이트에 콘텐츠는 많지만 _entity 신호_ 가 약하면, AI는 우리 회사를 _그냥 일반 회사_ 로 분류해 답변에서 빼버립니다.
+같은 페이지라도 AI에게는 _하나의 글_이 아니라 _수십 개의 청크_로 보여요. AI는 질문에 답할 때 _문단 단위_로 후보를 추리고, 그중 가장 _직답에 가까운 청크_를 골라 인용해요. 그래서 GEO에서는 _페이지를 잘 만드는 것_보다 _청크 하나하나를 잘 만드는 것_이 더 중요해집니다.
+
+여기서 SEO 시대의 _상위노출 1위_가 가지던 의미도 바뀌어요. Ahrefs는 _AI Overview가 떴을 때 1위 페이지의 평균 CTR이 34.5% 더 낮음_을 발견했고([2025-04](https://ahrefs.com/blog/ai-overviews-reduce-clicks/)), 2026년 2월 업데이트에서는 그 격차가 _58%까지_ 벌어졌어요 ([Ahrefs Update, 2026-02](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/)). 1위 자리는 그대로 있는데, _1위가 가져가던 트래픽_이 사라지고 있는 거죠.
 
 <div class="callout callout--note">
   <div class="callout-title">📝 핵심 한 줄</div>
   <div class="callout-body">
-    <p>SEO는 <strong>"검색되게"</strong> 만들고, GEO는 <strong>"답변에 들어가게"</strong> 만듭니다. 같은 콘텐츠도 두 게임의 평가 기준이 다르기 때문에, GEO를 위해서는 본문 구조와 entity 신호를 따로 다듬어야 합니다.</p>
+    <p>GEO는 SEO의 대체가 아니라 <strong>확장</strong>이에요. SEO 기반이 약하면 GEO는 더 약합니다.</p>
   </div>
 </div>
 
-## 왜 지금 시작해야 하는가
+## 왜 _지금_이어야 하나요?
 
-세 가지 신호가 동시에 잡힙니다.
+세 가지 신호가 같은 방향을 가리키고 있어요.
 
 <figure>
-  <img src="/assets/img/blog/geo-introduction/02_why_now_3signals.png" alt="GEO를 지금 시작해야 하는 3가지 신호 — 사용자 행동·인용 자리·한국 시장 공백">
+  <img src="/assets/img/blog/geo-introduction/02_why_now_3signals.png" alt="GEO를 지금 시작해야 하는 3가지 신호 — 전통 검색 감소·제로클릭·한국 AI 사용 증가">
   <figcaption>세 신호가 동시에 잡히는 지금이 GEO의 진입 기회입니다. 각 신호의 디테일은 아래에서 풀어 설명합니다.</figcaption>
 </figure>
 
-**첫째, 사용자 행동이 바뀌고 있습니다.** 한국에서도 ChatGPT, Perplexity, Claude 사용자가 빠르게 늘고 있습니다. 특히 _제품 추천_, _서비스 비교_, _전문 분야 질문_ 같은 _상업적 의도_ 검색이 AI 쪽으로 이동하는 속도가 빠릅니다.
+**신호 1 — 전통 검색 자체가 줄고 있어요.**
+Gartner는 _2026년까지 전통 검색 엔진 볼륨이 25% 감소_할 것으로 전망했어요 ([Gartner Predicts, 2024-02](https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents)). 검색 마케팅이 챗봇·AI 에이전트에게 시장 점유율을 내준다는 분석입니다. 한 발 더 가서, _2028년까지 브랜드의 오가닉 검색 트래픽이 50% 이상 감소_할 수 있다는 예측도 같이 내놨어요 ([Gartner Predicts, 2023-12](https://www.gartner.com/en/newsroom/press-releases/2023-12-14-gartner-predicts-fifty-percent-of-consumers-will-significantly-limit-their-interactions-with-social-media-by-2025)). SEO에 의존하던 마케팅의 절반이 _구조적으로_ 흔들리는 시나리오입니다.
 
-**둘째, AI 답변에는 _자리가 적습니다_.** 검색 결과 10개 자리 중 5~6위에 가도 클릭은 있었습니다. AI 답변은 대부분 _3~5개 출처_ 만 인용합니다. _인용되지 않으면 존재 자체가 보이지 않습니다_.
+**신호 2 — 검색이 일어나도 클릭은 줄고 있어요.**
+SparkToro의 2024년 조사에서는 _미국 Google 검색의 58.5%, EU의 59.7%가 제로클릭_으로 끝났어요. 1,000번 검색해도 오픈웹으로 향한 클릭은 _미국 374회, EU 360회_에 불과했죠 ([SparkToro 2024 Zero-Click Search Study](https://sparktoro.com/blog/2024-zero-click-search-study-for-every-1000-us-google-searches-only-374-clicks-go-to-the-open-web-in-the-eu-its-360/)). AI 답변·요약·지식 그래프가 _클릭 없이 답_을 끝내고 있는 거예요.
 
-**셋째, 한국 시장은 비어 있습니다.** 글로벌 GEO 컨설팅 회사들은 영어 검색 환경과 영문 콘텐츠 중심이라 한국 브랜드에 적용하면 측정 자체가 부정확합니다. 국내에는 전통 SEO 도구는 많지만 AI 답변 구조를 분석하는 도구가 부재합니다. _빠르게 움직이는 기업이 한국 GEO 시장의 표준을 정의할 수 있는 시점_ 입니다.
+**신호 3 — 한국 사용자도 이미 AI로 정보를 검색하고 있어요.**
+한국 정부 공식 통계(2024 인터넷이용실태조사)에 따르면 만 12세 이상 인터넷 이용자의 _생성형 AI 경험률은 2023년 17.6%에서 2024년 33.3%로 1년 만에 약 2배_가 됐어요. 그리고 _사용 분야 1위_가 _단순 정보검색(81.9%)_ 입니다 ([NIA 2024 인터넷이용실태조사](https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99870&bcIdx=27869&parentSeq=27869)). 한국 사용자가 _이미_ AI를 _검색처럼_ 쓰고 있다는 뜻이에요.
 
-## 한국 기업이 가장 자주 부딪히는 3가지 약점
+세 신호를 합치면 답은 분명해요. _전통 검색은 줄고, 남은 검색도 클릭은 줄고, 사용자는 AI로 옮겨갔다._ GEO는 _내년에 시작할 일_이 아니라 _작년에 시작했어야 할 일_입니다.
 
-저희가 다양한 분야 — K뷰티, 호텔·여행, 전문 서비스 — 의 브랜드를 진단해보며 _반복되는 약점 패턴_ 을 확인했습니다.
+## 한국 기업이 특히 약한 이유는?
 
-1. **자사 사이트가 AI 답변에 거의 인용되지 않습니다.** 한 K뷰티 시그니처 브랜드의 경우 ChatGPT 스킨케어 추천 답변에서 자사 사이트 인용률이 1% 미만이었습니다.
-2. **사이트 본문이 청크로 잘 추출되지 않습니다.** 페이지 전체가 _한 문단_ 으로 길게 이어지거나, 핵심 정보가 _이미지·표 안_ 에 갇혀 AI 크롤러가 읽을 수 없습니다.
-3. **권위 출처에서의 인용이 약합니다.** 우리 브랜드를 언급하는 _업계 매거진·전문 매체·위키 등재_ 가 부족하면 AI가 _주변 권위_ 를 보지 못하고 우리를 _신뢰도 낮은 entity_ 로 분류합니다.
+한국 시장에는 몇 가지 _특수한 조건_이 있어요.
 
-## 실행 첫 걸음 — 오늘 할 수 있는 두 가지
+**약점 1 — 네이버 의존 + 한국어 콘텐츠가 AI에 _덜 학습됨_.**
+StatCounter 기준 2026년 4월 한국 검색엔진 점유율은 _Google 47.36%, Naver 42.39%, Bing 6.15%, Daum 1.37%_ 입니다 ([StatCounter Korea](https://gs.statcounter.com/search-engine-market-share/all/south-korea)). 네이버 의존도가 여전히 절반에 가까운 시장이에요. 문제는 _AI가 학습한 한국어 콘텐츠의 상당 부분이 네이버 안에 갇혀 있다_는 점이에요. 네이버 블로그·카페·뉴스는 외부 크롤러 접근이 제한적이라, _글로벌 AI 모델들은 한국 기업의 실체를 잘 모르는 상태_가 많습니다.
 
-GEO는 _큰 프로젝트_ 처럼 들리지만, 실은 작은 액션부터 시작할 수 있습니다.
+**약점 2 — 자사몰·자체 사이트의 _AI 친화도_가 낮아요.**
+컨슈머인사이트가 2025년 하반기 14세 이상 휴대폰 이용자 3,148명을 조사한 결과 AI 서비스 이용 경험률은 _74%_, 서비스별로는 _ChatGPT 54% · Gemini 30% · 에이닷 17% · 뤼튼 13%_로 나타났어요 ([컨슈머인사이트 2025 하반기](https://www.consumerinsight.co.kr/boardView?no=3832&id=ins02_list&schFlag=0)). 사용자는 이미 4개 이상 AI를 _동시에_ 쓰고 있는데, 정작 한국 기업 자사몰은 _Schema 마크업·llms.txt·구조화된 FAQ_ 같은 _AI가 읽기 좋은 형식_이 거의 적용돼 있지 않아요.
 
-**1. Schema.org 마크업을 점검하세요.** 최소한 `Organization`, `Product`(또는 `Service`), `FAQPage` 세 가지는 박는 게 좋습니다. AI 크롤러가 _이 회사는 무엇을 하는 곳인지_ entity로 인식하는 가장 빠른 신호입니다. [Google Rich Results Test](https://search.google.com/test/rich-results) 로 검증할 수 있습니다.
+**약점 3 — 콘텐츠가 _페이지 단위로_ 만들어졌어요.**
+한국 마케팅 콘텐츠는 _상세페이지_, _브랜드 스토리_, _보도자료_ 같이 _완성된 페이지 형태_로 제작돼 왔어요. AI는 그걸 _청크로 다시 자르는데_, 청크 단위로 보면 _정의 한 줄·표·Q&A_ 같은 _직답 형태가 거의 없다_는 점이 드러납니다. 한 페이지에 정보가 _잘_ 들어 있어도, _AI가 인용할 만한 청크 한 덩어리_가 없는 경우가 많아요.
 
-가장 기본이 되는 `Organization` 마크업은 사이트 `<head>` 안에 다음 형태로 넣으면 됩니다.
+<div class="callout callout--note">
+  <div class="callout-title">📝 3중 약점</div>
+  <div class="callout-body">
+    <p>정리하면 — <strong>네이버 의존 + AI 미인식 + 청크 부재</strong> 3중 약점. 그래서 한국 기업의 GEO는 <em>글로벌 평균보다 더 큰 격차</em>에서 시작해요. 동시에 그게 <strong>기회</strong>이기도 합니다. 먼저 움직이는 회사가 <em>카테고리 인용 자리</em>를 가져갑니다.</p>
+  </div>
+</div>
+
+## 오늘 뭐부터 해야 해요?
+
+학습은 여기까지 충분해요. 진짜 중요한 건 _내일이 아니라 오늘_ 뭘 할 수 있느냐죠. 두 가지만 짚을게요.
+
+**① Schema.org Organization 마크업 — _AI에게 회사 정체성 알려주기_**
+
+AI가 _우리 회사가 누구인지_를 인식하는 가장 빠른 방법은 _구조화된 데이터_예요. 홈페이지에 아래 JSON-LD를 한 블록 넣는 것만으로 시작할 수 있어요.
 
 ```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "(우리 회사 정식 명칭)",
-  "url": "https://(우리 도메인)",
-  "logo": "https://(도메인)/logo.png",
-  "description": "한 줄로 우리 회사를 설명하는 문장",
+  "name": "회사명",
+  "url": "https://yourcompany.com",
+  "logo": "https://yourcompany.com/logo.png",
+  "description": "한 줄 회사 설명 (AI가 그대로 인용할 정의문)",
   "sameAs": [
-    "https://www.instagram.com/(계정)",
-    "https://blog.naver.com/(아이디)",
-    "https://www.youtube.com/@(채널)"
+    "https://www.linkedin.com/company/yourcompany",
+    "https://www.youtube.com/@yourcompany",
+    "https://www.instagram.com/yourcompany"
   ]
 }
 </script>
 ```
 
-여기서 `sameAs` 배열이 핵심입니다. AI 크롤러는 이 필드를 보고 _이 회사가 _저 인스타·블로그·유튜브와 같은 곳_이라고 entity를 묶어 인식_하기 시작합니다. 회사 SNS·블로그·외부 디렉터리 URL을 5~10개 정도 채워두면 entity 신호가 즉시 올라갑니다.
+여기서 가장 중요한 건 **`sameAs`** 배열이에요. AI가 _"이 회사 = 저 회사 = 또 저기 그 회사"_ 라는 _엔티티 연결_을 만들 때 결정적인 신호가 됩니다.
 
-**2. `llms.txt` 파일을 만드세요.** 사이트 루트에 _AI 크롤러용 마크다운 안내 파일_ 을 둡니다. AI가 우리 브랜드의 핵심 정보를 _요약된 형태_ 로 빠르게 파악하게 해주는 비공식 표준입니다. [llmstxt.org](https://llmstxt.org/) 에 형식이 정리돼 있습니다.
+**② llms.txt — _AI 크롤러에게 사이트 안내문 주기_**
 
-이 두 가지만 적용해도 _entity 인식 신호_ 가 즉시 올라갑니다. 단, 본문 청크 구조와 권위 출처 보강은 _시간이 필요한 작업_ 입니다.
+`/llms.txt` 파일은 _robots.txt의 AI 버전_이에요. 사이트 루트에 한 장 올려두면 LLM 기반 크롤러가 _우리 사이트의 핵심 페이지·구조·정책_을 빠르게 파악합니다.
+
+```
+# 회사명
+
+> 한 줄 회사 소개 — AI에게 보여줄 핵심 정체성
+
+## 핵심 페이지
+- [회사 소개](https://yourcompany.com/about): 우리는 누구인가
+- [서비스](https://yourcompany.com/service): 무엇을 하는가
+- [블로그](https://yourcompany.com/blog): 최신 인사이트
+
+## 정책
+- AI 학습·인용 허용 여부, 출처 표기 요청 사항 등
+```
 
 <div class="callout callout--tip">
   <div class="callout-title">💡 실행 우선순위</div>
   <div class="callout-body">
-    <p>Schema와 llms.txt가 <strong>1주차</strong> 작업이라면, 본문 청크 재구성은 <strong>1~3개월</strong>, 권위 출처(매거진·위키·PR) 보강은 <strong>3~6개월</strong> 작업입니다. 모두 동시에 하려고 하면 진척이 안 보이니, 작은 것부터 끝내고 다음으로 넘어가는 게 좋습니다.</p>
+    <p>이 두 가지는 <strong>오늘 1시간이면</strong> 적용할 수 있어요. 그리고 그 1시간이, 다음 1년 동안 ChatGPT·Perplexity가 <em>당신 회사를 인용할 가능성</em>을 <strong>0에서 시작 가능 상태로</strong> 바꿔놓습니다.</p>
   </div>
 </div>
 
-## 우리 회사는 지금 어디쯤일까
+공식 문서가 궁금하시면 [Schema.org Organization](https://schema.org/Organization)과 [llms.txt 표준 제안 (llmstxt.org)](https://llmstxt.org/)을 같이 보시면 좋아요.
 
-가장 먼저 해야 할 일은 _현재 위치를 측정하는 것_ 입니다. ChatGPT, Gemini, Claude, Perplexity 4대 AI가 우리 브랜드를 어떻게 답변하는지 _숫자로_ 보지 않으면 _무엇을 고쳐야 할지_ 알 수 없습니다.
+## 우리 회사는, 지금 어디쯤일까?
 
-GeoMoment는 한국 기업이 4대 AI에서 _얼마나·어떻게_ 노출되는지를 9개 KPI로 분해해 진단하고, 어느 페이지의 어느 단락을 어떻게 다시 써야 하는지까지 처방하는 한국형 GEO 서비스입니다. 앞으로 이 블로그에서 _분야별 진단 사례_, _실행 노트_, _AI 답변 트렌드_ 같은 실무 인사이트를 정기적으로 정리해드릴 예정입니다.
+여기까지 읽고 한 번쯤 던져보고 싶은 질문이 생기실 거예요.
+
+> _우리 회사는, 지금 어디쯤일까?_
+
+이 질문에 답하는 가장 빠른 방법은 _직접 측정해보는 것_이에요. 지금 바로 ChatGPT에 _"OO 분야 추천 회사 알려줘"_ 라고 물어보세요. 우리 회사가 답변에 등장하면 _시작 지점이 좋은 편_이고, 등장하지 않으면 _바로 그 자리에서 GEO가 필요해진_ 거예요.
+
+직접 측정이 어렵거나, _어떤 청크를 어떻게 고쳐야 인용될지_가 막막하면 [무료 GEO 진단](/geo-diagnose.html)으로 한 번 물어봐주세요. ChatGPT · Perplexity · Gemini · Claude _네 개 AI에 동시에_ 던져서 _어디가 약한지_ 4축으로 풀어드려요 🙂
+
+다음 글에서는 _그 4축 — EEAT · 토픽 권위도 · 엔티티 현저성 · 청크 적합도_ 가 무엇인지 정리할 예정이에요.
