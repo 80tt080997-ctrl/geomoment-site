@@ -1,6 +1,6 @@
 ---
 title: "청크 단위 처방 — AI에 인용되는 페이지를 쓰는 5가지 패턴"
-description: "GEO 실행은 페이지가 아니라 청크 단위로 일어납니다. Anthropic·LlamaIndex·EMNLP 학술 출처를 바탕으로 라이터가 오늘 적용할 5가지 재작성 패턴을 정리합니다."
+description: "GEO 실행은 페이지가 아니라 청크 단위로 일어납니다. Anthropic·LlamaIndex·EMNLP 학술 출처를 바탕으로 오늘 적용할 5가지 작성 패턴을 정리합니다."
 date: 2026-05-16 10:00:00 +0900
 last_modified_at: 2026-05-14 12:00:00 +0900
 author_id: jace
@@ -31,13 +31,13 @@ AI는 페이지 전체를 통째로 읽지 않아요. 페이지를 200~500 토�
 .gm-i5__title { font-size: 20px; font-weight: 700; color: #0B0B0F; text-align: center; margin: 0 0 4px; }
 .gm-i5__subtitle { font-size: 13px; color: #5A5A66; text-align: center; margin: 0 0 28px; }
 .gm-i5__flow { display: flex; gap: 0; align-items: stretch; flex-wrap: nowrap; }
-.gm-i5__step { flex: 1 1 0; min-width: 0; background: #F5F5F7; border: 1px solid #E8E8EA; border-radius: 12px; padding: 16px 12px 18px; text-align: center; display: flex; flex-direction: column; justify-content: center; gap: 4px; position: relative; }
+.gm-i5__step { flex: 1 1 0; min-width: 0; background: #F5F5F7; border: 1px solid #E8E8EA; border-radius: 12px; padding: 16px 12px 18px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 6px; position: relative; }
 .gm-i5__step--1 { background: linear-gradient(180deg, #F1F1FF 0%, #F8F8FF 100%); border-color: #C7C7FF; }
 .gm-i5__step--2 { background: linear-gradient(180deg, #E4E4FF 0%, #EEEEFF 100%); border-color: #B3B3FF; }
 .gm-i5__step--3 { background: linear-gradient(180deg, #DCD3FF 0%, #E8DDFF 100%); border-color: #9F87FF; box-shadow: 0 6px 18px rgba(123,91,255,0.15); }
 .gm-i5__step--4 { background: linear-gradient(180deg, #D0BFFF 0%, #DCD0FF 100%); border-color: #8A6BFF; }
 .gm-i5__step--5 { background: linear-gradient(180deg, #B89BFF 0%, #C9B0FF 100%); border-color: #7B5BFF; box-shadow: 0 8px 22px rgba(123,91,255,0.28); }
-.gm-i5__num { position: absolute; top: 8px; left: 8px; width: 24px; height: 24px; line-height: 24px; border-radius: 50%; font: 700 10px 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; background: linear-gradient(135deg, #3D3DFF 0%, #5C5CFF 100%); text-align: center; box-shadow: 0 2px 6px rgba(61,61,255,0.25); }
+.gm-i5__num { display: inline-block; padding: 3px 10px; border-radius: 999px; font: 700 10px 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; background: linear-gradient(135deg, #3D3DFF 0%, #5C5CFF 100%); letter-spacing: 0.6px; align-self: center; }
 .gm-i5__step--5 .gm-i5__num { background: linear-gradient(135deg, #7B5BFF 0%, #5A3DDB 100%); }
 .gm-i5__icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: 4px auto 2px; border-radius: 10px; background: rgba(255,255,255,0.95); border: 1px solid rgba(123,91,255,0.18); color: #5A3DDB; }
 .gm-i5__icon svg { width: 22px; height: 22px; display: block; }
@@ -72,9 +72,9 @@ AI는 페이지 전체를 통째로 읽지 않아요. 페이지를 200~500 토�
 .gm-i6__donut > span, .gm-i6__donut > small { position: relative; z-index: 1; }
 .gm-i6__donut > span { font: 800 18px/1 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; }
 .gm-i6__donut > small { font-size: 9px; color: rgba(255,255,255,0.85); margin-top: 2px; letter-spacing: 0.4px; }
-.gm-i6__head-text { display: flex; flex-direction: column; gap: 2px; }
-.gm-i6__head-text strong { font-size: 16px; font-weight: 800; }
-.gm-i6__head-text small { font: 700 10px 'JetBrains Mono','Consolas',monospace; opacity: 0.92; letter-spacing: 0.5px; }
+.gm-i6__head-text { display: flex; flex-direction: column; gap: 2px; color: #FFFFFF; }
+.gm-i6__head-text strong { font-size: 16px; font-weight: 800; color: #FFFFFF; }
+.gm-i6__head-text small { font: 700 10px 'JetBrains Mono','Consolas',monospace; color: rgba(255,255,255,0.92); letter-spacing: 0.5px; }
 .gm-i6__body { padding: 16px 18px 10px; flex: 1; }
 .gm-i6__chunk { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; margin-bottom: 8px; border-radius: 8px; font-size: 12.5px; line-height: 1.5; }
 .gm-i6__col--pass .gm-i6__chunk { background: #EEEEFF; border-left: 3px solid #3D3DFF; color: #0B0B0F; }
@@ -98,7 +98,7 @@ AI는 페이지 전체를 통째로 읽지 않아요. 페이지를 200~500 토�
 .gm-i7__grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
 .gm-i7__card { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 14px; padding: 18px 14px 14px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
 .gm-i7__card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(11,11,15,0.08); }
-.gm-i7__num { position: absolute; top: 10px; left: 10px; width: 26px; height: 26px; line-height: 26px; border-radius: 50%; text-align: center; font: 700 11px 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; flex: 0 0 auto; box-shadow: 0 2px 6px rgba(61,61,255,0.22); }
+.gm-i7__num { display: inline-block; padding: 3px 11px; border-radius: 999px; font: 700 10px 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; letter-spacing: 0.6px; align-self: center; }
 .gm-i7__icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin: 8px auto 4px; border-radius: 12px; background: #F5F5F7; flex: 0 0 auto; }
 .gm-i7__icon svg { width: 24px; height: 24px; display: block; }
 .gm-i7__card:nth-child(1) .gm-i7__num { background: linear-gradient(135deg, #3D3DFF 0%, #5C5CFF 100%); }
@@ -710,7 +710,7 @@ Anthropic Cookbook에서 이 차이가 얼마나 큰지 정량적으로 보여�
       "@type": "BlogPosting",
       "@id": "https://geomoment.me/blog/chunk-prescription/#article",
       "headline": "청크 단위 처방 — AI에 인용되는 페이지를 쓰는 5가지 패턴",
-      "description": "GEO 실행은 페이지가 아니라 청크 단위로 일어납니다. Anthropic·LlamaIndex·EMNLP 학술 출처를 바탕으로 라이터가 오늘 적용할 5가지 재작성 패턴을 정리합니다.",
+      "description": "GEO 실행은 페이지가 아니라 청크 단위로 일어납니다. Anthropic·LlamaIndex·EMNLP 학술 출처를 바탕으로 오늘 적용할 5가지 작성 패턴을 정리합니다.",
       "datePublished": "2026-05-16T10:00:00+09:00",
       "dateModified": "2026-05-14T12:00:00+09:00",
       "author": {
