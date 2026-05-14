@@ -2,8 +2,11 @@
 layout: default
 ---
 {% assign author = site.data.authors[page.author_id] | default: site.data.authors.jace %}
-{% assign words_per_min = 350 %}
-{% assign word_count = content | strip_html | strip_newlines | size %}
+{% assign words_per_min = 600 %}
+{% assign before_style = content | split: '<style' | first %}
+{% assign after_style = content | split: '</style>' | last %}
+{% assign clean_content = before_style | append: after_style %}
+{% assign word_count = clean_content | strip_html | strip_newlines | size %}
 {% assign read_time = word_count | divided_by: words_per_min | plus: 1 %}
 
 <!-- Reading progress widget — 카드형 도넛 -->
@@ -22,13 +25,7 @@ layout: default
   <button type="button" class="reading-widget-top" data-reading-top aria-label="맨 위로 가기" title="맨 위로 가기">↑</button>
 </div>
 
-<article class="blog-post{% if page.image %} blog-post--has-cover{% endif %}">
-
-  {% if page.image %}
-  <figure class="post-cover">
-    <img src="{{ page.image }}" alt="{{ page.title }} 썸네일" loading="eager">
-  </figure>
-  {% endif %}
+<article class="blog-post">
 
   <!-- Hero band: 카테고리 + 제목 + 부제 + 메타 (post-grid와 같은 그리드라 정렬 일치) -->
   <header class="post-hero">
@@ -59,6 +56,12 @@ layout: default
   <div class="post-grid">
 
     <div class="post-main">
+      {% if page.image %}
+      <figure class="post-hero-image">
+        <img src="{{ page.image }}" alt="{{ page.title }} 썸네일">
+      </figure>
+      {% endif %}
+
       {% if page.summary %}
       <aside class="post-summary" aria-label="마케터를 위한 핵심 요약">
         <div class="post-summary-head">

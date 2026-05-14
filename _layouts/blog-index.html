@@ -14,8 +14,11 @@ layout: default
     <div class="blog-grid">
       {% for post in site.posts %}
       {% assign author = site.data.authors[post.author_id] | default: site.data.authors.jace %}
-      {% assign word_count = post.content | strip_html | strip_newlines | size %}
-      {% assign read_time = word_count | divided_by: 350 | plus: 1 %}
+      {% assign before_style = post.content | split: '<style' | first %}
+      {% assign after_style = post.content | split: '</style>' | last %}
+      {% assign clean_content = before_style | append: after_style %}
+      {% assign word_count = clean_content | strip_html | strip_newlines | size %}
+      {% assign read_time = word_count | divided_by: 600 | plus: 1 %}
       <article class="blog-card">
         <a href="{{ post.url }}">
           {% if post.image %}
