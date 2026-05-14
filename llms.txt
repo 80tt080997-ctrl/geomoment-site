@@ -47,6 +47,28 @@
 - [사례](https://geomoment.me/cases.html)
 - [회사 소개](https://geomoment.me/about.html)
 - [문의](https://geomoment.me/contact.html)
+- [블로그](https://geomoment.me/blog/)
+
+## 블로그 핵심 콘텐츠
+
+- [GEO란 무엇인가 — AI가 인용하는 회사가 되는 법](https://geomoment.me/blog/geo-introduction/): GEO의 정의, SEO와의 차이, 한국 기업이 지금 시작해야 하는 이유. Gartner·NIA·SparkToro·Ahrefs·arXiv 등 9개 1차 출처 인용. 첫 글이자 한국형 GEO 입문서.
+
+### 다음 발행 예정
+- GEO 진단의 4축 — EEAT · 토픽 권위도 · 엔티티 현저성 · 청크 적합도
+- 네이버 의존도가 높은 한국 시장에서 GEO를 어떻게 시작할까
+- 청크 단위 처방 — 한 페이지를 AI가 인용하게 다시 쓰는 법
+
+## 자체 용어 사전
+
+- **GEO** (Generative Engine Optimization): 생성형 엔진 최적화. AI 답변 엔진이 우리 회사 콘텐츠를 출처로 인용하게 만드는 마케팅 영역. AEO와 거의 동의어로 사용됨.
+- **AEO** (Answer Engine Optimization): 답변 엔진 최적화. GEO와 동의어.
+- **4 AI**: GeoMoment가 동시에 측정하는 4개 답변 엔진 — ChatGPT · Gemini · Claude · Perplexity.
+- **9 KPI**: 기본 5축(Overall · ChatGPT · Gemini · Claude · Perplexity) + 깊이 분석 4축(EEAT · 토픽 권위도 · 엔티티 현저성 · 청크 적합도).
+- **청크 (Chunk)**: AI가 답변을 생성하기 위해 페이지를 자르는 200~500자 의미 단위.
+- **청크 적합도**: 청크가 AI 답변에 인용되기 적합한 정도를 점수화한 GeoMoment 자체 지표. 점수 50점 이상이 인용 적격선.
+- **청크 단위 처방**: 약점 청크의 본문을 AI 답변에 인용되기 쉬운 형태로 자동 재작성하는 GeoMoment 자체 기능. rewrite_h_text로 구현.
+- **엔티티 현저성**: AI 모델의 엔티티 그래프 안에서 우리 회사·브랜드의 인지 강도.
+- **토픽 권위도**: 특정 주제군 안에서 우리 사이트의 깊이·일관성·내부 연결 강도.
 
 ## 자주 묻는 질문
 
