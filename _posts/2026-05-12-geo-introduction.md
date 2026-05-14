@@ -135,21 +135,15 @@ summary: |
 .post-body .gm-i3__chip,
 .post-body .gm-i3__chip * { color: #FFFFFF; }
 
-/* --- Author card (under quote callouts) — avatar + minimal meta --- */
-.author-card { display: grid; grid-template-columns: 140px 1fr; gap: 0; border: 1px solid #E8E8EA; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; background: #FFFFFF; transition: transform 0.15s, box-shadow 0.15s; margin: 14px 0 0; }
-.author-card:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(11,11,15,0.10); text-decoration: none; }
-.author-card__avatar { width: 140px; height: 140px; object-fit: cover; display: block; }
-.author-card__meta { padding: 16px 20px; display: flex; flex-direction: column; gap: 4px; justify-content: center; background: #F5F5F7; }
-.author-card__tag { font: 700 10px 'JetBrains Mono','Consolas',monospace; letter-spacing: 0.6px; color: #7B5BFF; text-transform: uppercase; }
-.author-card__name { font-size: 16px; font-weight: 700; color: #0B0B0F; }
-.author-card__role { font-size: 12.5px; color: #2A2A33; }
-.author-card__credit { font-size: 11.5px; color: #5A5A66; }
-.author-card__cta { margin-top: 4px; font-size: 12px; color: #3D3DFF; font-weight: 600; }
-@media (max-width: 640px) {
-  .author-card { grid-template-columns: 100px 1fr; }
-  .author-card__avatar { width: 100px; height: 100px; }
-  .author-card__meta { padding: 12px 14px; }
-}
+/* --- Author figure (wide capture + caption, Hinton/Cadwallader tone) --- */
+.author-figure { margin: 14px 0 0; }
+.author-figure a { display: block; border-radius: 12px; overflow: hidden; border: 1px solid #E8E8EA; transition: transform 0.15s, box-shadow 0.15s; }
+.author-figure a:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(11,11,15,0.10); }
+.author-figure img { width: 100%; height: auto; display: block; }
+.author-figure figcaption { margin: 10px 0 0; font-size: 12.5px; color: #5A5A66; line-height: 1.55; }
+.author-figure figcaption strong { color: #0B0B0F; font-weight: 700; margin-right: 4px; }
+.author-figure-source { display: block; margin-top: 3px; font-size: 11.5px; color: #9A9AA3; }
+.author-figure-source a { color: inherit; text-decoration: underline; }
 
 /* --- Responsive --- */
 @media (max-width: 640px) {
@@ -215,9 +209,10 @@ GEO는 *Generative Engine Optimization*, 한국어로는 생성형 엔진 최적
     </blockquote>
   </div>
 </div>
-<div class="author-card-wrap">
-<a class="author-card" href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener"><img class="author-card__avatar" src="/assets/img/blog/geo-introduction/aggarwal_avatar.png" alt="Pranjal Aggarwal 프로필 사진" /><div class="author-card__meta"><span class="author-card__tag">원전 저자</span><strong class="author-card__name">Pranjal Aggarwal</strong><span class="author-card__role">PhD Student · Carnegie Mellon University</span><span class="author-card__credit">GEO 논문 1저자 · arXiv 2311.09735 · KDD 2024</span><span class="author-card__cta">arxiv.org에서 원문 보기 →</span></div></a>
-</div>
+<figure class="author-figure">
+  <a href="https://pranjal2041.github.io/" target="_blank" rel="noopener"><img src="/assets/img/blog/geo-introduction/aggarwal_hero.png" alt="Pranjal Aggarwal — Carnegie Mellon University PhD Student 개인 사이트 헤더" /></a>
+  <figcaption><strong>Pranjal Aggarwal</strong>, PhD Student · Carnegie Mellon University (GEO 논문 1저자)<span class="author-figure-source">출처: <a href="https://pranjal2041.github.io/" target="_blank" rel="noopener">pranjal2041.github.io</a> · 논문: <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">arXiv 2311.09735</a> · KDD 2024</span></figcaption>
+</figure>
 
 ChatGPT가 직접 어떻게 작동하는지 궁금하다면, OpenAI가 ChatGPT Search 기능을 처음 공개했던 영상을 한 번 보시는 걸 추천해요. AI가 답을 만들 때 어떤 출처를 어떻게 가져오는지 시연으로 잘 보여줍니다.
 
@@ -290,9 +285,10 @@ SEO와 GEO를 완전히 다른 게임으로 묘사하는 글이 많은데, 저�
     </blockquote>
   </div>
 </div>
-<div class="author-card-wrap">
-<a class="author-card" href="https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search" target="_blank" rel="noopener"><img class="author-card__avatar" src="/assets/img/blog/geo-introduction/lily_ray_avatar.png" alt="Lily Ray 프로필 사진" /><div class="author-card__meta"><span class="author-card__tag">인용 저자</span><strong class="author-card__name">Lily Ray</strong><span class="author-card__role">VP, SEO &amp; AI Search · Amsive</span><span class="author-card__credit">Substack — A Reflection on SEO, GEO &amp; AI Search in 2025 (2026-01)</span><span class="author-card__cta">lilyraynyc.substack.com에서 원문 보기 →</span></div></a>
-</div>
+<figure class="author-figure">
+  <a href="https://www.amsive.com/insights/author/lily-ray/" target="_blank" rel="noopener"><img src="/assets/img/blog/geo-introduction/lily_ray_amsive.png" alt="Lily Ray — Amsive VP, SEO Strategy & Research 공식 프로필 페이지" /></a>
+  <figcaption><strong>Lily Ray</strong>, VP, SEO Strategy &amp; Research · Amsive<span class="author-figure-source">출처: <a href="https://www.amsive.com/insights/author/lily-ray/" target="_blank" rel="noopener">amsive.com</a> · 인용 글: <a href="https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search" target="_blank" rel="noopener">A Reflection on SEO, GEO &amp; AI Search in 2025</a> (2026-01)</span></figcaption>
+</figure>
 
 실제로 [Similarweb 2025 Generative AI Report](https://www.similarweb.com/corp/reports/2025-generative-ai-landscape/) 분석에 따르면 **ChatGPT 사용자의 약 95%는 여전히 Google을 병행 사용**해요. SEO 기반은 살아 있고, GEO는 그 위에 새로운 층을 얹는 작업에 가깝습니다.
 
