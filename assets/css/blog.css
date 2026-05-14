@@ -4,7 +4,7 @@
 
 .blog-main {
   padding: var(--sp-6) 0 0;
-  background: var(--ink-50);
+  background: rgba(61, 61, 255, 0.04);  /* matches .post-hero gradient start */
 }
 /* .blog-index and .blog-post supply their own bottom padding */
 
