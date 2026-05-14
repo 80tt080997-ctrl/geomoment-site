@@ -25,9 +25,10 @@ summary: |
 
 /* --- 1번 : Bar chart + supplementary stat --- */
 .gm-i1 { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 16px; padding: 32px 28px 24px; box-shadow: 0 4px 16px rgba(11,11,15,0.06); }
-.gm-i1__title { font-size: 18px; font-weight: 700; color: #0B0B0F; margin: 0 0 8px; }
-.gm-i1__chart { position: relative; padding-top: 40px; }
-.gm-i1__delta { position: absolute; top: 4px; left: 50%; transform: translateX(-50%); background: #EEEEFF; color: #7B5BFF; font-size: 13px; font-weight: 700; padding: 6px 14px; border-radius: 999px; border: 1px solid #7B5BFF; white-space: nowrap; }
+.gm-i1__head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.gm-i1__title { font-size: 18px; font-weight: 700; color: #0B0B0F; margin: 0; }
+.gm-i1__delta { background: #EEEEFF; color: #7B5BFF; font-size: 13px; font-weight: 700; padding: 6px 14px; border-radius: 999px; border: 1px solid #7B5BFF; white-space: nowrap; }
+.gm-i1__chart { padding-top: 12px; }
 .gm-i1__bars { display: flex; align-items: flex-end; justify-content: center; gap: 60px; height: 260px; padding: 0 20px; }
 .gm-i1__bar { flex: 0 0 130px; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
 .gm-i1__bar-value { font-size: 26px; font-weight: 700; color: #0B0B0F; margin-bottom: 8px; line-height: 1; }
@@ -127,6 +128,12 @@ summary: |
 .gm-i4__note { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 12px; color: #2A2A33; text-align: center; }
 .gm-i4__note strong { color: #3D3DFF; }
 
+/* --- Color overrides : defeat .post-body strong/h{2..} darkening on colored bands --- */
+.post-body .gm-i2__top,
+.post-body .gm-i2__top * { color: #FFFFFF; }
+.post-body .gm-i3__chip,
+.post-body .gm-i3__chip * { color: #FFFFFF; }
+
 /* --- Responsive --- */
 @media (max-width: 640px) {
   .gm-i1 { padding: 24px 18px 18px; }
@@ -152,9 +159,11 @@ summary: |
 </style>
 
 <figure class="gm-infographic gm-i1">
-  <h4 class="gm-i1__title">한국 인터넷 이용자의 생성형 AI 경험률</h4>
+  <div class="gm-i1__head">
+    <h4 class="gm-i1__title">한국 인터넷 이용자의 생성형 AI 경험률</h4>
+    <span class="gm-i1__delta">1년 만에 약 2배 · +15.7%p</span>
+  </div>
   <div class="gm-i1__chart">
-    <div class="gm-i1__delta">1년 만에 약 2배 · +15.7%p</div>
     <div class="gm-i1__bars">
       <div class="gm-i1__bar">
         <span class="gm-i1__bar-value">17.6%</span>
