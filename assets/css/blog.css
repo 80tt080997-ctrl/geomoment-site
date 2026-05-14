@@ -530,6 +530,26 @@
   margin-top: 10px;
 }
 
+/* YouTube / video embed — responsive 16:9 */
+.post-body .video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: var(--sp-5) 0;
+  background: var(--ink-50);
+  box-shadow: var(--shadow-md);
+}
+.post-body .video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* 표 */
 .post-body table {
   width: 100%;
