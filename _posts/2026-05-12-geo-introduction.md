@@ -134,6 +134,20 @@ summary: |
 .post-body .gm-i3__chip,
 .post-body .gm-i3__chip * { color: #FFFFFF; }
 
+/* --- Source capture card (under quote callouts) --- */
+.source-capture { display: grid; grid-template-columns: minmax(0, 1.3fr) 1fr; gap: 0; border: 1px solid #E8E8EA; border-radius: 12px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.15s, box-shadow 0.15s; background: #FFFFFF; margin: 14px 0 0; }
+.source-capture:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(11,11,15,0.10); text-decoration: none; }
+.source-capture__image { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; max-height: 220px; border-right: 1px solid #E8E8EA; }
+.source-capture__meta { padding: 18px 20px; display: flex; flex-direction: column; justify-content: center; gap: 6px; background: #F5F5F7; }
+.source-capture__tag { font: 700 10px 'JetBrains Mono','Consolas',monospace; letter-spacing: 0.6px; color: #7B5BFF; text-transform: uppercase; }
+.source-capture__title { font-size: 14px; font-weight: 700; color: #0B0B0F; line-height: 1.45; }
+.source-capture__sub { font-size: 12px; color: #5A5A66; line-height: 1.5; }
+.source-capture__cta { margin-top: 4px; font-size: 12px; color: #3D3DFF; font-weight: 600; }
+@media (max-width: 640px) {
+  .source-capture { grid-template-columns: 1fr; }
+  .source-capture__image { max-height: 240px; border-right: 0; border-bottom: 1px solid #E8E8EA; }
+}
+
 /* --- Responsive --- */
 @media (max-width: 640px) {
   .gm-i1 { padding: 24px 18px 18px; }
@@ -198,6 +212,15 @@ GEO는 *Generative Engine Optimization*, 한국어로는 생성형 엔진 최적
     </blockquote>
   </div>
 </div>
+<a class="source-capture" href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">
+  <img class="source-capture__image" src="/assets/img/blog/geo-introduction/aggarwal_arxiv.png" alt="arXiv 2311.09735 페이지 — GEO 논문 제목·저자·초록 헤더 캡쳐">
+  <div class="source-capture__meta">
+    <span class="source-capture__tag">원문 페이지</span>
+    <strong class="source-capture__title">arXiv 2311.09735 — GEO: Generative Engine Optimization</strong>
+    <span class="source-capture__sub">Aggarwal · Murahari · Rajpurohit · Kalyan · Narasimhan · Deshpande (Princeton 외, KDD 2024)</span>
+    <span class="source-capture__cta">arxiv.org에서 원문 보기 →</span>
+  </div>
+</a>
 
 ChatGPT가 직접 어떻게 작동하는지 궁금하다면, OpenAI가 ChatGPT Search 기능을 처음 공개했던 영상을 한 번 보시는 걸 추천해요. AI가 답을 만들 때 어떤 출처를 어떻게 가져오는지 시연으로 잘 보여줍니다.
 
@@ -270,6 +293,15 @@ SEO와 GEO를 완전히 다른 게임으로 묘사하는 글이 많은데, 저�
     </blockquote>
   </div>
 </div>
+<a class="source-capture" href="https://lilyraynyc.substack.com/p/a-reflection-on-seo-and-ai-search" target="_blank" rel="noopener">
+  <img class="source-capture__image" src="/assets/img/blog/geo-introduction/lily_ray_substack.png" alt="Lily Ray Substack 글 헤더 캡쳐 — A Reflection on SEO & AI Search in 2025">
+  <div class="source-capture__meta">
+    <span class="source-capture__tag">원문 페이지</span>
+    <strong class="source-capture__title">A Reflection on SEO, GEO &amp; AI Search in 2025</strong>
+    <span class="source-capture__sub">Lily Ray · Substack · 2026-01-20 발행</span>
+    <span class="source-capture__cta">lilyraynyc.substack.com에서 원문 보기 →</span>
+  </div>
+</a>
 
 실제로 [Similarweb 2025 Generative AI Report](https://www.similarweb.com/corp/reports/2025-generative-ai-landscape/) 분석에 따르면 **ChatGPT 사용자의 약 95%는 여전히 Google을 병행 사용**해요. SEO 기반은 살아 있고, GEO는 그 위에 새로운 층을 얹는 작업에 가깝습니다.
 
