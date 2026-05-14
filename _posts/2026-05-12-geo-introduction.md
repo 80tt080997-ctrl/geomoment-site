@@ -5,6 +5,7 @@ date: 2026-05-12 10:00:00 +0900
 author_id: jace
 category: GEO 입문
 tags: [GEO, AEO, AI 검색, ChatGPT, SEO]
+image: /assets/img/blog/geo-introduction/og.png
 summary: |
   - AI 검색이 늘면서 **전통 검색 볼륨은 2026년까지 25%, 브랜드 오가닉 트래픽은 2028년까지 50% 이상 줄어들 전망**입니다 (Gartner).
   - **검색 결과에 AI Overview가 뜨면 1위 페이지의 클릭이 AI Overview가 없을 때보다 34.5% 줄어들고, 2026년 들어 그 격차는 58%까지 벌어졌습니다** (Ahrefs).

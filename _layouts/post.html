@@ -72,10 +72,9 @@ layout: default
       <!-- Share row -->
       <div class="post-share">
         <span class="post-share-label">공유</span>
-        <button type="button" class="post-share-btn" data-share="twitter" aria-label="X에 공유">X</button>
-        <button type="button" class="post-share-btn" data-share="facebook" aria-label="페이스북에 공유">Facebook</button>
-        <button type="button" class="post-share-btn" data-share="kakao" aria-label="카카오스토리에 공유">Kakao</button>
-        <button type="button" class="post-share-btn" data-share="copy" aria-label="링크 복사">링크 복사</button>
+        <button type="button" class="post-share-btn" data-share="copy" aria-label="링크 복사">🔗 링크 복사</button>
+        <button type="button" class="post-share-btn" data-share="kakao" aria-label="카카오톡에 공유">💬 카카오톡</button>
+        <button type="button" class="post-share-btn" data-share="instagram" aria-label="인스타그램에 공유">📷 인스타그램</button>
       </div>
 
       <!-- Author bio box -->
@@ -93,6 +92,34 @@ layout: default
         <p>URL 하나만 입력하면 Gemini 가시성 점수와 핵심 약점 3가지를 1페이지 PDF로 무료 발송해 드립니다.</p>
         <a href="/geo-diagnose.html" class="btn-primary">30초 무료 진단 받기 →</a>
       </div>
+
+      <!-- Related posts -->
+      {% assign related = site.posts | where_exp: "p", "p.url != page.url" | sort: "date" | reverse %}
+      <section class="post-related" aria-label="같이 읽으면 좋은 글">
+        <h3 class="post-related-title">같이 읽으면 좋은 글</h3>
+        {% if related.size > 0 %}
+        <div class="post-related-grid">
+          {% for p in related limit:3 %}
+          <a class="post-related-card" href="{{ p.url }}">
+            {% if p.category %}<span class="post-related-cat">{{ p.category }}</span>{% endif %}
+            <strong class="post-related-name">{{ p.title }}</strong>
+            {% if p.description %}<span class="post-related-desc">{{ p.description | truncate: 80 }}</span>{% endif %}
+            <span class="post-related-date">{{ p.date | date: "%Y-%m-%d" }}</span>
+          </a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="post-related-empty">
+          <p>다음 글들을 준비하고 있어요. 곧 발행되면 가장 먼저 알려드릴게요.</p>
+          <ul>
+            <li>GEO 진단의 4축 — EEAT · 토픽 권위도 · 엔티티 현저성 · 청크 적합도</li>
+            <li>네이버 의존도가 높은 한국 시장에서 GEO를 어떻게 시작할까</li>
+            <li>청크 단위 처방 — 한 페이지를 AI가 인용하게 다시 쓰는 법</li>
+          </ul>
+          <a href="/geo-diagnose.html" class="post-related-cta">무료 진단을 신청해두면 발행 시점에 메일로 안내드려요 →</a>
+        </div>
+        {% endif %}
+      </section>
 
       <nav class="post-nav">
         <a href="/blog/" class="post-back">← 블로그 전체 보기</a>
