@@ -45,7 +45,7 @@ summary: |
 .gm-i1__source a { color: inherit; text-decoration: underline; }
 
 /* --- 2번 : 3 signal cards + direction --- */
-.gm-i2 { background: #F5F5F7; border-radius: 16px; padding: 32px 24px; }
+.gm-i2 { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 16px; padding: 32px 24px; box-shadow: 0 4px 16px rgba(11,11,15,0.06); }
 .gm-i2__title { font-size: 20px; font-weight: 700; color: #0B0B0F; margin: 0 0 4px; text-align: center; }
 .gm-i2__subtitle { font-size: 13px; color: #5A5A66; margin: 0 0 28px; text-align: center; }
 .gm-i2__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }

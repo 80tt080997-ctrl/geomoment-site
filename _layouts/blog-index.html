@@ -6,7 +6,7 @@ layout: default
 <section class="blog-index">
   <div class="container">
 
-    <!-- (1) Hub header -->
+    <!-- Hub header -->
     <header class="blog-index-header">
       <div class="fp-eyebrow">{{ site.title }} 블로그</div>
       <h1 class="blog-index-title">한국형 GEO 인사이트</h1>
@@ -19,11 +19,7 @@ layout: default
     </div>
     {% else %}
 
-    {% comment %} =============================================
-       Category tabs — auto-rendered when there are ≥ 2 posts
-       and ≥ 2 unique categories. Filtering is wired up later
-       via a small JS handler; static href fallbacks for now.
-    ============================================= {% endcomment %}
+    {% comment %} Category tabs — auto-activate when ≥ 2 posts and ≥ 2 categories {% endcomment %}
     {% assign categories = site.posts | map: 'category' | compact | uniq %}
     {% if site.posts.size > 1 and categories.size > 1 %}
     <nav class="blog-index-tabs" aria-label="카테고리">
@@ -34,112 +30,48 @@ layout: default
     </nav>
     {% endif %}
 
-    {% comment %} ===== (2) Featured — newest post as hero card ===== {% endcomment %}
-    {% assign featured = site.posts | first %}
-    {% assign f_author = site.data.authors[featured.author_id] | default: jace %}
-    {% assign f_before = featured.content | split: '<style' | first %}
-    {% assign f_after = featured.content | split: '</style>' | last %}
-    {% assign f_clean = f_before | append: f_after %}
-    {% assign f_words = f_clean | strip_html | strip_newlines | size %}
-    {% assign f_read = f_words | divided_by: 600 | plus: 1 %}
-
-    <section class="blog-section blog-section--featured">
-      <div class="blog-section-head">
-        <h2 class="blog-section-title">최신 글</h2>
-      </div>
-      <article class="blog-card blog-card--featured">
-        <a href="{{ featured.url }}">
-          {% if featured.image %}
+    <div class="blog-grid">
+      {% for post in site.posts %}
+      {% assign author = site.data.authors[post.author_id] | default: jace %}
+      {% assign before_style = post.content | split: '<style' | first %}
+      {% assign after_style = post.content | split: '</style>' | last %}
+      {% assign clean_content = before_style | append: after_style %}
+      {% assign word_count = clean_content | strip_html | strip_newlines | size %}
+      {% assign read_time = word_count | divided_by: 600 | plus: 1 %}
+      <article class="blog-card">
+        <a href="{{ post.url }}">
+          {% if post.image %}
           <div class="blog-card-thumb blog-card-thumb--image" aria-hidden="true">
-            <img src="{{ featured.image }}" alt="" loading="eager">
+            <img src="{{ post.image }}" alt="" loading="lazy">
           </div>
           {% else %}
           <div class="blog-card-thumb" aria-hidden="true">
-            <span class="blog-card-thumb-label">{{ featured.category | default: 'GEO' }}</span>
+            <span class="blog-card-thumb-label">{{ post.category | default: 'GEO' }}</span>
             <span class="blog-card-thumb-mono">G</span>
           </div>
           {% endif %}
           <div class="blog-card-body">
-            {% if featured.category %}<span class="blog-card-cat">{{ featured.category }}</span>{% endif %}
-            <h2 class="blog-card-title">{{ featured.title }}</h2>
-            {% if featured.description %}<p class="blog-card-desc">{{ featured.description }}</p>{% endif %}
+            {% if post.category %}<span class="blog-card-cat">{{ post.category }}</span>{% endif %}
+            <h2 class="blog-card-title">{{ post.title }}</h2>
+            {% if post.description %}<p class="blog-card-desc">{{ post.description }}</p>{% endif %}
             <div class="blog-card-meta">
-              <img src="{{ f_author.avatar }}" alt="{{ f_author.name }}" class="blog-card-avatar">
-              <span class="blog-card-author">{{ f_author.name }}</span>
+              <img src="{{ author.avatar }}" alt="{{ author.name }}" class="blog-card-avatar">
+              <span class="blog-card-author">{{ author.name }}</span>
               <span class="blog-card-dot">·</span>
-              <time datetime="{{ featured.date | date: '%Y-%m-%d' }}">{{ featured.date | date: "%Y-%m-%d" }}</time>
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
               <span class="blog-card-dot">·</span>
-              <span class="blog-card-read">{{ f_read }}분</span>
+              <span class="blog-card-read">{{ read_time }}분</span>
             </div>
           </div>
         </a>
       </article>
-    </section>
+      {% endfor %}
+    </div>
 
-    {% comment %} ===== (3) Rest grid — visible once ≥ 2 posts ===== {% endcomment %}
-    {% if site.posts.size > 1 %}
-    <section class="blog-section blog-section--grid">
-      <div class="blog-section-head">
-        <h2 class="blog-section-title">모든 글</h2>
-      </div>
-      <div class="blog-grid">
-        {% for post in site.posts offset:1 %}
-        {% assign author = site.data.authors[post.author_id] | default: jace %}
-        {% assign before_style = post.content | split: '<style' | first %}
-        {% assign after_style = post.content | split: '</style>' | last %}
-        {% assign clean_content = before_style | append: after_style %}
-        {% assign word_count = clean_content | strip_html | strip_newlines | size %}
-        {% assign read_time = word_count | divided_by: 600 | plus: 1 %}
-        <article class="blog-card">
-          <a href="{{ post.url }}">
-            {% if post.image %}
-            <div class="blog-card-thumb blog-card-thumb--image" aria-hidden="true">
-              <img src="{{ post.image }}" alt="" loading="lazy">
-            </div>
-            {% else %}
-            <div class="blog-card-thumb" aria-hidden="true">
-              <span class="blog-card-thumb-label">{{ post.category | default: 'GEO' }}</span>
-              <span class="blog-card-thumb-mono">G</span>
-            </div>
-            {% endif %}
-            <div class="blog-card-body">
-              {% if post.category %}<span class="blog-card-cat">{{ post.category }}</span>{% endif %}
-              <h2 class="blog-card-title">{{ post.title }}</h2>
-              {% if post.description %}<p class="blog-card-desc">{{ post.description }}</p>{% endif %}
-              <div class="blog-card-meta">
-                <img src="{{ author.avatar }}" alt="{{ author.name }}" class="blog-card-avatar">
-                <span class="blog-card-author">{{ author.name }}</span>
-                <span class="blog-card-dot">·</span>
-                <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-                <span class="blog-card-dot">·</span>
-                <span class="blog-card-read">{{ read_time }}분</span>
-              </div>
-            </div>
-          </a>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-    {% endif %}
-
-    {% comment %} ===== (4) Author footer — blog-style sign-off ===== {% endcomment %}
-    <aside class="blog-index-footer" aria-label="작가 소개">
-      <img src="{{ jace.avatar }}" alt="{{ jace.name }}" class="blog-index-footer-avatar">
-      <div class="blog-index-footer-body">
-        <div class="blog-index-footer-name">{{ jace.name }} <span>· {{ jace.role }}</span></div>
-        <p class="blog-index-footer-bio">{{ jace.bio }}</p>
-        <a href="/geo-diagnose.html" class="blog-index-footer-cta">무료 GEO 진단 받기 →</a>
-      </div>
-    </aside>
-
-    {% comment %} ===== (5) Newsletter — placeholder, activate later =====
-    <section class="blog-section blog-section--newsletter">
-      <h2 class="blog-section-title">새 글이 발행되면 메일로 받아보세요</h2>
-      <form action="..." class="blog-newsletter-form">
-        <input type="email" placeholder="이메일">
-        <button type="submit">구독</button>
-      </form>
-    </section>
+    {% comment %} ===== Future hooks (activate by uncommenting):
+      - Section grouping by category once posts accumulate
+      - Newsletter subscribe form
+      - Author footer / About-the-blog block
     ============================================= {% endcomment %}
 
     {% endif %}
