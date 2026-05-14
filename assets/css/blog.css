@@ -393,8 +393,13 @@
 
 .post-main { min-width: 0; }
 
-.post-sidebar { position: relative; }
+.post-sidebar {
+  position: relative;
+  align-self: start;     /* grid item must self-align to start for sticky */
+  height: max-content;   /* avoid grid-stretch which kills sticky */
+}
 .post-toc {
+  position: -webkit-sticky;
   position: sticky;
   top: 120px;
   padding: var(--sp-5) 0 0 var(--sp-4);

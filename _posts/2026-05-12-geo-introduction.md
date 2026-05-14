@@ -135,12 +135,12 @@ summary: |
 .post-body .gm-i3__chip,
 .post-body .gm-i3__chip * { color: #FFFFFF; }
 
-/* --- Author figure (image-only + 1-line source caption) --- */
+/* --- Author figure (image-only + 1-line source caption, no box) --- */
 .author-figure { margin: 14px 0 0; }
-.author-figure a { display: block; border-radius: 12px; overflow: hidden; border: 1px solid #E8E8EA; transition: transform 0.15s, box-shadow 0.15s; }
+.author-figure a { display: block; border-radius: 12px; overflow: hidden; transition: transform 0.15s, box-shadow 0.15s; }
 .author-figure a:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(11,11,15,0.10); }
 .author-figure img { width: 100%; height: auto; display: block; }
-.author-figure figcaption { margin: 8px 0 0; font-size: 11.5px; color: #9A9AA3; line-height: 1.5; text-align: right; font-style: italic; }
+.author-figure figcaption { margin: 8px 0 0; padding: 0; background: transparent; border: none; font-size: 12.5px; color: #5A5A66; line-height: 1.5; text-align: left; font-style: normal; }
 .author-figure figcaption a { color: inherit; text-decoration: underline; }
 
 /* --- Responsive --- */
