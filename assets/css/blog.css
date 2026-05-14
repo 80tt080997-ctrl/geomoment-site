@@ -2,7 +2,8 @@
    GeoMoment Blog Styles v2 — TOC + Author + Callouts + Cards
    ========================================================================== */
 
-.blog-main { padding: var(--sp-7) 0 var(--sp-9); }
+.blog-main { padding: 0; }
+/* .blog-index and .blog-post supply their own top/bottom padding */
 
 .container--narrow { max-width: 760px; margin: 0 auto; padding: 0 var(--sp-4); }
 
@@ -307,8 +308,8 @@
 
 .post-hero {
   background: linear-gradient(180deg, rgba(61, 61, 255, 0.04) 0%, transparent 100%);
-  padding: var(--sp-8) 0 var(--sp-7);
-  margin-bottom: var(--sp-7);
+  padding: var(--sp-5) 0 var(--sp-6);
+  margin-bottom: var(--sp-6);
   border-bottom: 1px solid var(--ink-100);
 }
 .post-grid--hero { align-items: start; }
