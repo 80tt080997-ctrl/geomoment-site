@@ -7,6 +7,10 @@ timezone: Asia/Seoul
 author:
   name: 김승재
   email: contact@geomoment.me
+  url: https://geomoment.me/about.html
+
+logo: /assets/logo/mark-gradient.svg
+image: /assets/img/blog/geo-introduction/og.png
 
 permalink: /blog/:slug/
 
