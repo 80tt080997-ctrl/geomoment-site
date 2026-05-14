@@ -456,7 +456,7 @@
   line-height: 1.85;
   color: var(--ink-800);
 }
-.post-body > * + * { margin-top: var(--sp-3); }
+.post-body > * + * { margin-top: var(--sp-4); }
 .post-body h2 {
   font-family: 'Manrope', 'Pretendard', sans-serif;
   font-size: 28px;
@@ -464,8 +464,8 @@
   line-height: 1.35;
   letter-spacing: -0.02em;
   color: var(--ink-900);
-  margin-top: var(--sp-7);
-  margin-bottom: var(--sp-3);
+  margin-top: var(--sp-8);
+  margin-bottom: var(--sp-4);
   scroll-margin-top: 100px;
 }
 .post-body h3 {
@@ -476,7 +476,7 @@
   margin-bottom: var(--sp-2);
   scroll-margin-top: 100px;
 }
-.post-body p { margin-bottom: var(--sp-3); }
+.post-body p { margin-bottom: var(--sp-4); }
 .post-body ul, .post-body ol { padding-left: var(--sp-5); margin: var(--sp-3) 0; }
 .post-body li { margin-bottom: 10px; line-height: 1.75; }
 .post-body strong { font-weight: 700; color: var(--ink-900); }
@@ -520,7 +520,7 @@
   display: block;
 }
 .post-body figure {
-  margin: var(--sp-5) 0;
+  margin: var(--sp-6) 0;
 }
 .post-body figure img { margin: 0; }
 .post-body figcaption {
@@ -581,7 +581,7 @@
    ========================================================================== */
 
 .post-body .callout {
-  margin: var(--sp-4) 0;
+  margin: var(--sp-5) 0;
   padding: var(--sp-4) var(--sp-5);
   border-radius: 12px;
   border-left: 4px solid;

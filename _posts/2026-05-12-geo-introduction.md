@@ -7,7 +7,7 @@ category: GEO 입문
 tags: [GEO, AEO, AI 검색, ChatGPT, SEO]
 summary: |
   - AI 검색이 늘면서 **전통 검색 볼륨은 2026년까지 25%, 브랜드 오가닉 트래픽은 2028년까지 50% 이상 줄어들 전망**입니다 (Gartner).
-  - **AI Overview가 노출되면 1위 페이지의 CTR이 34.5% 낮아졌고, 2026년 들어 그 격차는 58%까지 벌어졌습니다** (Ahrefs).
+  - **검색 결과에 AI Overview가 뜨면 1위 페이지의 클릭이 AI Overview가 없을 때보다 34.5% 줄어들고, 2026년 들어 그 격차는 58%까지 벌어졌습니다** (Ahrefs).
   - 한국 인터넷 이용자의 **생성형 AI 경험률은 1년 만에 17.6% → 33.3%로 두 배**, 가장 많이 쓰는 용도는 **단순 정보검색(81.9%)** 입니다 (NIA).
   - 게임의 룰이 바뀐 만큼, 오늘 가장 먼저 점검할 두 가지는 **Schema.org Organization 마크업**과 **llms.txt 파일**입니다.
 ---
@@ -20,10 +20,10 @@ summary: |
 
 <style>
 /* === GeoMoment infographics (scoped to this post) === */
-.gm-infographic { margin: 32px 0; font-family: 'Pretendard', 'Apple SD Gothic Neo', system-ui, sans-serif; color: #0B0B0F; }
+.gm-infographic { margin: 40px 0; font-family: 'Pretendard', 'Apple SD Gothic Neo', system-ui, sans-serif; color: #0B0B0F; }
 .gm-infographic *, .gm-infographic *::before, .gm-infographic *::after { box-sizing: border-box; }
 
-/* --- 1번 : Bar chart --- */
+/* --- 1번 : Bar chart + supplementary stat --- */
 .gm-i1 { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 16px; padding: 32px 28px 24px; box-shadow: 0 4px 16px rgba(11,11,15,0.06); }
 .gm-i1__title { font-size: 18px; font-weight: 700; color: #0B0B0F; margin: 0 0 8px; }
 .gm-i1__chart { position: relative; padding-top: 40px; }
@@ -35,10 +35,14 @@ summary: |
 .gm-i1__bar-fill { width: 100%; background: #9A9AA3; border-radius: 8px 8px 0 0; }
 .gm-i1__bar--primary .gm-i1__bar-fill { background: linear-gradient(180deg, #3D3DFF 0%, #5C5CFF 100%); }
 .gm-i1__bar-year { margin-top: 12px; font-size: 13px; color: #5A5A66; font-weight: 500; }
-.gm-i1__source { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11px; color: #5A5A66; font-style: italic; text-align: left; }
+.gm-i1__extra { margin: 20px 0 0; padding: 14px 18px; background: #F5F5F7; border-radius: 10px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.gm-i1__extra-tag { font: 700 10px 'JetBrains Mono','Consolas',monospace; letter-spacing: 0.6px; color: #7B5BFF; padding: 5px 10px; background: #F0EBFF; border-radius: 999px; flex: 0 0 auto; }
+.gm-i1__extra-text { font-size: 13px; color: #2A2A33; line-height: 1.5; }
+.gm-i1__extra-text strong { font-weight: 700; color: #0B0B0F; }
+.gm-i1__source { margin: 14px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11px; color: #5A5A66; font-style: italic; text-align: left; }
 .gm-i1__source a { color: inherit; text-decoration: underline; }
 
-/* --- 2번 : 3 signal cards --- */
+/* --- 2번 : 3 signal cards + direction --- */
 .gm-i2 { background: #F5F5F7; border-radius: 16px; padding: 32px 24px; }
 .gm-i2__title { font-size: 20px; font-weight: 700; color: #0B0B0F; margin: 0 0 4px; text-align: center; }
 .gm-i2__subtitle { font-size: 13px; color: #5A5A66; margin: 0 0 28px; text-align: center; }
@@ -48,22 +52,27 @@ summary: |
 .gm-i2__card--c1 .gm-i2__top { background: linear-gradient(135deg, #3D3DFF 0%, #5C5CFF 100%); }
 .gm-i2__card--c2 .gm-i2__top { background: linear-gradient(135deg, #7B5BFF 0%, #9B7DFF 100%); }
 .gm-i2__card--c3 .gm-i2__top { background: linear-gradient(135deg, #E64A4A 0%, #FF6B6B 100%); }
-.gm-i2__tag { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; font-family: 'JetBrains Mono', 'Consolas', monospace; opacity: 0.9; margin-bottom: 8px; }
+.gm-i2__tag { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.6px; font-family: 'JetBrains Mono','Consolas',monospace; opacity: 0.9; margin-bottom: 8px; }
 .gm-i2__big { display: block; font-size: 38px; font-weight: 700; line-height: 1.05; }
 .gm-i2__donut { --pct: 0; --c: #3D3DFF; width: 108px; height: 108px; border-radius: 50%; background: conic-gradient(var(--c) calc(var(--pct) * 1%), #E8E8EA 0); display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 18px auto 14px; position: relative; }
 .gm-i2__donut::before { content: ''; position: absolute; inset: 14px; background: #FFFFFF; border-radius: 50%; z-index: 0; }
 .gm-i2__donut > span, .gm-i2__donut > small { position: relative; z-index: 1; text-align: center; line-height: 1.2; }
 .gm-i2__donut > span { font-size: 15px; font-weight: 700; color: #0B0B0F; }
 .gm-i2__donut > small { font-size: 10px; color: #5A5A66; margin-top: 2px; }
-.gm-i2__name { font-size: 14px; font-weight: 700; color: #0B0B0F; text-align: center; margin: 0 16px 8px; line-height: 1.4; }
-.gm-i2__body { font-size: 12px; color: #2A2A33; text-align: center; margin: 0 16px 14px; line-height: 1.55; flex: 1; }
+.gm-i2__name { font-size: 14px; font-weight: 700; color: #0B0B0F; text-align: center; margin: 0 16px 10px; line-height: 1.4; }
+.gm-i2__body { font-size: 12px; color: #2A2A33; text-align: center; margin: 0 16px 12px; line-height: 1.55; flex: 1; }
+.gm-i2__direction { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0 16px 12px; padding: 7px 12px; background: #F5F5F7; border-radius: 999px; font-size: 11px; font-weight: 600; color: #2A2A33; }
+.gm-i2__direction-arrow { font-size: 16px; font-weight: 700; line-height: 1; }
+.gm-i2__card--c1 .gm-i2__direction-arrow,
+.gm-i2__card--c2 .gm-i2__direction-arrow { color: #E64A4A; }
+.gm-i2__card--c3 .gm-i2__direction-arrow { color: #3D3DFF; }
 .gm-i2__source { margin: 0 16px 16px; padding-top: 10px; border-top: 1px solid #E8E8EA; font-size: 10.5px; color: #5A5A66; font-style: italic; text-align: center; }
 
 /* --- 3번 : SEO vs GEO comparison --- */
 .gm-i3 { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 16px; padding: 32px 28px; box-shadow: 0 4px 16px rgba(11,11,15,0.06); }
 .gm-i3__title { font-size: 20px; font-weight: 700; color: #0B0B0F; text-align: center; margin: 0 0 4px; }
 .gm-i3__subtitle { font-size: 13px; color: #5A5A66; text-align: center; margin: 0 0 24px; }
-.gm-i3__cols { display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: stretch; }
+.gm-i3__cols { display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px; align-items: stretch; }
 .gm-i3__col { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 12px; display: flex; flex-direction: column; overflow: hidden; }
 .gm-i3__chip { padding: 18px 16px 14px; text-align: center; color: #FFFFFF; }
 .gm-i3__col--seo .gm-i3__chip { background: linear-gradient(135deg, #3D3DFF 0%, #5C5CFF 100%); }
@@ -76,17 +85,47 @@ summary: |
 .gm-i3__q { margin: 0; padding: 14px 18px 16px; border-top: 1px solid #E8E8EA; font-size: 13px; color: #2A2A33; }
 .gm-i3__col--seo .gm-i3__q { background: #EEEEFF; }
 .gm-i3__col--geo .gm-i3__q { background: #F0EBFF; }
-.gm-i3__q-tag { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; font-family: 'JetBrains Mono', 'Consolas', monospace; margin-bottom: 6px; }
+.gm-i3__q-tag { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.6px; font-family: 'JetBrains Mono','Consolas',monospace; margin-bottom: 6px; }
 .gm-i3__col--seo .gm-i3__q-tag { color: #3D3DFF; }
 .gm-i3__col--geo .gm-i3__q-tag { color: #7B5BFF; }
 .gm-i3__q-text { font-style: italic; }
-.gm-i3__bridge { align-self: center; background: #FFFFFF; border: 2px solid #0B0B0F; border-radius: 14px; padding: 18px 18px; text-align: center; position: relative; min-width: 140px; }
-.gm-i3__bridge::before, .gm-i3__bridge::after { content: ''; position: absolute; top: 50%; width: 16px; height: 2px; background: #0B0B0F; transform: translateY(-50%); }
-.gm-i3__bridge::before { left: -16px; }
-.gm-i3__bridge::after { right: -16px; }
-.gm-i3__bridge-tag { display: block; font-size: 10px; font-weight: 700; font-family: 'JetBrains Mono', 'Consolas', monospace; letter-spacing: 0.6px; color: #5A5A66; margin-bottom: 8px; }
-.gm-i3__bridge strong { display: block; font-size: 14px; color: #0B0B0F; margin-bottom: 4px; }
-.gm-i3__bridge-asset { display: block; font-size: 15px; font-weight: 700; color: #0B0B0F; }
+.gm-i3__bridge { align-self: center; background: linear-gradient(135deg, #EEEEFF 0%, #F0EBFF 100%); border: 1.5px solid #7B5BFF; border-radius: 14px; padding: 20px 22px; text-align: center; position: relative; min-width: 150px; box-shadow: 0 6px 18px rgba(123,91,255,0.18); }
+.gm-i3__bridge::before, .gm-i3__bridge::after { content: ''; position: absolute; top: 50%; width: 28px; height: 2px; background: linear-gradient(90deg, #3D3DFF 0%, #7B5BFF 100%); transform: translateY(-50%); }
+.gm-i3__bridge::before { left: -28px; }
+.gm-i3__bridge::after { right: -28px; }
+.gm-i3__bridge-tag { display: block; font-size: 10px; font-weight: 700; font-family: 'JetBrains Mono','Consolas',monospace; letter-spacing: 0.6px; color: #7B5BFF; margin-bottom: 8px; }
+.gm-i3__bridge strong { display: block; font-size: 13px; color: #5A5A66; margin-bottom: 4px; font-weight: 600; }
+.gm-i3__bridge-asset { display: block; font-size: 17px; font-weight: 700; color: #0B0B0F; }
+
+/* --- 4번 : Page → Chunks --- */
+.gm-i4 { background: #FFFFFF; border: 1px solid #E8E8EA; border-radius: 16px; padding: 32px 28px 24px; box-shadow: 0 4px 16px rgba(11,11,15,0.06); }
+.gm-i4__title { font-size: 20px; font-weight: 700; color: #0B0B0F; text-align: center; margin: 0 0 4px; }
+.gm-i4__subtitle { font-size: 13px; color: #5A5A66; text-align: center; margin: 0 0 24px; }
+.gm-i4__layout { display: grid; grid-template-columns: 220px 110px 1fr; gap: 20px; align-items: stretch; }
+.gm-i4__page { background: #F5F5F7; border: 1px solid #E8E8EA; border-radius: 10px; padding: 18px; min-height: 380px; }
+.gm-i4__page-tag { font: 700 10px 'JetBrains Mono','Consolas',monospace; color: #9A9AA3; letter-spacing: 0.6px; }
+.gm-i4__page-url { display: block; font: 600 12px 'JetBrains Mono','Consolas',monospace; color: #5A5A66; margin-top: 6px; padding-bottom: 12px; border-bottom: 1px solid #E8E8EA; }
+.gm-i4__page-lines { margin-top: 14px; display: flex; flex-direction: column; gap: 7px; }
+.gm-i4__page-lines span { display: block; height: 6px; background: #D4D4DA; border-radius: 2px; }
+.gm-i4__arrow { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 0; }
+.gm-i4__arrow-line { font-size: 32px; color: #7B5BFF; line-height: 1; font-weight: 700; }
+.gm-i4__arrow-label { display: block; font-size: 13px; font-weight: 700; color: #7B5BFF; margin-top: 10px; text-align: center; }
+.gm-i4__arrow-sub { display: block; font-size: 11px; color: #5A5A66; margin-top: 4px; text-align: center; line-height: 1.3; }
+.gm-i4__chunks { display: flex; flex-direction: column; gap: 8px; }
+.gm-i4__chunk { padding: 12px 16px; border-radius: 10px; }
+.gm-i4__chunk--pass { background: #EEEEFF; border: 1.5px solid #3D3DFF; }
+.gm-i4__chunk--fail { background: #F5F5F7; border: 1px solid #E8E8EA; }
+.gm-i4__chunk-head { display: flex; justify-content: space-between; align-items: center; }
+.gm-i4__chunk-tag { font: 700 10px 'JetBrains Mono','Consolas',monospace; letter-spacing: 0.6px; }
+.gm-i4__chunk--pass .gm-i4__chunk-tag { color: #3D3DFF; }
+.gm-i4__chunk--fail .gm-i4__chunk-tag { color: #9A9AA3; }
+.gm-i4__check, .gm-i4__x { width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px; line-height: 1; }
+.gm-i4__check { background: #3D3DFF; color: #FFFFFF; }
+.gm-i4__x { background: #E8E8EA; color: #9A9AA3; }
+.gm-i4__chunk-body { margin: 6px 0 0; font-size: 13px; color: #2A2A33; line-height: 1.5; }
+.gm-i4__chunk--fail .gm-i4__chunk-body { color: #9A9AA3; }
+.gm-i4__note { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 12px; color: #2A2A33; text-align: center; }
+.gm-i4__note strong { color: #3D3DFF; }
 
 /* --- Responsive --- */
 @media (max-width: 640px) {
@@ -95,6 +134,7 @@ summary: |
   .gm-i1__bar { flex: 0 0 96px; }
   .gm-i1__bar-value { font-size: 22px; }
   .gm-i1__delta { font-size: 11px; padding: 5px 12px; }
+  .gm-i1__extra { flex-direction: column; align-items: flex-start; gap: 8px; }
   .gm-i2 { padding: 24px 16px; }
   .gm-i2__grid { grid-template-columns: 1fr; gap: 14px; }
   .gm-i2__big { font-size: 34px; }
@@ -102,6 +142,12 @@ summary: |
   .gm-i3__cols { grid-template-columns: 1fr; gap: 14px; }
   .gm-i3__bridge::before, .gm-i3__bridge::after { display: none; }
   .gm-i3__bridge { width: 100%; }
+  .gm-i4 { padding: 24px 16px 18px; }
+  .gm-i4__layout { grid-template-columns: 1fr; gap: 16px; }
+  .gm-i4__page { min-height: auto; }
+  .gm-i4__arrow { padding: 4px 0; flex-direction: row; gap: 10px; }
+  .gm-i4__arrow-line { transform: rotate(90deg); }
+  .gm-i4__arrow-label, .gm-i4__arrow-sub { margin: 0; }
 }
 </style>
 
@@ -121,6 +167,10 @@ summary: |
         <span class="gm-i1__bar-year">2024년</span>
       </div>
     </div>
+  </div>
+  <div class="gm-i1__extra">
+    <span class="gm-i1__extra-tag">사용 분야 1위</span>
+    <span class="gm-i1__extra-text">단순 정보검색이 <strong>81.9%</strong> — 한국인은 이미 AI를 검색처럼 쓰고 있어요.</span>
   </div>
   <figcaption class="gm-i1__source">출처: <a href="https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?cbIdx=99870&bcIdx=27869&parentSeq=27869" target="_blank" rel="noopener">NIA·과학기술정보통신부, 「2024 인터넷이용실태조사」 (2025-03)</a> · 대상: 만 12세 이상 인터넷 이용자</figcaption>
 </figure>
@@ -223,14 +273,77 @@ SEO와 GEO를 완전히 다른 게임으로 묘사하는 글이 많은데, 저�
 | 성공의 모습 | 1페이지 상위노출 → 클릭 | AI 답변 안에 **인용** |
 | 측정 도구 | GA · 서치콘솔 · 키워드 도구 | 아직 표준 부재 — 직접 측정 필요 |
 
-<figure>
-  <img src="/assets/img/blog/geo-introduction/04_page_to_chunks.svg" alt="페이지가 청크로 분할되고 점수가 매겨지는 과정 다이어그램">
-  <figcaption>한 페이지(왼쪽)가 5개 청크로 잘리고, AI는 청크별로 답변 적합도 점수를 매깁니다. <strong>점수 50점 이상 청크만 인용 적격</strong>이라, 페이지 전체 품질이 좋아도 청크 구조가 약하면 답변에 들어가지 못합니다.</figcaption>
+<figure class="gm-infographic gm-i4">
+  <h4 class="gm-i4__title">AI는 페이지가 아니라 청크 단위로 인용합니다</h4>
+  <p class="gm-i4__subtitle">한 페이지가 200~500자 단위 청크로 잘리고, 그중 답변 적합도가 높은 청크만 인용됩니다.</p>
+  <div class="gm-i4__layout">
+    <div class="gm-i4__page">
+      <span class="gm-i4__page-tag">PAGE</span>
+      <span class="gm-i4__page-url">/booking/mice-package</span>
+      <div class="gm-i4__page-lines">
+        <span style="width:92%"></span>
+        <span style="width:78%"></span>
+        <span style="width:88%"></span>
+        <span style="width:60%"></span>
+        <span style="width:84%"></span>
+        <span style="width:90%"></span>
+        <span style="width:72%"></span>
+        <span style="width:86%"></span>
+        <span style="width:55%"></span>
+        <span style="width:80%"></span>
+        <span style="width:94%"></span>
+        <span style="width:68%"></span>
+      </div>
+    </div>
+    <div class="gm-i4__arrow">
+      <span class="gm-i4__arrow-line">→</span>
+      <span class="gm-i4__arrow-label">청크 분리</span>
+      <span class="gm-i4__arrow-sub">H2/H3 + 의미 단위</span>
+    </div>
+    <div class="gm-i4__chunks">
+      <article class="gm-i4__chunk gm-i4__chunk--pass">
+        <div class="gm-i4__chunk-head">
+          <span class="gm-i4__chunk-tag">CHUNK 01 · 점수 82</span>
+          <span class="gm-i4__check">✓</span>
+        </div>
+        <p class="gm-i4__chunk-body">Q: MICE 50인 패키지 가격은? · A: 5만원/인, 회의실 6시간 포함…</p>
+      </article>
+      <article class="gm-i4__chunk gm-i4__chunk--pass">
+        <div class="gm-i4__chunk-head">
+          <span class="gm-i4__chunk-tag">CHUNK 02 · 점수 71</span>
+          <span class="gm-i4__check">✓</span>
+        </div>
+        <p class="gm-i4__chunk-body">표: 회의실 5종 비교 (200석 · 동시통역 · 빔프로젝터 등)</p>
+      </article>
+      <article class="gm-i4__chunk gm-i4__chunk--fail">
+        <div class="gm-i4__chunk-head">
+          <span class="gm-i4__chunk-tag">CHUNK 03 · 점수 28</span>
+          <span class="gm-i4__x">×</span>
+        </div>
+        <p class="gm-i4__chunk-body">"그것은 다음과 같이 진행됩니다…" (지시어 시작 · 주어 누락)</p>
+      </article>
+      <article class="gm-i4__chunk gm-i4__chunk--fail">
+        <div class="gm-i4__chunk-head">
+          <span class="gm-i4__chunk-tag">CHUNK 04 · 점수 35</span>
+          <span class="gm-i4__x">×</span>
+        </div>
+        <p class="gm-i4__chunk-body">긴 한 문단 · 표 리스트 없음 · 직답 없음</p>
+      </article>
+      <article class="gm-i4__chunk gm-i4__chunk--pass">
+        <div class="gm-i4__chunk-head">
+          <span class="gm-i4__chunk-tag">CHUNK 05 · 점수 65</span>
+          <span class="gm-i4__check">✓</span>
+        </div>
+        <p class="gm-i4__chunk-body">Q: 노바스테이 광화문 주차 가능? · A: 지하 60대, 투숙객 무료</p>
+      </article>
+    </div>
+  </div>
+  <p class="gm-i4__note"><strong>점수 50점 이상</strong> 청크만 AI 답변에 인용됩니다. 5개 청크 중 3개만 인용 적격이에요.</p>
 </figure>
 
 같은 페이지라도 AI에게는 하나의 글이 아니라 수십 개의 청크로 보여요. AI는 질문에 답할 때 문단 단위로 후보를 추리고, 그중 가장 직답에 가까운 청크를 골라 인용해요. 그래서 GEO에서는 페이지를 잘 만드는 것보다 **청크 하나하나를 잘 만드는 것**이 더 중요해집니다.
 
-여기서 SEO 시대의 상위노출 1위가 가지던 의미도 바뀌어요. Ahrefs는 AI Overview가 떴을 때 1위 페이지의 평균 CTR이 **34.5% 더 낮음**을 발견했고 ([Ahrefs, 2025-04](https://ahrefs.com/blog/ai-overviews-reduce-clicks/)), 2026년 2월 업데이트에서는 그 격차가 **58%까지** 벌어졌어요 ([Ahrefs Update, 2026-02](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/)). 1위 자리는 그대로 있는데, 1위가 가져가던 트래픽이 사라지고 있는 거죠.
+여기서 SEO 시대의 상위노출 1위가 가지던 의미도 바뀌어요. Ahrefs는 30만 키워드를 비교 분석해서, **검색 결과 상단에 AI Overview가 노출되면 1위 페이지가 가져가던 클릭이 AI Overview가 없는 동급 키워드 대비 34.5% 줄어든다**고 발표했어요 ([Ahrefs, 2025-04](https://ahrefs.com/blog/ai-overviews-reduce-clicks/)). 2026년 2월 업데이트에서는 그 격차가 **58%까지** 벌어졌습니다 ([Ahrefs Update, 2026-02](https://ahrefs.com/blog/ai-overviews-reduce-clicks-update/)). 1위 자리는 그대로 있는데, AI Overview가 위에 떠 있으면 1위가 가져가던 클릭이 절반 가까이 사라지는 거죠.
 
 <div class="callout callout--note">
   <div class="callout-title">📝 핵심 한 줄</div>
@@ -258,6 +371,7 @@ SEO와 GEO를 완전히 다른 게임으로 묘사하는 글이 많은데, 저�
       </div>
       <h5 class="gm-i2__name">전통 검색 볼륨 감소 전망</h5>
       <p class="gm-i2__body">2026년까지 전통 검색 엔진 볼륨이 25% 줄어들 것으로 전망</p>
+      <div class="gm-i2__direction"><span class="gm-i2__direction-arrow">↘</span><span>전통 검색 감소</span></div>
       <p class="gm-i2__source">출처: Gartner Predicts (2024-02)</p>
     </article>
     <article class="gm-i2__card gm-i2__card--c2">
@@ -271,6 +385,7 @@ SEO와 GEO를 완전히 다른 게임으로 묘사하는 글이 많은데, 저�
       </div>
       <h5 class="gm-i2__name">미국 Google 검색의 제로클릭</h5>
       <p class="gm-i2__body">2024년 미국 Google 검색의 58.5%가 제로클릭으로 종료 (EU는 59.7%)</p>
+      <div class="gm-i2__direction"><span class="gm-i2__direction-arrow">↘</span><span>오픈웹 클릭 감소</span></div>
       <p class="gm-i2__source">출처: SparkToro 2024 Zero-Click Study</p>
     </article>
     <article class="gm-i2__card gm-i2__card--c3">
@@ -284,6 +399,7 @@ SEO와 GEO를 완전히 다른 게임으로 묘사하는 글이 많은데, 저�
       </div>
       <h5 class="gm-i2__name">한국인의 생성형 AI 경험률</h5>
       <p class="gm-i2__body">한국 인터넷 이용자의 경험률이 1년 만에 17.6% → 33.3%로 2배</p>
+      <div class="gm-i2__direction"><span class="gm-i2__direction-arrow">↗</span><span>AI 사용 확산</span></div>
       <p class="gm-i2__source">출처: NIA 2024 인터넷이용실태조사</p>
     </article>
   </div>
