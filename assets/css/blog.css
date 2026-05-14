@@ -3,6 +3,8 @@
    ========================================================================== */
 
 .blog-main { padding: var(--sp-7) 0 var(--sp-9); }
+.blog-post--has-cover ~ * .blog-main,
+.blog-main:has(.blog-post--has-cover) { padding-top: 0; }
 
 .container--narrow { max-width: 760px; margin: 0 auto; padding: 0 var(--sp-4); }
 
@@ -311,6 +313,27 @@
   margin-bottom: var(--sp-7);
   border-bottom: 1px solid var(--ink-100);
 }
+.blog-post--has-cover .post-hero { padding-top: var(--sp-5); }
+
+/* Full-bleed cover banner at the very top of the post */
+.post-cover {
+  margin: 0;
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
+}
+.post-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 640px) {
+  .post-cover { max-height: 240px; }
+  .post-cover img { max-height: 240px; }
+}
 .post-grid--hero { align-items: start; }
 .post-sidebar--hero { display: block; }
 @media (max-width: 1024px) {
@@ -394,15 +417,14 @@
   display: grid;
   grid-template-columns: minmax(0, 760px) 240px;
   gap: 60px;
-  align-items: start;
+  align-items: stretch;  /* let .post-sidebar fill the row so sticky child can scroll inside */
 }
 
 .post-main { min-width: 0; }
 
 .post-sidebar {
   position: relative;
-  align-self: start;     /* grid item must self-align to start for sticky */
-  height: max-content;   /* avoid grid-stretch which kills sticky */
+  align-self: stretch;     /* sidebar must fill the grid row so sticky has scroll room */
 }
 .post-toc {
   position: -webkit-sticky;
