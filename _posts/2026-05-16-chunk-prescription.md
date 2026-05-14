@@ -46,7 +46,7 @@ AI는 페이지 전체를 통째로 읽지 않아요. 페이지를 200~500 토�
 .gm-i5__arrow { display: flex; align-items: center; justify-content: center; flex: 0 0 26px; font-size: 20px; font-weight: 800; color: #7B5BFF; }
 .gm-i5__legend { margin: 18px 0 0; padding: 12px 18px; background: linear-gradient(135deg, #EEEEFF 0%, #F0EBFF 100%); border-radius: 10px; font-size: 12.5px; color: #2A2A33; text-align: center; line-height: 1.55; }
 .gm-i5__legend strong { color: #5A3DDB; font-weight: 700; }
-.gm-i5__source { margin: 14px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11px; color: #5A5A66; font-style: italic; text-align: left; }
+.gm-i5__source { margin: 14px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11px; color: #5A5A66; font-style: italic; text-align: center; }
 .gm-i5__source a { color: inherit; text-decoration: underline; }
 @media (max-width: 760px) {
   .gm-i5__flow { flex-wrap: wrap; gap: 8px; }
@@ -113,7 +113,7 @@ AI는 페이지 전체를 통째로 읽지 않아요. 페이지를 200~500 토�
 .gm-i7__card:nth-child(5) .gm-i7__num { background: linear-gradient(135deg, #BB9DFF 0%, #7B5BFF 100%); }
 .gm-i7__card:nth-child(5) .gm-i7__icon { background: #F0EBFF; color: #7B5BFF; }
 .gm-i7__name { font-size: 14px; font-weight: 700; color: #0B0B0F; line-height: 1.35; }
-.gm-i7__tag { display: inline-block; padding: 3px 8px; background: #F5F5F7; border-radius: 999px; font: 700 9px 'JetBrains Mono','Consolas',monospace; color: #5A5A66; letter-spacing: 0.4px; align-self: flex-start; }
+.gm-i7__tag { display: inline-block; padding: 3px 8px; background: #F5F5F7; border-radius: 999px; font: 700 9px 'JetBrains Mono','Consolas',monospace; color: #5A5A66; letter-spacing: 0.4px; align-self: center; }
 .gm-i7__desc { font-size: 11.5px; color: #5A5A66; line-height: 1.55; flex: 1; margin: 0; }
 .gm-i7__example { margin-top: 4px; padding: 8px 10px; background: #FAFAFB; border: 1px dashed #D4D4DA; border-radius: 8px; font: 400 11px/1.55 'Pretendard','Apple SD Gothic Neo',system-ui,sans-serif; color: #2A2A33; }
 .gm-i7__example strong { color: #5A3DDB; font-weight: 700; font-size: 10px; letter-spacing: 0.3px; }
@@ -138,7 +138,7 @@ AI는 페이지 전체를 통째로 읽지 않아요. 페이지를 200~500 토�
 .gm-i8__donut-content span { font: 800 32px/1 'JetBrains Mono','Consolas',monospace; }
 .gm-i8__panel--before .gm-i8__donut-content span { color: #E64A4A; }
 .gm-i8__panel--after .gm-i8__donut-content span { color: #5A3DDB; }
-.gm-i8__donut-content small { font: 700 9px/1 'JetBrains Mono','Consolas',monospace; color: #5A5A66; letter-spacing: 0.4px; }
+.gm-i8__donut-content small { font: 700 9px/1.25 'JetBrains Mono','Consolas',monospace; color: #5A5A66; letter-spacing: 0.4px; text-align: center; display: block; }
 .gm-i8__panel-title { text-align: center; font-size: 13px; font-weight: 700; color: #0B0B0F; margin: 0 0 12px; line-height: 1.4; }
 .gm-i8__panel--before .gm-i8__panel-title { color: #5A5A66; }
 .gm-i8__text-block { background: #FFFFFF; border-radius: 8px; padding: 10px 12px; font-size: 12px; color: #2A2A33; line-height: 1.5; margin-bottom: 8px; border: 1px solid #E8E8EA; }
