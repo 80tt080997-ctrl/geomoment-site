@@ -99,7 +99,7 @@
       const url = encodeURIComponent(window.location.href);
       const title = encodeURIComponent(document.title);
 
-      // 1) Link copy
+      // Link copy (only share method now)
       if (type === 'copy') {
         try {
           await navigator.clipboard.writeText(window.location.href);
@@ -108,46 +108,6 @@
           setTimeout(() => { btn.textContent = orig; }, 1800);
           if (window.gtag) window.gtag('event', 'share', { method: 'copy_link' });
         } catch (err) {
-          alert('복사 실패. URL을 직접 복사해주세요.');
-        }
-        return;
-      }
-
-      // 2) KakaoTalk — open Kakao share if SDK loaded, otherwise fallback to copy + guide
-      if (type === 'kakao') {
-        if (window.Kakao && window.Kakao.Share) {
-          try {
-            window.Kakao.Share.sendDefault({
-              objectType: 'feed',
-              content: {
-                title: document.title,
-                description: (document.querySelector('meta[name="description"]') || {}).content || '',
-                imageUrl: (document.querySelector('meta[property="og:image"]') || {}).content || '',
-                link: { mobileWebUrl: window.location.href, webUrl: window.location.href }
-              }
-            });
-            if (window.gtag) window.gtag('event', 'share', { method: 'kakao' });
-            return;
-          } catch (_) { /* fall through to fallback */ }
-        }
-        // Fallback: copy + open KakaoTalk web share or guide
-        try {
-          await navigator.clipboard.writeText(window.location.href);
-          alert('링크가 복사됐어요. 카카오톡을 열어 친구나 채팅방에 붙여넣어 주세요.');
-          if (window.gtag) window.gtag('event', 'share', { method: 'kakao_fallback' });
-        } catch (_) {
-          window.open(`https://story.kakao.com/share?url=${url}`, '_blank', 'width=600,height=500');
-        }
-        return;
-      }
-
-      // 3) Instagram — no public sharing API. Copy link + guide.
-      if (type === 'instagram') {
-        try {
-          await navigator.clipboard.writeText(window.location.href);
-          alert('링크가 복사됐어요. Instagram을 열어 스토리·DM·프로필 링크에 붙여넣어 주세요.');
-          if (window.gtag) window.gtag('event', 'share', { method: 'instagram' });
-        } catch (_) {
           alert('복사 실패. URL을 직접 복사해주세요.');
         }
         return;

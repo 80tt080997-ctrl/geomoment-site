@@ -53,6 +53,12 @@ layout: default
   <div class="post-grid">
 
     <div class="post-main">
+      {% if page.image %}
+      <figure class="post-hero-image">
+        <img src="{{ page.image }}" alt="{{ page.title }} 썸네일">
+      </figure>
+      {% endif %}
+
       {% if page.summary %}
       <aside class="post-summary" aria-label="마케터를 위한 핵심 요약">
         <div class="post-summary-head">
@@ -67,14 +73,6 @@ layout: default
 
       <div class="post-body">
         {{ content }}
-      </div>
-
-      <!-- Share row -->
-      <div class="post-share">
-        <span class="post-share-label">공유</span>
-        <button type="button" class="post-share-btn" data-share="copy" aria-label="링크 복사">🔗 링크 복사</button>
-        <button type="button" class="post-share-btn" data-share="kakao" aria-label="카카오톡에 공유">💬 카카오톡</button>
-        <button type="button" class="post-share-btn" data-share="instagram" aria-label="인스타그램에 공유">📷 인스타그램</button>
       </div>
 
       <!-- Author bio box -->
@@ -126,11 +124,14 @@ layout: default
       </nav>
     </div>
 
-    <!-- Right sticky sidebar (TOC) -->
-    <aside class="post-sidebar" aria-label="목차">
+    <!-- Right sticky sidebar (TOC + Share) -->
+    <aside class="post-sidebar" aria-label="목차 및 공유">
       <div class="post-toc">
         <div class="post-toc-head">목차</div>
         <ol class="post-toc-list"></ol>
+        <div class="post-toc-share">
+          <button type="button" class="post-share-btn" data-share="copy" aria-label="링크 복사">🔗 링크 복사</button>
+        </div>
       </div>
     </aside>
 
