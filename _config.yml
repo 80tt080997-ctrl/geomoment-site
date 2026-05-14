@@ -4,6 +4,9 @@ url: https://geomoment.me
 lang: ko-KR
 timezone: Asia/Seoul
 
+# Allow future-dated posts (we publish ahead of the dateline)
+future: true
+
 author:
   name: 김승재
   email: contact@geomoment.me
