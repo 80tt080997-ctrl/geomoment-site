@@ -759,6 +759,17 @@
   background: rgba(245, 158, 11, 0.06);
 }
 .post-body .callout--warn .callout-title { color: #B45309; }
+/* Inside a callout, the inner blockquote should not add a second
+   vertical bar/background on top of the callout's own one. */
+.post-body .callout blockquote {
+  border-left: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+  font-size: inherit;
+}
+
 .post-body .callout--quote {
   border-left-color: var(--violet);
   background: rgba(124, 58, 237, 0.05);
