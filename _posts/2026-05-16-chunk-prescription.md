@@ -5,8 +5,9 @@ date: 2026-05-16 10:00:00 +0900
 last_modified_at: 2026-05-14 12:00:00 +0900
 author_id: jace
 category: 실행 노트
-tags: [GEO, AEO, 청크, RAG, Contextual Retrieval, 콘텐츠 라이팅]
+tags: [GEO, AEO, chunk, RAG, contextual-retrieval, writing]
 image: /assets/img/blog/chunk-prescription/og.png
+published: false
 summary: |
   - AI는 페이지가 아니라 **청크 단위로 인용**해요. 청크는 보통 200~500 토큰의 의미 단위 문단입니다.
   - Anthropic은 청크 앞에 50~100 토큰의 설명 맥락을 붙이면 **retrieval failure가 단독 35%, BM25 결합 49%, reranking 추가 시 67%까지 감소**한다고 보고합니다.
