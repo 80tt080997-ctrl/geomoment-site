@@ -439,10 +439,10 @@
    Blog Post — Hero
    ========================================================================== */
 
-.blog-post { padding-bottom: var(--sp-9); margin-top: calc(-1 * var(--sp-6)); }
+.blog-post { padding-bottom: var(--sp-9); }
 
 .post-hero {
-  background: linear-gradient(180deg, rgba(61, 61, 255, 0.04) 0%, transparent 100%);
+  background: transparent;
   padding: var(--sp-5) 0 var(--sp-6);
   margin-bottom: var(--sp-6);
   border-bottom: 1px solid var(--ink-100);
