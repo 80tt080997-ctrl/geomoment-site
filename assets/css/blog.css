@@ -439,7 +439,7 @@
    Blog Post — Hero
    ========================================================================== */
 
-.blog-post { padding-bottom: var(--sp-9); }
+.blog-post { padding-bottom: var(--sp-9); margin-top: calc(-1 * var(--sp-6)); }
 
 .post-hero {
   background: linear-gradient(180deg, rgba(61, 61, 255, 0.04) 0%, transparent 100%);

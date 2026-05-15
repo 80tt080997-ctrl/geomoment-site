@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -77,6 +79,7 @@
 <!-- Styles -->
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/blog.css">
 <meta name="naver-site-verification" content="b090a51ae752a47ae0c77b8315f1cd0bcedf0981" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N581TKG6SH"></script>
@@ -640,6 +643,58 @@
         <p class="tc-desc">5단계 정규화 가중 평균 청구항으로 보호. AI 답변의 비결정성을 보정해 0~100 단일 점수로 환산 — 한국 특허청 출원 완료.</p>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ============ Blog teaser — 한국형 GEO 인사이트 ============ -->
+<section class="home-blog-teaser" style="padding: var(--sp-9) 0; background: rgba(61, 61, 255, 0.04);">
+  <div class="container">
+    <header class="home-blog-teaser-head" style="display:flex; align-items:flex-end; justify-content:space-between; gap: var(--sp-5); margin-bottom: var(--sp-6); flex-wrap: wrap;">
+      <div>
+        <div class="fp-eyebrow">BLOG · 한국형 GEO 인사이트</div>
+        <h2 class="fp-headline" style="margin: var(--sp-3) 0 var(--sp-3);">AI가 인용하는 회사가 되는 길 — <b>Jace의 실무 노트</b></h2>
+        <p style="color: var(--ink-500); font-size: 17px; line-height: 1.7; max-width: 720px; margin: 0;">GEO 진단의 4축, 청크 단위 처방, 한국 시장 GEO 시작법 — 매주 실무에서 검증한 패턴만 정리해 공유합니다.</p>
+      </div>
+      <a href="/blog/" class="btn-secondary" style="flex: 0 0 auto;">블로그 전체 보기 →</a>
+    </header>
+    <div class="blog-grid">
+      {% assign jace = site.data.authors.jace %}
+      {% for post in site.posts limit:3 %}
+      {% assign author = site.data.authors[post.author_id] | default: jace %}
+      {% assign before_style = post.content | split: '<style' | first %}
+      {% assign after_style = post.content | split: '</style>' | last %}
+      {% assign clean_content = before_style | append: after_style %}
+      {% assign word_count = clean_content | strip_html | strip_newlines | size %}
+      {% assign read_time = word_count | divided_by: 600 | plus: 1 %}
+      <article class="blog-card">
+        <a href="{{ post.url }}">
+          {% if post.image %}
+          <div class="blog-card-thumb blog-card-thumb--image" aria-hidden="true">
+            <img src="{{ post.image }}" alt="" loading="lazy">
+          </div>
+          {% else %}
+          <div class="blog-card-thumb" aria-hidden="true">
+            <span class="blog-card-thumb-label">{{ post.category | default: 'GEO' }}</span>
+            <span class="blog-card-thumb-mono">G</span>
+          </div>
+          {% endif %}
+          <div class="blog-card-body">
+            {% if post.category %}<span class="blog-card-cat">{{ post.category }}</span>{% endif %}
+            <h3 class="blog-card-title">{{ post.title }}</h3>
+            {% if post.description %}<p class="blog-card-desc">{{ post.description }}</p>{% endif %}
+            <div class="blog-card-meta">
+              <img src="{{ author.avatar }}" alt="{{ author.name }}" class="blog-card-avatar">
+              <span class="blog-card-author">{{ author.name }}</span>
+              <span class="blog-card-dot">·</span>
+              <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+              <span class="blog-card-dot">·</span>
+              <span class="blog-card-read">{{ read_time }}분</span>
+            </div>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
     </div>
   </div>
 </section>
