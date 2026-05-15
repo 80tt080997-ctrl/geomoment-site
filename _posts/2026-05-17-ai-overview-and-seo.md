@@ -94,7 +94,8 @@ summary: |
 .gm-i13__item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #0B0B0F; }
 .gm-i13__rank { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; font: 700 10px/1 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; background: linear-gradient(135deg, #5A5A66 0%, #2A2A33 100%); flex: 0 0 auto; }
 .gm-i13__group--upset .gm-i13__rank { background: linear-gradient(135deg, #7B5BFF 0%, #5A3DDB 100%); }
-.gm-i13__badge { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 6px; font: 800 11px 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; flex: 0 0 auto; }
+.gm-i13__badge { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; border-radius: 6px; background: #FFFFFF; border: 1px solid #E8E8EA; padding: 3px; flex: 0 0 auto; box-shadow: 0 1px 2px rgba(11,11,15,0.04); }
+.gm-i13__badge img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .gm-i13__domain { font-weight: 700; }
 .gm-i13__note { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11.5px; color: #5A5A66; line-height: 1.6; }
 .gm-i13__note strong { color: #5A3DDB; font-weight: 700; }
@@ -278,21 +279,21 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
       <h5 class="gm-i13__group-title">TOP 6 — 일반 검색에서도 강한 도메인</h5>
       <p class="gm-i13__group-sub">"As in the classic web search…"</p>
       <ol class="gm-i13__list">
-        <li class="gm-i13__item"><span class="gm-i13__rank">1</span> <span class="gm-i13__badge" style="background:#000000;">W</span> <span class="gm-i13__domain">Wikipedia</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">2</span> <span class="gm-i13__badge" style="background:#FF0000;">Y</span> <span class="gm-i13__domain">YouTube</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">3</span> <span class="gm-i13__badge" style="background:#F5C518;color:#000;">i</span> <span class="gm-i13__domain">IMDb</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">4</span> <span class="gm-i13__badge" style="background:#003B6F;">B</span> <span class="gm-i13__domain">Britannica</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">5</span> <span class="gm-i13__badge" style="background:#FF4500;">R</span> <span class="gm-i13__domain">Reddit</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">6</span> <span class="gm-i13__badge" style="background:#6001D2;">Y</span> <span class="gm-i13__domain">Yahoo</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">1</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/wikipedia.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Wikipedia</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">2</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/youtube.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">YouTube</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">3</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/imdb.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">IMDb</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">4</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/britannica.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Britannica</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">5</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/reddit.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Reddit</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">6</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/yahoo.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Yahoo</span></li>
       </ol>
     </article>
     <article class="gm-i13__group gm-i13__group--upset">
       <h5 class="gm-i13__group-title">AI Mode에서 <em>상대적으로</em> 더 강한 도메인</h5>
       <p class="gm-i13__group-sub">"They achieve significantly better rankings in AI Mode results."</p>
       <ol class="gm-i13__list">
-        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge" style="background:#FA005A;">F</span> <span class="gm-i13__domain">Fandom</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge" style="background:#C41200;">y</span> <span class="gm-i13__domain">Yelp</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge" style="background:#B92B27;">Q</span> <span class="gm-i13__domain">Quora</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/fandom.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Fandom</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/yelp.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Yelp</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge"><img src="/assets/img/blog/ai-overview-and-seo/favicons/quora.png" alt="" loading="lazy"></span> <span class="gm-i13__domain">Quora</span></li>
       </ol>
     </article>
   </div>
