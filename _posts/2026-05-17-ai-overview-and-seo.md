@@ -147,6 +147,12 @@ summary: |
 
 사용 규모는 이미 작지 않아요. Google은 같은 발표에서 AI Overview를 **10억 명 이상이 사용**한다고 밝혔고, 2025년 5월 I/O 발표에서는 *"AI Overviews is driving over 10% increase in usage"* — <em>AI Overview가 표시되는 질의군에서 미국·인도 같은 주요 시장의 Google 사용량이 10% 이상 증가했다</em>고 보고했습니다 ([Google Blog, 2025-05-20](https://blog.google/products-and-platforms/products/search/google-search-ai-mode-update/)).
 
+이 발표를 영상으로 보고 싶으시면 Google 공식 채널의 _Search ｜ I/O 2025 Keynote_가 가장 빠른 자료예요. AI Overview 사용량 증가 · AI Mode 미국 일반 출시 · query fan-out 메커니즘이 한 영상에 모여 있습니다.
+
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/stnSRel03e8" title="Search ｜ I/O 2025 Keynote — Google" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <figure class="gm-infographic gm-i11">
   <h4 class="gm-i11__title">AI Overview · AI Mode · 일반 SERP 비교</h4>
   <p class="gm-i11__subtitle">같은 질문이 세 가지 다른 형태로 처리됩니다 — 사용자가 보는 화면도, 우리 페이지가 노출되는 방식도 다 다릅니다</p>
@@ -320,6 +326,12 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
 
 
 [Lily Ray 2025-11-11 발표(Amsive)](https://www.amsive.com/insights/seo/geo-aeo-llmo-separating-fact-from-fiction-how-to-win-in-ai-search/)는 더 보수적 톤이에요. *"AI search is expanding traditional search, not replacing it. In fact, data shows that 95% of ChatGPT users still rely on Google, and AI search currently drives less than 1% of total site traffic."* — AI 검색은 <em>전통 검색을 대체하는 게 아니라 확장한다</em>, ChatGPT 사용자의 95%가 여전히 Google에 의존하고, <em>AI 검색이 차지하는 사이트 트래픽은 1~2% 수준</em>이라는 입장입니다.
+
+본문에 인용한 Lily Ray의 발언은 MozCon 2025 발표 그 자체에 있어요. 보수적 톤의 근거(트래픽 1~2%, 95% 여전히 Google)를 영상으로 직접 확인할 수 있습니다.
+
+<div class="video-embed">
+  <iframe src="https://www.youtube.com/embed/2nJkT8zOzcM" title="Lily Ray — GEO, AEO, LLMO: Separating Fact from Fiction & How to Win in AI Search (MozCon 2025)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 반대편에는 [Mike King 2025-05 분석(iPullRank)](https://ipullrank.com/how-ai-mode-works)이 있어요. AI Mode는 <em>확률적 · 개인화 · embedding alignment(우리 페이지가 AI의 의미 공간 안 어디에 위치하는지) · passage selection(한 페이지 안에서 어느 단락을 답변에 인용할지 고르는 과정)</em>의 문제로, <em>고전적 순위 추적은 급격히 약해진다</em>는 강한 변화론. *"AI Mode rewrites the rules. This isn't just about ranking anymore."*
 
