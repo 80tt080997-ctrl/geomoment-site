@@ -47,6 +47,10 @@ summary: |
 .gm-i11__features { margin: 0; padding: 0 0 0 14px; font-size: 11.5px; color: #5A5A66; line-height: 1.7; }
 .gm-i11__source { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11px; color: #5A5A66; font-style: italic; text-align: center; }
 .gm-i11__source a { color: inherit; text-decoration: underline; }
+.gm-i11__icon { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: rgba(255,255,255,0.95); border: 1px solid rgba(123,91,255,0.18); color: #5A3DDB; flex: 0 0 auto; align-self: center; margin: 4px auto 2px; }
+.gm-i11__icon svg { width: 28px; height: 28px; display: block; }
+.gm-i11__col--classic .gm-i11__icon { color: #5A5A66; border-color: #E8E8EA; background: #FFFFFF; }
+.gm-i11__col--mode .gm-i11__icon { background: rgba(255,255,255,0.95); border-color: rgba(90,61,219,0.35); }
 @media (max-width: 760px) { .gm-i11__cols { grid-template-columns: 1fr; } }
 
 /* --- i12 : 4개 측정사 비교 카드 --- */
@@ -60,7 +64,9 @@ summary: |
 .gm-i12__card--2 { border-color: #5C5CFF; }
 .gm-i12__card--3 { border-color: #7B5BFF; }
 .gm-i12__card--4 { border-color: #9B7DFF; }
+.gm-i12__head { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
 .gm-i12__brand { font: 800 12px 'JetBrains Mono','Consolas',monospace; letter-spacing: 0.5px; }
+.gm-i12__year { font: 700 9px 'JetBrains Mono','Consolas',monospace; padding: 3px 8px; border-radius: 999px; background: #F5F5F7; color: #5A5A66; letter-spacing: 0.4px; flex: 0 0 auto; }
 .gm-i12__card--1 .gm-i12__brand { color: #3D3DFF; }
 .gm-i12__card--2 .gm-i12__brand { color: #5C5CFF; }
 .gm-i12__card--3 .gm-i12__brand { color: #7B5BFF; }
@@ -88,6 +94,7 @@ summary: |
 .gm-i13__item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #0B0B0F; }
 .gm-i13__rank { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; font: 700 10px/1 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; background: linear-gradient(135deg, #5A5A66 0%, #2A2A33 100%); flex: 0 0 auto; }
 .gm-i13__group--upset .gm-i13__rank { background: linear-gradient(135deg, #7B5BFF 0%, #5A3DDB 100%); }
+.gm-i13__badge { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 6px; font: 800 11px 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; flex: 0 0 auto; }
 .gm-i13__domain { font-weight: 700; }
 .gm-i13__note { margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #E8E8EA; font-size: 11.5px; color: #5A5A66; line-height: 1.6; }
 .gm-i13__note strong { color: #5A3DDB; font-weight: 700; }
@@ -102,7 +109,10 @@ summary: |
 .gm-i14__total-wrap { text-align: center; margin-bottom: 18px; }
 .gm-i14__total { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background: linear-gradient(135deg, #EEEEFF 0%, #F0EBFF 100%); border: 1px solid #7B5BFF; border-radius: 999px; font: 700 12px 'JetBrains Mono','Consolas',monospace; color: #5A3DDB; }
 .gm-i14__steps { display: flex; flex-direction: column; gap: 8px; }
-.gm-i14__step { display: grid; grid-template-columns: 26px 36px 1fr; gap: 14px; align-items: flex-start; padding: 16px 18px; background: #F5F5F7; border-radius: 12px; border: 1px solid #E8E8EA; transition: background 0.15s, border-color 0.15s; }
+.gm-i14__step { display: grid; grid-template-columns: 26px 36px 36px 1fr; gap: 14px; align-items: flex-start; padding: 16px 18px; background: #F5F5F7; border-radius: 12px; border: 1px solid #E8E8EA; transition: background 0.15s, border-color 0.15s; }
+.gm-i14__step-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: #FFFFFF; border: 1px solid #E8E8EA; color: #5A3DDB; flex: 0 0 auto; margin-top: 2px; }
+.gm-i14__step-icon svg { width: 20px; height: 20px; display: block; }
+.gm-i14__step:hover .gm-i14__step-icon { border-color: #BB9DFF; }
 .gm-i14__step:hover { background: #F0EBFF; border-color: #BB9DFF; }
 .gm-i14__check { width: 22px; height: 22px; border: 2px solid #BB9DFF; border-radius: 6px; background: #FFFFFF; display: inline-block; flex: 0 0 auto; margin-top: 4px; }
 .gm-i14__step-num { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; font: 700 12px/1 'JetBrains Mono','Consolas',monospace; color: #FFFFFF; flex: 0 0 auto; margin-top: 2px; }
@@ -116,7 +126,9 @@ summary: |
 .gm-i14__step-desc { font-size: 12.5px; color: #5A5A66; line-height: 1.6; }
 .gm-i14__step-source { font-size: 11px; color: #5A3DDB; font-weight: 600; margin-top: 2px; }
 @media (max-width: 720px) {
-  .gm-i14__step { grid-template-columns: 22px 32px 1fr; gap: 10px; padding: 14px 14px; }
+  .gm-i14__step { grid-template-columns: 22px 32px 32px 1fr; gap: 10px; padding: 14px 14px; }
+  .gm-i14__step-icon { width: 32px; height: 32px; }
+  .gm-i14__step-icon svg { width: 18px; height: 18px; }
 }
 </style>
 
@@ -141,6 +153,7 @@ summary: |
   <div class="gm-i11__cols">
     <article class="gm-i11__col gm-i11__col--classic">
       <span class="gm-i11__tag">CLASSIC SERP</span>
+      <span class="gm-i11__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1"/><circle cx="3.5" cy="12" r="1"/><circle cx="3.5" cy="18" r="1"/></svg></span>
       <h5 class="gm-i11__name">일반 검색 결과</h5>
       <div class="gm-i11__output"><strong>출력:</strong> 링크 10개 + 광고 + 답변 스니펫</div>
       <ul class="gm-i11__features">
@@ -151,6 +164,7 @@ summary: |
     </article>
     <article class="gm-i11__col gm-i11__col--ai">
       <span class="gm-i11__tag">AI OVERVIEW</span>
+      <span class="gm-i11__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.5 4.7 1.8-4.7 1.8L12 15.6l-1.8-4.5-4.7-1.8 4.7-1.8z"/><path d="M19 15l1 2.4 2.4 1-2.4 1-1 2.4-1-2.4-2.4-1 2.4-1z"/></svg></span>
       <h5 class="gm-i11__name">AI Overview</h5>
       <div class="gm-i11__output"><strong>출력:</strong> SERP 상단에 합성 답변 + 출처 카드 (2024-05 정식 출시)</div>
       <ul class="gm-i11__features">
@@ -161,6 +175,7 @@ summary: |
     </article>
     <article class="gm-i11__col gm-i11__col--mode">
       <span class="gm-i11__tag">AI MODE</span>
+      <span class="gm-i11__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/><path d="M12 8.5l1 2.2 2.2 1-2.2 1-1 2.2-1-2.2-2.2-1 2.2-1z"/></svg></span>
       <h5 class="gm-i11__name">AI Mode</h5>
       <div class="gm-i11__output"><strong>출력:</strong> 대화형 검색 + 추론·multimodal·복합 비교 (2025-05 미국 일반 사용자)</div>
       <ul class="gm-i11__features">
@@ -192,25 +207,25 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
   <p class="gm-i12__subtitle">측정 단위가 다르면 결론도 달라요 — 네 데이터를 겹쳐 봐야 전체 풍경이 보입니다</p>
   <div class="gm-i12__grid">
     <article class="gm-i12__card gm-i12__card--1">
-      <span class="gm-i12__brand">AHREFS</span>
+      <header class="gm-i12__head"><span class="gm-i12__brand">AHREFS</span><span class="gm-i12__year">2025-04</span></header>
       <span class="gm-i12__metric">−34.5<span class="gm-i12__metric-unit">%</span></span>
       <span class="gm-i12__label">1위 결과 CTR 감소</span>
       <span class="gm-i12__caveat">30만 키워드 · 집계형 GSC<br>비인용 informational 1위 기준</span>
     </article>
     <article class="gm-i12__card gm-i12__card--2">
-      <span class="gm-i12__brand">SEMRUSH</span>
+      <header class="gm-i12__head"><span class="gm-i12__brand">SEMRUSH</span><span class="gm-i12__year">2025-12</span></header>
       <span class="gm-i12__metric">33.75<span class="gm-i12__metric-unit">→31.53%</span></span>
       <span class="gm-i12__label">동일 키워드 zero-click 변화</span>
       <span class="gm-i12__caveat">10M+ 키워드 · 11K 도메인<br>AIO 트리거 15.69%</span>
     </article>
     <article class="gm-i12__card gm-i12__card--3">
-      <span class="gm-i12__brand">SEER</span>
+      <header class="gm-i12__head"><span class="gm-i12__brand">SEER</span><span class="gm-i12__year">2025-11</span></header>
       <span class="gm-i12__metric">+35<span class="gm-i12__metric-unit">%</span></span>
       <span class="gm-i12__label">AIO 인용 시 organic 클릭</span>
       <span class="gm-i12__caveat">3,119 검색어 · 25.1M imp<br>비인용 -65.2% / 인용 -49.4% YoY</span>
     </article>
     <article class="gm-i12__card gm-i12__card--4">
-      <span class="gm-i12__brand">BRIGHTEDGE</span>
+      <header class="gm-i12__head"><span class="gm-i12__brand">BRIGHTEDGE</span><span class="gm-i12__year">2025-05</span></header>
       <span class="gm-i12__metric">+49<span class="gm-i12__metric-unit">% / −30%</span></span>
       <span class="gm-i12__label">검색 노출 ↑ / CTR ↓</span>
       <span class="gm-i12__caveat">Healthcare·Edu·B2BTech 우세<br>E-commerce는 평탄</span>
@@ -240,6 +255,11 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
   </div>
 </div>
 
+<figure class="author-figure">
+  <a href="https://www.sistrix.com/blog/the-path-to-ai-citations-what-the-top-100-most-cited-websites-are-doing-right/" target="_blank" rel="noopener"><img src="/assets/img/blog/ai-overview-and-seo/sistrix_top100.png" alt="SISTRIX — The Path to AI Citations: What the Top 100 Most Cited Websites are Doing Right (2025-12-03) — 제목·intro·3 Pillars 목차"></a>
+  <figcaption>SISTRIX 원문 페이지 상단 — _Google AI Mode가 10개 파란 링크를 하나의 합성 답변으로 대체한다_는 도입과 함께, 본문의 3 Pillars(answer-centric · authority+recency · machine readability) 목차가 보입니다.</figcaption>
+</figure>
+
 이 결론은 GeoMoment 블로그 [<em>청크 단위 처방</em>](/blog/chunk-prescription/)에서 짚은 <em>AI는 페이지가 아니라 청크 단위로 인용한다</em>는 메커니즘과 정확히 일치해요. 같은 페이지 안에서도 <em>답변 블록 단위로</em> 잘 분절된 청크가 인용 확률을 높입니다. 산업 측정사의 결론과 RAG 학술 결과가 같은 방향을 가리킨다는 점이 중요해요.
 
 어떤 도메인이 이 구조를 잘 만들고 있을까요? [SISTRIX 2025-07-02 미국 AI Mode 1만 키워드 분석](https://www.sistrix.com/blog/top-domains-in-the-new-ai-mode-usa/)이 좋은 지도를 그려 줍니다.
@@ -252,21 +272,21 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
       <h5 class="gm-i13__group-title">TOP 6 — 일반 검색에서도 강한 도메인</h5>
       <p class="gm-i13__group-sub">"As in the classic web search…"</p>
       <ol class="gm-i13__list">
-        <li class="gm-i13__item"><span class="gm-i13__rank">1</span> <span class="gm-i13__domain">Wikipedia</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">2</span> <span class="gm-i13__domain">YouTube</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">3</span> <span class="gm-i13__domain">IMDb</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">4</span> <span class="gm-i13__domain">Britannica</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">5</span> <span class="gm-i13__domain">Reddit</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">6</span> <span class="gm-i13__domain">Yahoo</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">1</span> <span class="gm-i13__badge" style="background:#000000;">W</span> <span class="gm-i13__domain">Wikipedia</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">2</span> <span class="gm-i13__badge" style="background:#FF0000;">Y</span> <span class="gm-i13__domain">YouTube</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">3</span> <span class="gm-i13__badge" style="background:#F5C518;color:#000;">i</span> <span class="gm-i13__domain">IMDb</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">4</span> <span class="gm-i13__badge" style="background:#003B6F;">B</span> <span class="gm-i13__domain">Britannica</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">5</span> <span class="gm-i13__badge" style="background:#FF4500;">R</span> <span class="gm-i13__domain">Reddit</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">6</span> <span class="gm-i13__badge" style="background:#6001D2;">Y</span> <span class="gm-i13__domain">Yahoo</span></li>
       </ol>
     </article>
     <article class="gm-i13__group gm-i13__group--upset">
       <h5 class="gm-i13__group-title">AI Mode에서 <em>상대적으로</em> 더 강한 도메인</h5>
       <p class="gm-i13__group-sub">"They achieve significantly better rankings in AI Mode results."</p>
       <ol class="gm-i13__list">
-        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__domain">Fandom</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__domain">Yelp</span></li>
-        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__domain">Quora</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge" style="background:#FA005A;">F</span> <span class="gm-i13__domain">Fandom</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge" style="background:#C41200;">y</span> <span class="gm-i13__domain">Yelp</span></li>
+        <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__badge" style="background:#B92B27;">Q</span> <span class="gm-i13__domain">Quora</span></li>
       </ol>
     </article>
   </div>
@@ -293,6 +313,12 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
 
 [Aleyda Solis 2025-06-02 칼럼](https://www.aleydasolis.com/en/search-engine-optimization/seo-vs-geo-optimizing-for-traditional-vs-ai-search/)이 균형 잡힌 출발점이에요. *"There's a high overlap in the optimization principles for traditional search and LLMs."* — 전통 검색과 LLM 최적화 원칙 사이에는 <em>높은 중첩</em>이 있다. 단 차이도 분명하다고 짚어요: query fan-out, 개인화 깊이, 문맥 중심 최적화, <em>응답 내 인용·포함</em> 중심 KPI.
 
+<figure class="author-figure">
+  <a href="https://www.aleydasolis.com/en/search-engine-optimization/seo-vs-geo-optimizing-for-traditional-vs-ai-search/" target="_blank" rel="noopener"><img src="/assets/img/blog/ai-overview-and-seo/aleyda_seo_vs_geo.png" alt="Aleyda Solis — SEO VS GEO: Optimizing for Traditional vs AI Search (Updated June 2, 2025) — 원문 상단"></a>
+  <figcaption>Aleyda Solis — <em>SEO VS GEO: Optimizing for Traditional vs AI Search</em> (2025-06-02). 원문 페이지 상단의 _전통 검색과 AI 검색의 중첩_ 분석 도입부.</figcaption>
+</figure>
+
+
 [Lily Ray 2025-11-11 발표(Amsive)](https://www.amsive.com/insights/seo/geo-aeo-llmo-separating-fact-from-fiction-how-to-win-in-ai-search/)는 더 보수적 톤이에요. *"AI search is expanding traditional search, not replacing it. In fact, data shows that 95% of ChatGPT users still rely on Google, and AI search currently drives less than 1% of total site traffic."* — AI 검색은 <em>전통 검색을 대체하는 게 아니라 확장한다</em>, ChatGPT 사용자의 95%가 여전히 Google에 의존하고, <em>AI 검색이 차지하는 사이트 트래픽은 1~2% 수준</em>이라는 입장입니다.
 
 반대편에는 [Mike King 2025-05 분석(iPullRank)](https://ipullrank.com/how-ai-mode-works)이 있어요. AI Mode는 <em>확률적 · 개인화 · embedding alignment(우리 페이지가 AI의 의미 공간 안 어디에 위치하는지) · passage selection(한 페이지 안에서 어느 단락을 답변에 인용할지 고르는 과정)</em>의 문제로, <em>고전적 순위 추적은 급격히 약해진다</em>는 강한 변화론. *"AI Mode rewrites the rules. This isn't just about ranking anymore."*
@@ -314,6 +340,12 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
 
 2026년 4월 27일, 네이버는 [AI탭 베타](https://www.navercorp.com/media/pressReleasesDetail?seq=34984)를 네이버플러스 멤버십 사용자 대상으로 출시했어요. 최수연 대표는 발표에서 *"AI탭은 탐색에서 실행으로 자연스럽게 확장되는 네이버 검색 패러다임의 전환점"*이라고 짚었습니다. AI탭은 <em>통합검색·쇼핑·플레이스·블로그·카페</em>를 연결한 <em>대화형 AI 검색 서비스</em>로 정의되고, 2026년 상반기 내 전체 사용자로 확대될 계획이에요.
 
+<figure class="author-figure">
+  <a href="https://www.navercorp.com/media/pressReleasesDetail?seq=34984" target="_blank" rel="noopener"><img src="/assets/img/blog/ai-overview-and-seo/naver_aitab.png" alt="NAVER 공식 보도자료 — 네이버, AI 검색 서비스 'AI탭' 베타 출시 (2026-04-28)"></a>
+  <figcaption>NAVER 공식 보도자료 — <em>네이버, AI 검색 서비스 'AI탭' 베타 출시… '에이전틱 검색 경험의 시작'</em> (2026-04-28). 검색 경험 확장·버티컬 생태계 연계·상반기 전체 사용자 확대 3가지가 본문 첫 줄에 정리되어 있어요.</figcaption>
+</figure>
+
+
 함께 짚어야 할 것이 **AI 브리핑**입니다. 네이버는 [공식 서비스 소개](https://www.navercorp.com/service/search)에서 AI 브리핑을 *"생성형 AI를 활용하여 사용자의 검색 의도와 맥락을 이해하여, 요약된 답변과 출처 정보, 관련 질문 등을 함께 확인할 수 있도록 검색 결과를 제공"*한다고 정의해요. <em>Google AIO와 구조적으로 비교 가능한 한국형 검색 레이어</em>라고 볼 수 있습니다.
 
 <figure class="author-figure">
@@ -322,6 +354,12 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
 </figure>
 
 사용자 측 변화도 빠릅니다. 2026년 2월 기준 [와이즈앱 인사이트](https://www.wiseapp.co.kr/insight/detail/953) 발표에 따르면 **한국인의 48.7%(약 2,494만 명)가 생성형 AI 앱을 사용**해요 (와이즈앱 발표 기준). 2025년 6월 동향 리포트에서는 *월간 사용자 수 1위 AI 앱이 ChatGPT 1,844만 명, 이어 네이버 파파고 1,261만 명, Gemini 219만 명*으로 측정됐습니다 ([와이즈앱 2025-08-06](https://www.wiseapp.co.kr/insight/detail/812/2025-ai-app-trend-chatbot-translation-recording-avatar-photo) 발표 기준).
+
+<figure class="author-figure">
+  <a href="https://www.wiseapp.co.kr/insight/detail/953" target="_blank" rel="noopener"><img src="/assets/img/blog/ai-overview-and-seo/wiseapp_kor_ai.png" alt="와이즈앱·리테일 인사이트 — 생성형 AI 앱, 한국인 10명 중 5명 사용! (2026-03-25)"></a>
+  <figcaption>와이즈앱·리테일 인사이트 — <em>생성형 AI 앱, 한국인 10명 중 5명 사용!</em> (2026-03-25). 본문에는 설치자 수·사용자 수·1인당 평균 사용시간·조사 방법까지 4개 인덱스로 정리되어 있어요.</figcaption>
+</figure>
+
 
 <div class="callout callout--tip">
   <div class="callout-title">🇰🇷 한국 시장 한눈에 — 2026-05 시점</div>
@@ -347,6 +385,7 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
     <div class="gm-i14__step">
       <span class="gm-i14__check" aria-hidden="true"></span>
       <span class="gm-i14__step-num">01</span>
+      <span class="gm-i14__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
       <div class="gm-i14__step-body">
         <span class="gm-i14__step-name">기존 SEO 기본기는 그대로 유지</span>
         <span class="gm-i14__step-desc">E-E-A-T(경험·전문성·권위·신뢰) · 기술적 SEO · 내부 링킹 · 구조화 데이터는 AI 시대에 더 중요해져요</span>
@@ -356,6 +395,7 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
     <div class="gm-i14__step">
       <span class="gm-i14__check" aria-hidden="true"></span>
       <span class="gm-i14__step-num">02</span>
+      <span class="gm-i14__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="6" width="3" height="12"/></svg></span>
       <div class="gm-i14__step-body">
         <span class="gm-i14__step-name">Search Console에서 AI 검색 트래픽 별도 추적</span>
         <span class="gm-i14__step-desc">AI Overview·AI Mode 성과가 Web 검색 타입에 합산 집계됩니다 — 기존 GSC가 그대로 측정 도구예요</span>
@@ -365,6 +405,7 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
     <div class="gm-i14__step">
       <span class="gm-i14__check" aria-hidden="true"></span>
       <span class="gm-i14__step-num">03</span>
+      <span class="gm-i14__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.12 15.88"/><path d="M14.47 14.48L20 20"/><path d="M8.12 8.12L12 12"/></svg></span>
       <div class="gm-i14__step-body">
         <span class="gm-i14__step-name">페이지를 청크 단위로 다시 쓰기</span>
         <span class="gm-i14__step-desc">Q&amp;A H2 분할 · 정의 박스 · 정형 표·리스트 · 엔티티 풍부화 · 출처 카드 — 5가지 처방 패턴 그대로</span>
@@ -374,6 +415,7 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
     <div class="gm-i14__step">
       <span class="gm-i14__check" aria-hidden="true"></span>
       <span class="gm-i14__step-num">04</span>
+      <span class="gm-i14__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6"/><path d="M8 6l-6 6 6 6"/><path d="M14 4l-4 16"/></svg></span>
       <div class="gm-i14__step-body">
         <span class="gm-i14__step-name">Schema·JSON-LD 마크업 강화</span>
         <span class="gm-i14__step-desc">FAQPage · HowTo · BlogPosting · Article · Product 중 적합한 타입을 페이지마다 명시</span>
@@ -383,6 +425,7 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
     <div class="gm-i14__step">
       <span class="gm-i14__check" aria-hidden="true"></span>
       <span class="gm-i14__step-num">05</span>
+      <span class="gm-i14__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
       <div class="gm-i14__step-body">
         <span class="gm-i14__step-name">4 AI 답변 엔진을 동시에 추적</span>
         <span class="gm-i14__step-desc">Google AIO 외에 ChatGPT · Perplexity · Gemini · Claude 인용 여부를 함께 측정 — 한국 시장은 이미 한국인 절반이 AI 앱 사용</span>
