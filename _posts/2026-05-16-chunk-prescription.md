@@ -654,7 +654,7 @@ Google이 query fan-out을 어떻게 설명하는지 공식 채널 영상으로 
 
 직접 적용 결과가 궁금하시면 [GeoMoment 무료 진단](https://geomoment.me/geo-diagnose.html)을 통해 청크 단위 점수와 처방 카드를 받아 보실 수 있어요. ChatGPT·Perplexity·Gemini·Claude 네 모델에서 우리 회사가 어떻게 인용되는지 동시에 측정하고, 점수가 낮은 청크에 어떤 패턴을 적용하면 좋을지까지 짚어 드립니다.
 
-다음 글에서는 한 발 더 나아가서, **Schema.org와 llms.txt 완전 가이드** — AI 크롤러가 우리 회사 엔티티와 청크 구조를 <em>기계적으로 읽을 수 있게</em> 만드는 마크업 패턴을 정리할게요.
+다음 글에서는 한 발 더 나아가서, [**AI Overview · AI Mode 등장 후 SEO는 어디로 가는가**](/blog/ai-overview-and-seo/) — 같은 청크 단위 메커니즘이 _답변 엔진(GEO)_ 옆 _검색 엔진(Google AI Overview·AI Mode)_에서 어떻게 작동하고, 우리 회사 SEO는 무엇을 유지하고 무엇을 새로 써야 하는지 정리할게요.
 
 <div class="callout callout--quote">
   <div class="callout-title">📚 학술 원전 — Anthropic Contextual Retrieval</div>
