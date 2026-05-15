@@ -154,6 +154,15 @@ summary: |
   <iframe src="https://www.youtube.com/embed/stnSRel03e8" title="Search ｜ I/O 2025 Keynote — Google" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<div class="callout callout--tip">
+  <div class="callout-title">📌 AI Overview · AI Mode 한 줄 차이</div>
+  <div class="callout-body">
+    <p><strong>AI Overview:</strong> SERP 상단에 합성 답변을 노출 (2024-05 정식, 10억+ 사용자).</p>
+    <p><strong>AI Mode:</strong> AI Overview의 확장판 — 추론·multimodal·복합 비교 (2025-05 미국 일반 출시).</p>
+    <p><strong>공통:</strong> query fan-out — 한 질문이 N개 하위 질의로 자동 쪼개져 처리됨.</p>
+  </div>
+</div>
+
 <figure class="gm-infographic gm-i11">
   <h4 class="gm-i11__title">AI Overview · AI Mode · 일반 SERP 비교</h4>
   <p class="gm-i11__subtitle">같은 질문이 세 가지 다른 형태로 처리됩니다 — 사용자가 보는 화면도, 우리 페이지가 노출되는 방식도 다 다릅니다</p>
@@ -240,6 +249,16 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
   </div>
   <p class="gm-i12__note">핵심: <strong>CTR 하락 압력은 분명, 다만 AIO에 인용된 페이지는 손실이 절반 가까이 작아져요.</strong> 새 게임 룰의 핵심은 <em>순위</em>가 아니라 <em>답변 안에 들어가느냐</em>입니다.</p>
 </figure>
+
+<div class="callout callout--note">
+  <div class="callout-title">📊 측정사 4곳의 같은 변화, 다른 결론 한 줄</div>
+  <div class="callout-body">
+    <p><strong>Ahrefs (2025-04):</strong> 1위 결과 CTR -34.5% — 상위 CTR 손실 분명.</p>
+    <p><strong>Semrush (2025-12):</strong> 같은 키워드 zero-click 33.75 → 31.53% — 단위가 다르면 결론도 달라짐.</p>
+    <p><strong>Seer (2025-11):</strong> AIO 인용 시 organic 클릭 +35%, 비인용 -65.2% YoY — 인용 여부가 손실 폭을 결정.</p>
+    <p><strong>BrightEdge (2025-05):</strong> 노출 +49% / CTR -30% / E-commerce 평탄 — 산업 분화 진행.</p>
+  </div>
+</div>
 
 마케터 시점으로 옮기면 이렇게 읽힙니다 — **단순한 <em>순위 사수</em>가 아니라 <em>답변에 인용될 청크를 만드는 일</em>이 새 SEO 작업의 첫 줄이에요.** 그리고 페이지 한 장을 새로 만드는 것보다 <em>기존 페이지의 청크를 재배치</em>하는 것이 훨씬 빠른 효과를 봅니다.
 
