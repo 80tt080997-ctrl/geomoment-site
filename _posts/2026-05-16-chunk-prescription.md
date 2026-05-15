@@ -284,6 +284,11 @@ Anthropic은 이 한계를 정면으로 다뤘어요. 2024년 9월 발표한 [Co
 - 여기에 Contextual BM25 키워드 검색을 결합하면 **49%** (5.7% → 2.9%)까지 떨어집니다.
 - 마지막으로 reranking 단계까지 추가하면 **67%** (5.7% → 1.9%)에 도달해요.
 
+<figure class="author-figure">
+  <a href="https://www.anthropic.com/news/contextual-retrieval" target="_blank" rel="noopener"><img src="/assets/img/blog/chunk-prescription/anthropic_failure_reduction.png" alt="Anthropic Contextual Retrieval — Failed Retrievals @20: Embedding 5.7% / Embedding+BM25 5.0% / Contextual embedding 3.7% / Contextual embedding+BM25 2.9%" /></a>
+  <figcaption>Standard Retrieval(5.7% · 5.0%) → Contextual Retrieval(3.7% · 2.9%) — 청크 앞 50~100 토큰 prepend가 만든 차이. 출처: <em>Anthropic — Contextual Retrieval in AI Systems</em> (2024-09)</figcaption>
+</figure>
+
 같은 데이터·같은 모델인데 <em>청크 앞에 무엇을 붙이느냐</em>에 따라 인용 정확도가 두 배 가까이 벌어진다는 뜻이에요. 라이터 입장에서 보면, 페이지의 한 단락을 다시 쓸 때 <em>그 단락 앞에 자기 자신을 설명하는 한 줄을 두느냐 마느냐</em> 가 결과를 갈라요.
 
 학술적인 출발점도 짚고 갈게요. GEO 원논문(Aggarwal et al., 2024)은 이 메커니즘을 뒷받침하는 가장 인용 많은 학술 문서입니다. 다만 <em>측정 단위</em>에 미묘한 차이가 있어서, 아래 박스에 따로 정리해 둘게요.
@@ -294,10 +299,6 @@ Anthropic은 이 한계를 정면으로 다뤘어요. 2024년 9월 발표한 [Co
     <p>Aggarwal 등의 GEO 원논문(<a href="https://arxiv.org/pdf/2311.09735" target="_blank" rel="noopener">arXiv:2311.09735</a>)은 <em>chunk-level visibility</em>라는 용어를 직접 정의하지 않아요. 학술 단위는 <strong>인용된 문장(citation·sentence)</strong>이고, 제안된 세 지표는 Word Count, Position-Adjusted Word Count, Subjective Impression입니다. 다만 오늘날의 RAG·LLM 실무에서 이 단위는 거의 그대로 chunk로 확장돼 적용되고 있어서, 본문에서는 편의상 "청크"로 부를게요.</p>
   </div>
 </div>
-<figure class="author-figure">
-  <a href="https://pranjal2041.github.io/" target="_blank" rel="noopener"><img src="/assets/img/blog/chunk-prescription/aggarwal_hero.png" alt="Pranjal Aggarwal — GEO 원논문 (arXiv:2311.09735) 제1저자 개인 사이트" /></a>
-  <figcaption>Pranjal Aggarwal — GEO 원논문 제1저자 (CMU PhD). 출처: pranjal2041.github.io</figcaption>
-</figure>
 
 RAG가 청크 단위로 어떻게 작동하는지 영상으로 한 번 보시면 머릿속에 그림이 더 잘 그려져요. IBM Research의 Marina Danilevsky가 6분 안에 차근차근 설명합니다.
 
