@@ -9,17 +9,17 @@ tags: [SEO, AEO, GEO, AI-Overview, AI-Mode, query-fan-out, search]
 image: /assets/img/blog/ai-overview-and-seo/og.png
 summary: |
   - AI Overview는 **검색 결과 위에 직접 답을 합성**하는 새 레이어예요. 2024-05 정식 출시 후 **10억 명 이상**이 사용 중입니다.
-  - **CTR 압력은 분명**합니다 — Ahrefs는 1위 결과 CTR이 **34.5%** 낮아진다고 보고했고, BrightEdge는 _노출 +49%, CTR -30%_ 라고 짚었어요.
-  - 다만 **AIO에 인용된 페이지**는 손실이 절반 가까이 작아져요 — Seer 측정에서 _인용 시 organic clicks +35%, paid clicks +91%_.
-  - 인용되는 콘텐츠의 공통점은 _주제·예산이 아니라 구조_ — SISTRIX 100대 분석은 _"databases of responses"_ 라는 한 문장으로 정리했어요.
-  - SEO 기본기는 살아 있되 **측정·인용 단위가 페이지에서 응답 블록으로 이동**합니다. 한국 시장은 _네이버 AI탭_ + _AI 앱 대중화_(48.7%)가 먼저 읽혀요.
+  - **CTR 압력은 분명**합니다 — Ahrefs는 1위 결과 CTR이 **34.5%** 낮아진다고 보고했고, BrightEdge는 <em>노출 +49%, CTR -30%</em> 라고 짚었어요.
+  - 다만 **AIO에 인용된 페이지**는 손실이 절반 가까이 작아져요 — Seer 측정에서 <em>인용 시 organic clicks +35%, paid clicks +91%</em>.
+  - 인용되는 콘텐츠의 공통점은 <em>주제·예산이 아니라 구조</em> — SISTRIX 100대 분석은 <em>"databases of responses"</em> 라는 한 문장으로 정리했어요.
+  - SEO 기본기는 살아 있되 **측정·인용 단위가 페이지에서 응답 블록으로 이동**합니다. 한국 시장은 <em>네이버 AI탭</em> + <em>AI 앱 대중화</em>(48.7%)가 먼저 읽혀요.
 ---
 
-네이버 블로그를 운영하는 마케터라면 최근 1~2년 사이 _방문자 수가 눈에 띄게 줄어드는_ 경험을 했을 거예요. 검색량 자체가 줄어든 게 아니라, 같은 키워드를 검색해도 _AI가 답변을 SERP(검색 결과 페이지) 위에서 직접 보여주기 시작한_ 변화입니다. 네이버는 2026년 4월 AI탭 베타를 출시했고, 구글은 2024년 5월부터 AI Overview를 정식 노출하고 있어요.
+네이버 블로그를 운영하는 마케터라면 최근 1~2년 사이 <em>방문자 수가 눈에 띄게 줄어드는</em> 경험을 했을 거예요. 검색량 자체가 줄어든 게 아니라, 같은 키워드를 검색해도 <em>AI가 답변을 SERP(검색 결과 페이지) 위에서 직접 보여주기 시작한</em> 변화입니다. 네이버는 2026년 4월 AI탭 베타를 출시했고, 구글은 2024년 5월부터 AI Overview를 정식 노출하고 있어요.
 
-같은 흐름은 자사몰 트래픽에서도 보입니다. 한 K뷰티 자사몰의 검색 트래픽이 6개월 사이 30% 줄었는데, 같은 6개월 동안 _AI Overview에 인용된_ 페이지는 오히려 클릭률이 35% 더 높았다는 보고도 나왔어요.
+같은 흐름은 자사몰 트래픽에서도 보입니다. 한 K뷰티 자사몰의 검색 트래픽이 6개월 사이 30% 줄었는데, 같은 6개월 동안 <em>AI Overview에 인용된</em> 페이지는 오히려 클릭률이 35% 더 높았다는 보고도 나왔어요.
 
-같은 검색 결과에서 _어떤 페이지는 답변에 포함되고, 어떤 페이지는 클릭조차 잃는다_ — 2024년 5월 AI Overview 정식 출시 이후의 새 풍경이에요. _SEO는 죽었는가, 진화하는가_ 논쟁의 핵심도 여기에 있습니다.
+같은 검색 결과에서 <em>어떤 페이지는 답변에 포함되고, 어떤 페이지는 클릭조차 잃는다</em> — 2024년 5월 AI Overview 정식 출시 이후의 새 풍경이에요. <em>SEO는 죽었는가, 진화하는가</em> 논쟁의 핵심도 여기에 있습니다.
 
 이 글에서는 산업 표준 측정사 4곳(Ahrefs · Semrush · Seer · BrightEdge)의 데이터, Google 공식 가이드, SISTRIX 100대 인용 분석, 그리고 한국 시장에서 시작된 네이버 AI탭까지 묶어서 — AI Overview · AI Mode 시대의 SEO가 실제로 어떻게 바뀌고 있는지, 그리고 우리 브랜드는 오늘부터 무엇을 조정해야 하는지 6가지로 정리합니다.
 
@@ -122,18 +122,18 @@ summary: |
 
 ## AI Overview와 AI Mode가 뭐고, 일반 검색과 어떻게 다른가요?
 
-**AI Overview와 AI Mode는 모두 _검색 결과 위에 직접 답을 합성_하는 Google 검색의 새 레이어예요.** 쉽게 비유하면, _검색 결과 맨 위에 작은 위키백과 페이지가 매번 자동으로 만들어지는 느낌_입니다. 일반 SERP가 _링크 10개_를 보여주는 것과 다르게, AI Overview는 _질문에 대한 답을 한 번에 만들어서_ 사용자가 클릭하기 전에 노출해요.
+**AI Overview와 AI Mode는 모두 <em>검색 결과 위에 직접 답을 합성</em>하는 Google 검색의 새 레이어예요.** 쉽게 비유하면, <em>검색 결과 맨 위에 작은 위키백과 페이지가 매번 자동으로 만들어지는 느낌</em>입니다. 일반 SERP가 <em>링크 10개</em>를 보여주는 것과 다르게, AI Overview는 <em>질문에 대한 답을 한 번에 만들어서</em> 사용자가 클릭하기 전에 노출해요.
 
-한국어 검색에서는 어떻게 보이는지 _GEO란?_ 이라는 질의를 직접 던져 보면 가장 빨라요.
+한국어 검색에서는 어떻게 보이는지 <em>GEO란?</em> 이라는 질의를 직접 던져 보면 가장 빨라요.
 
 <figure class="author-figure">
   <img src="/assets/img/blog/ai-overview-and-seo/google_ai_overview.png" alt="구글에서 'GEO란?' 검색 시 SERP 상단에 노출되는 AI 개요 — 합성 답변, 인용 출처 카드, 추가 펼치기 버튼">
-  <figcaption>구글에서 <em>GEO란?</em> 검색 시 노출되는 AI 개요 — 한국 구글에서는 AI Overview를 _AI 개요_라고 부르고, 합성 답변·인용 출처 카드·추가 펼치기 버튼이 함께 등장합니다.</figcaption>
+  <figcaption>구글에서 <em>GEO란?</em> 검색 시 노출되는 AI 개요 — 한국 구글에서는 AI Overview를 <em>AI 개요</em>라고 부르고, 합성 답변·인용 출처 카드·추가 펼치기 버튼이 함께 등장합니다.</figcaption>
 </figure>
 
-두 기능의 관계는 [Google 공식 발표(2025-03-05)](https://blog.google/products-and-platforms/products/search/ai-mode-search/)가 명확하게 짚어요. *"AI Mode. This new Search mode expands what AI Overviews can do with more advanced reasoning."* — AI Mode는 별도 제품이 아니라 _AI Overview의 확장판_이라는 뜻이에요. 둘 다 **query fan-out** — 하나의 질문이 여러 하위 질의로 쪼개져 처리되는 방식 — 으로 답을 만듭니다. (GeoMoment 블로그 [_청크 단위 처방_](/blog/chunk-prescription/)에서 짚었던 그 메커니즘과 동일해요.)
+두 기능의 관계는 [Google 공식 발표(2025-03-05)](https://blog.google/products-and-platforms/products/search/ai-mode-search/)가 명확하게 짚어요. *"AI Mode. This new Search mode expands what AI Overviews can do with more advanced reasoning."* — AI Mode는 별도 제품이 아니라 <em>AI Overview의 확장판</em>이라는 뜻이에요. 둘 다 **query fan-out** — 하나의 질문이 여러 하위 질의로 쪼개져 처리되는 방식 — 으로 답을 만듭니다. (GeoMoment 블로그 [<em>청크 단위 처방</em>](/blog/chunk-prescription/)에서 짚었던 그 메커니즘과 동일해요.)
 
-사용 규모는 이미 작지 않아요. Google은 같은 발표에서 AI Overview를 **10억 명 이상이 사용**한다고 밝혔고, 2025년 5월 I/O 발표에서는 *"AI Overviews is driving over 10% increase in usage"* — _AI Overview가 표시되는 질의군에서 미국·인도 같은 주요 시장의 Google 사용량이 10% 이상 증가했다_고 보고했습니다 ([Google Blog, 2025-05-20](https://blog.google/products-and-platforms/products/search/google-search-ai-mode-update/)).
+사용 규모는 이미 작지 않아요. Google은 같은 발표에서 AI Overview를 **10억 명 이상이 사용**한다고 밝혔고, 2025년 5월 I/O 발표에서는 *"AI Overviews is driving over 10% increase in usage"* — <em>AI Overview가 표시되는 질의군에서 미국·인도 같은 주요 시장의 Google 사용량이 10% 이상 증가했다</em>고 보고했습니다 ([Google Blog, 2025-05-20](https://blog.google/products-and-platforms/products/search/google-search-ai-mode-update/)).
 
 <figure class="gm-infographic gm-i11">
   <h4 class="gm-i11__title">AI Overview · AI Mode · 일반 SERP 비교</h4>
@@ -173,19 +173,19 @@ summary: |
   <p class="gm-i11__source">출처: <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener">Google Search Central — AI features and your website</a> (2025-12 업데이트), <a href="https://blog.google/products-and-platforms/products/search/ai-mode-search/" target="_blank" rel="noopener">Google Blog</a> (2025-03·2025-05)</p>
 </figure>
 
-AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mode 안에 어떻게 보이는가'_ 라는 질문이에요. 클릭이 일어나기 전 단계에서 답변이 합성된다는 사실 자체가 SEO 게임 룰을 바꿉니다.
+AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI Mode 안에 어떻게 보이는가'</em> 라는 질문이에요. 클릭이 일어나기 전 단계에서 답변이 합성된다는 사실 자체가 SEO 게임 룰을 바꿉니다.
 
 ## AI Overview가 나온 뒤 트래픽과 CTR은 실제로 어떻게 변했나요?
 
-**1년 치 데이터가 모이면서 결론은 _CTR 하락 압력은 분명하다, 다만 측정 단위에 따라 결론은 다르다_로 모이고 있어요.** 산업 표준 측정사 4곳이 _서로 다른 방법론_으로 같은 현상을 측정했고, 네 결과를 _겹쳐 봐야_ 전체 풍경이 드러납니다.
+**1년 치 데이터가 모이면서 결론은 <em>CTR 하락 압력은 분명하다, 다만 측정 단위에 따라 결론은 다르다</em>로 모이고 있어요.** 산업 표준 측정사 4곳이 <em>서로 다른 방법론</em>으로 같은 현상을 측정했고, 네 결과를 <em>겹쳐 봐야</em> 전체 풍경이 드러납니다.
 
-가장 자주 인용되는 수치는 [Ahrefs 분석](https://ahrefs.com/blog/ai-overviews-reduce-clicks/)이에요. 30만 키워드와 집계형 Google Search Console 데이터를 비교한 결과, *"the presence of an AI Overview… correlated with a 34.5% lower average clickthrough rate (CTR) for the top-ranking page"* — _AI Overview의 존재가 1위 결과의 CTR을 약 34.5% 낮춘다_고 보고했어요. 구체적으로 AIO 키워드군 1위 CTR은 2024년 3월 0.073에서 2025년 3월 0.026으로 떨어졌습니다.
+가장 자주 인용되는 수치는 [Ahrefs 분석](https://ahrefs.com/blog/ai-overviews-reduce-clicks/)이에요. 30만 키워드와 집계형 Google Search Console 데이터를 비교한 결과, *"the presence of an AI Overview… correlated with a 34.5% lower average clickthrough rate (CTR) for the top-ranking page"* — <em>AI Overview의 존재가 1위 결과의 CTR을 약 34.5% 낮춘다</em>고 보고했어요. 구체적으로 AIO 키워드군 1위 CTR은 2024년 3월 0.073에서 2025년 3월 0.026으로 떨어졌습니다.
 
-같은 변화를 **zero-click**(_검색했지만 아무 사이트도 클릭하지 않고 SERP에서 답만 보고 끝내는 행동_) 관점에서 본 [Semrush 2025-12 리포트](https://www.semrush.com/blog/semrush-ai-overviews-study/)는 다른 결론을 짚어요 (Semrush 측정사 발표 기준). 같은 키워드를 AIO 도입 전후로 비교했더니 *zero-click 비율이 33.75%에서 31.53%로 오히려 감소*했고, 2025년 11월 기준 AI Overview 트리거 비율은 _15.69%_, 산업별로는 Science 25.96%, Computers & Electronics 17.92%가 가장 높았습니다.
+같은 변화를 **zero-click**(<em>검색했지만 아무 사이트도 클릭하지 않고 SERP에서 답만 보고 끝내는 행동</em>) 관점에서 본 [Semrush 2025-12 리포트](https://www.semrush.com/blog/semrush-ai-overviews-study/)는 다른 결론을 짚어요 (Semrush 측정사 발표 기준). 같은 키워드를 AIO 도입 전후로 비교했더니 *zero-click 비율이 33.75%에서 31.53%로 오히려 감소*했고, 2025년 11월 기준 AI Overview 트리거 비율은 <em>15.69%</em>, 산업별로는 Science 25.96%, Computers & Electronics 17.92%가 가장 높았습니다.
 
-결정적인 통찰은 [Seer Interactive 2025-11 데이터](https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update)에서 나옵니다. 3,119개 검색어 · 42개 조직 · 2,510만 organic impressions를 분석한 결과, _AIO가 있지만 우리 사이트가 인용되지 않은 경우 organic CTR 0.52%_, _AIO에 인용된 경우 0.70%_였어요. Seer는 이걸 *"When you are cited in an AIO, you get 35% more organic clicks and 91% more paid clicks compared to when you are not cited at all"* — _인용 시 organic 클릭 +35%, paid 클릭 +91%_로 정리했습니다. _전년 대비로는_ 비인용 -65.2%, 인용 -49.4% — **인용된 경우 손실이 절반 가까이 작아지는 셈**이에요.
+결정적인 통찰은 [Seer Interactive 2025-11 데이터](https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-september-2025-update)에서 나옵니다. 3,119개 검색어 · 42개 조직 · 2,510만 organic impressions를 분석한 결과, <em>AIO가 있지만 우리 사이트가 인용되지 않은 경우 organic CTR 0.52%</em>, <em>AIO에 인용된 경우 0.70%</em>였어요. Seer는 이걸 *"When you are cited in an AIO, you get 35% more organic clicks and 91% more paid clicks compared to when you are not cited at all"* — <em>인용 시 organic 클릭 +35%, paid 클릭 +91%</em>로 정리했습니다. <em>전년 대비로는</em> 비인용 -65.2%, 인용 -49.4% — **인용된 경우 손실이 절반 가까이 작아지는 셈**이에요.
 
-산업 분화는 [BrightEdge 2025-05 리포트](https://videos.brightedge.com/assets/SGE-Guide/BrightEdge%20Report%20-%20AIO%20Overviews%20One%20Year%20Review%20Research%20Paper%20and%20Deep%20Dive%20.pdf)가 가장 선명하게 짚어요. *"total search impressions on Google have increased by over 49%… CTRs declined by nearly 30%"* — _Google 전체 검색 노출은 49% 이상 증가했지만 CTR은 거의 30% 하락_했고, 산업별로는 Healthcare · Education · B2B Tech · Insurance에서 AIO 커버리지가 우세, 반대로 _E-commerce AIO Growth Remains Flat_ — 커머스는 평탄했습니다.
+산업 분화는 [BrightEdge 2025-05 리포트](https://videos.brightedge.com/assets/SGE-Guide/BrightEdge%20Report%20-%20AIO%20Overviews%20One%20Year%20Review%20Research%20Paper%20and%20Deep%20Dive%20.pdf)가 가장 선명하게 짚어요. *"total search impressions on Google have increased by over 49%… CTRs declined by nearly 30%"* — <em>Google 전체 검색 노출은 49% 이상 증가했지만 CTR은 거의 30% 하락</em>했고, 산업별로는 Healthcare · Education · B2B Tech · Insurance에서 AIO 커버리지가 우세, 반대로 <em>E-commerce AIO Growth Remains Flat</em> — 커머스는 평탄했습니다.
 
 <figure class="gm-infographic gm-i12">
   <h4 class="gm-i12__title">측정사 4곳이 보는 AI Overview의 영향</h4>
@@ -219,13 +219,15 @@ AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mo
   <p class="gm-i12__note">핵심: <strong>CTR 하락 압력은 분명, 다만 AIO에 인용된 페이지는 손실이 절반 가까이 작아져요.</strong> 새 게임 룰의 핵심은 <em>순위</em>가 아니라 <em>답변 안에 들어가느냐</em>입니다.</p>
 </figure>
 
-라이터·매니저 시점으로 옮기면 이렇게 읽힙니다 — **단순한 _순위 사수_가 아니라 _답변에 인용될 청크를 만드는 일_이 새 SEO 작업의 첫 줄이에요.** 페이지 한 장을 새로 만드는 것보다 _기존 페이지의 청크를 재배치_하는 것이 더 빠른 효과를 봅니다.
+마케터 시점으로 옮기면 이렇게 읽힙니다 — **단순한 <em>순위 사수</em>가 아니라 <em>답변에 인용될 청크를 만드는 일</em>이 새 SEO 작업의 첫 줄이에요.** 그리고 페이지 한 장을 새로 만드는 것보다 <em>기존 페이지의 청크를 재배치</em>하는 것이 훨씬 빠른 효과를 봅니다.
+
+이유는 세 가지예요. 첫째, 기존 페이지는 이미 <em>크롤 · 인덱스 · 내부 링크 · 백링크</em>가 쌓여 있어요. 새 페이지를 만들면 이 신뢰 기반을 처음부터 다시 쌓아야 합니다. 둘째, AI는 <em>같은 페이지여도 답변 블록 단위</em>로 인용 적격성을 평가하니, 같은 정보를 <em>Q&amp;A H2 · 정의 박스 · 표 · 리스트</em>로 분절하기만 해도 인용 후보가 즉시 늘어나요. 셋째, 청크 재작성은 <em>한 페이지당 30분</em> 분량이지만 새 페이지 + 신뢰 빌드는 보통 수 주 ~ 수 개월 걸립니다. <em>같은 시간 같은 인력</em>으로 가장 큰 변화를 만드는 작업이 청크 재배치인 셈이에요.
 
 ## AI Overview에 인용되는 콘텐츠는 어떤 구조인가요?
 
-**AI Overview에 인용되는 페이지는 _선형 텍스트가 아니라 응답의 데이터베이스_ 처럼 쓰여 있어요.** SISTRIX가 AI Mode에서 가장 많이 인용된 100개 웹사이트를 분석한 결과, 공통점은 _주제나 예산이 아니라 구조_였습니다.
+**AI Overview에 인용되는 페이지는 <em>선형 텍스트가 아니라 응답의 데이터베이스</em> 처럼 쓰여 있어요.** SISTRIX가 AI Mode에서 가장 많이 인용된 100개 웹사이트를 분석한 결과, 공통점은 <em>주제나 예산이 아니라 구조</em>였습니다.
 
-[SISTRIX 2025-12-03 분석](https://www.sistrix.com/blog/the-path-to-ai-citations-what-the-top-100-most-cited-websites-are-doing-right/)이 짚은 세 기둥은 이래요. 첫째 **answer-centric content design** — 작은 응답 블록, 명확한 리스트·튜토리얼·FAQ 구조. 둘째 **authority & recency** — 권위 + 최신성 신호 + JSON-LD 구조화 데이터. 셋째 **strict machine readability** — 목차·앵커 연결로 _기계가 한 블록씩 떼어 읽을 수 있는_ 페이지.
+[SISTRIX 2025-12-03 분석](https://www.sistrix.com/blog/the-path-to-ai-citations-what-the-top-100-most-cited-websites-are-doing-right/)이 짚은 세 기둥은 이래요. 첫째 **answer-centric content design** — 작은 응답 블록, 명확한 리스트·튜토리얼·FAQ 구조. 둘째 **authority & recency** — 권위 + 최신성 신호 + JSON-LD 구조화 데이터. 셋째 **strict machine readability** — 목차·앵커 연결로 <em>기계가 한 블록씩 떼어 읽을 수 있는</em> 페이지.
 
 <div class="callout callout--quote">
   <div class="callout-title">📚 학술 원전 — SISTRIX TOP 100 분석</div>
@@ -238,7 +240,7 @@ AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mo
   </div>
 </div>
 
-이 결론은 GeoMoment 블로그 [_청크 단위 처방_](/blog/chunk-prescription/)에서 짚은 _AI는 페이지가 아니라 청크 단위로 인용한다_는 메커니즘과 정확히 일치해요. 같은 페이지 안에서도 _답변 블록 단위로_ 잘 분절된 청크가 인용 확률을 높입니다. 산업 측정사의 결론과 RAG 학술 결과가 같은 방향을 가리킨다는 점이 중요해요.
+이 결론은 GeoMoment 블로그 [<em>청크 단위 처방</em>](/blog/chunk-prescription/)에서 짚은 <em>AI는 페이지가 아니라 청크 단위로 인용한다</em>는 메커니즘과 정확히 일치해요. 같은 페이지 안에서도 <em>답변 블록 단위로</em> 잘 분절된 청크가 인용 확률을 높입니다. 산업 측정사의 결론과 RAG 학술 결과가 같은 방향을 가리킨다는 점이 중요해요.
 
 어떤 도메인이 이 구조를 잘 만들고 있을까요? [SISTRIX 2025-07-02 미국 AI Mode 1만 키워드 분석](https://www.sistrix.com/blog/top-domains-in-the-new-ai-mode-usa/)이 좋은 지도를 그려 줍니다.
 
@@ -259,7 +261,7 @@ AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mo
       </ol>
     </article>
     <article class="gm-i13__group gm-i13__group--upset">
-      <h5 class="gm-i13__group-title">AI Mode에서 _상대적으로_ 더 강한 도메인</h5>
+      <h5 class="gm-i13__group-title">AI Mode에서 <em>상대적으로</em> 더 강한 도메인</h5>
       <p class="gm-i13__group-sub">"They achieve significantly better rankings in AI Mode results."</p>
       <ol class="gm-i13__list">
         <li class="gm-i13__item"><span class="gm-i13__rank">↑</span> <span class="gm-i13__domain">Fandom</span></li>
@@ -268,40 +270,51 @@ AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mo
       </ol>
     </article>
   </div>
-  <p class="gm-i13__note"><strong>패턴:</strong> 권위 백과(Wikipedia·Britannica) + 플랫폼 UGC(YouTube·Reddit·Quora) + 비교·평판형(IMDb·Yelp). 세 종류의 도메인이 _답변 블록 구조_를 공통적으로 갖고 있어 AI 인용에 유리해요.</p>
+  <p class="gm-i13__note"><strong>패턴:</strong> 권위 백과(Wikipedia·Britannica) + 플랫폼 UGC(YouTube·Reddit·Quora) + 비교·평판형(IMDb·Yelp). 세 종류의 도메인이 <em>답변 블록 구조</em>를 공통적으로 갖고 있어 AI 인용에 유리해요.</p>
   <p class="gm-i13__source">출처: <a href="https://www.sistrix.com/blog/top-domains-in-the-new-ai-mode-usa/" target="_blank" rel="noopener">SISTRIX — Top domains in the new AI Mode (USA)</a> (2025-07-02)</p>
 </figure>
 
-라이터 입장에서 이 분석은 _안도와 압박_을 동시에 줍니다. 안도 — 새 비밀 SEO가 따로 있는 게 아니라 _구조와 명확성_이라는 같은 원리예요. 압박 — _페이지 한 장을 통째로 잘 쓴 것_으로는 부족하고 _그 안의 모든 청크가 답변 후보로 완성_되어 있어야 한다는 점입니다.
+**한국에서는 이런 1차 데이터가 아직 없어요.** Google AI Overview · AI Mode의 한국어 SERP 인용 도메인을 산업 측정사가 공개한 리포트가 (이 글 작성 시점 기준) 부재합니다. 다만 미국 패턴을 한국 검색 생태계로 옮겨 보면 아래처럼 매핑할 수 있어요.
+
+| 미국 AI Mode 상위 (SISTRIX) | 한국 대응 후보 |
+|---|---|
+| Wikipedia · Britannica (권위 백과) | 나무위키 · 한국민족문화대백과 · 두산백과 |
+| YouTube · Reddit (플랫폼 · UGC) | YouTube · 네이버 카페 · 디시인사이드 · 클리앙 |
+| Quora (Q&A) | 지식iN · 아하 |
+| IMDb · Yelp (비교 · 평판) | 왓챠피디아 · 다음 영화 · 카카오맵 리뷰 |
+
+이건 <em>실측이 아닌 패턴 유추</em>예요. 다음 글(시리즈 5번 — 4 AI 답변 엔진 비교)에서 한국어 질의로 직접 측정한 결과를 함께 공개할 예정입니다. 지금 짚을 핵심은 <em>한국 시장에서도 같은 종류의 도메인 — 권위 백과 + 플랫폼 UGC + 비교·평판형 — 이 답변 블록 구조를 가장 잘 갖췄다</em>는 점이에요. 한국 시장의 전체 풍경(네이버 AI탭 · AI 브리핑 · 한국 AI 앱 사용률)은 아래 H2-5에서 따로 정리했으니 함께 보시면 좋아요.
+
+마케터 입장에서 이 분석은 <em>안도와 압박</em>을 동시에 줍니다. 안도 — 새 비밀 SEO가 따로 있는 게 아니라 <em>구조와 명확성</em>이라는 같은 원리예요. 압박 — <em>페이지 한 장을 통째로 잘 쓴 것</em>으로는 부족하고 <em>그 안의 모든 청크가 답변 후보로 완성</em>되어 있어야 한다는 점입니다.
 
 ## SEO는 죽었나요, 진화하는 건가요?
 
-**현장 전문가들의 답은 _죽지 않았다, 다만 토대가 같다는 점에서 진화한다_로 모입니다.** 다만 _얼마나 빠르게 진화하는가_에 대한 강도 차이가 있어요. 세 진영을 한 줄씩 보면 이렇습니다.
+**현장 전문가들의 답은 <em>죽지 않았다, 다만 토대가 같다는 점에서 진화한다</em>로 모입니다.** 다만 <em>얼마나 빠르게 진화하는가</em>에 대한 강도 차이가 있어요. 세 진영을 한 줄씩 보면 이렇습니다.
 
-[Aleyda Solis 2025-06-02 칼럼](https://www.aleydasolis.com/en/search-engine-optimization/seo-vs-geo-optimizing-for-traditional-vs-ai-search/)이 균형 잡힌 출발점이에요. *"There's a high overlap in the optimization principles for traditional search and LLMs."* — 전통 검색과 LLM 최적화 원칙 사이에는 _높은 중첩_이 있다. 단 차이도 분명하다고 짚어요: query fan-out, 개인화 깊이, 문맥 중심 최적화, _응답 내 인용·포함_ 중심 KPI.
+[Aleyda Solis 2025-06-02 칼럼](https://www.aleydasolis.com/en/search-engine-optimization/seo-vs-geo-optimizing-for-traditional-vs-ai-search/)이 균형 잡힌 출발점이에요. *"There's a high overlap in the optimization principles for traditional search and LLMs."* — 전통 검색과 LLM 최적화 원칙 사이에는 <em>높은 중첩</em>이 있다. 단 차이도 분명하다고 짚어요: query fan-out, 개인화 깊이, 문맥 중심 최적화, <em>응답 내 인용·포함</em> 중심 KPI.
 
-[Lily Ray 2025-11-11 발표(Amsive)](https://www.amsive.com/insights/seo/geo-aeo-llmo-separating-fact-from-fiction-how-to-win-in-ai-search/)는 더 보수적 톤이에요. *"AI search is expanding traditional search, not replacing it. In fact, data shows that 95% of ChatGPT users still rely on Google, and AI search currently drives less than 1% of total site traffic."* — AI 검색은 _전통 검색을 대체하는 게 아니라 확장한다_, ChatGPT 사용자의 95%가 여전히 Google에 의존하고, _AI 검색이 차지하는 사이트 트래픽은 1~2% 수준_이라는 입장입니다.
+[Lily Ray 2025-11-11 발표(Amsive)](https://www.amsive.com/insights/seo/geo-aeo-llmo-separating-fact-from-fiction-how-to-win-in-ai-search/)는 더 보수적 톤이에요. *"AI search is expanding traditional search, not replacing it. In fact, data shows that 95% of ChatGPT users still rely on Google, and AI search currently drives less than 1% of total site traffic."* — AI 검색은 <em>전통 검색을 대체하는 게 아니라 확장한다</em>, ChatGPT 사용자의 95%가 여전히 Google에 의존하고, <em>AI 검색이 차지하는 사이트 트래픽은 1~2% 수준</em>이라는 입장입니다.
 
-반대편에는 [Mike King 2025-05 분석(iPullRank)](https://ipullrank.com/how-ai-mode-works)이 있어요. AI Mode는 _확률적 · 개인화 · embedding alignment(우리 페이지가 AI의 의미 공간 안 어디에 위치하는지) · passage selection(한 페이지 안에서 어느 단락을 답변에 인용할지 고르는 과정)_의 문제로, _고전적 순위 추적은 급격히 약해진다_는 강한 변화론. *"AI Mode rewrites the rules. This isn't just about ranking anymore."*
+반대편에는 [Mike King 2025-05 분석(iPullRank)](https://ipullrank.com/how-ai-mode-works)이 있어요. AI Mode는 <em>확률적 · 개인화 · embedding alignment(우리 페이지가 AI의 의미 공간 안 어디에 위치하는지) · passage selection(한 페이지 안에서 어느 단락을 답변에 인용할지 고르는 과정)</em>의 문제로, <em>고전적 순위 추적은 급격히 약해진다</em>는 강한 변화론. *"AI Mode rewrites the rules. This isn't just about ranking anymore."*
 
 <div class="callout callout--note">
   <div class="callout-title">⚖️ 세 입장 한 줄 비교</div>
   <div class="callout-body">
-    <p><strong>Aleyda Solis (균형):</strong> "high overlap" — 원칙은 같다, 다만 KPI가 _응답 내 인용·포함_으로 이동.</p>
+    <p><strong>Aleyda Solis (균형):</strong> "high overlap" — 원칙은 같다, 다만 KPI가 <em>응답 내 인용·포함</em>으로 이동.</p>
     <p><strong>Lily Ray (보수적):</strong> "expanding, not replacing" — AI 검색이 트래픽의 1~2% 수준, 토대는 그대로.</p>
-    <p><strong>Mike King (변화론):</strong> "AI Mode rewrites the rules" — 확률적·개인화 환경에서 _ranking_ 개념 자체가 약해진다.</p>
+    <p><strong>Mike King (변화론):</strong> "AI Mode rewrites the rules" — 확률적·개인화 환경에서 <em>ranking</em> 개념 자체가 약해진다.</p>
   </div>
 </div>
 
-세 입장을 한 줄로 모으면 이렇게 됩니다 — **SEO 기본기는 살아 있다, 다만 _측정·인용 단위_가 페이지에서 응답 블록으로 이동한다.** 결론은 _SEO 종말이 아니라 단위 재정의_예요. 페이지 100장을 새로 만드는 게 아니라 _기존 페이지의 청크를 답변 블록 단위로 다시 쓰는 일_이 첫 번째 작업입니다.
+세 입장을 한 줄로 모으면 이렇게 됩니다 — **SEO 기본기는 살아 있다, 다만 <em>측정·인용 단위</em>가 페이지에서 응답 블록으로 이동한다.** 결론은 <em>SEO 종말이 아니라 단위 재정의</em>예요. 페이지 100장을 새로 만드는 게 아니라 <em>기존 페이지의 청크를 답변 블록 단위로 다시 쓰는 일</em>이 첫 번째 작업입니다.
 
 ## 한국 시장은 어디까지 왔나요?
 
-**한국 시장은 _Google AI Overview 침투율_보다 _네이버 AI 검색 전환_과 _AI 앱 사용 대중화_가 먼저 읽혀요.** 한국어 콘텐츠로 사업하는 브랜드라면 이 두 변화부터 봐야 합니다.
+**한국 시장은 <em>Google AI Overview 침투율</em>보다 <em>네이버 AI 검색 전환</em>과 <em>AI 앱 사용 대중화</em>가 먼저 읽혀요.** 한국어 콘텐츠로 사업하는 브랜드라면 이 두 변화부터 봐야 합니다.
 
-2026년 4월 27일, 네이버는 [AI탭 베타](https://www.navercorp.com/media/pressReleasesDetail?seq=34984)를 네이버플러스 멤버십 사용자 대상으로 출시했어요. 최수연 대표는 발표에서 *"AI탭은 탐색에서 실행으로 자연스럽게 확장되는 네이버 검색 패러다임의 전환점"*이라고 짚었습니다. AI탭은 _통합검색·쇼핑·플레이스·블로그·카페_를 연결한 _대화형 AI 검색 서비스_로 정의되고, 2026년 상반기 내 전체 사용자로 확대될 계획이에요.
+2026년 4월 27일, 네이버는 [AI탭 베타](https://www.navercorp.com/media/pressReleasesDetail?seq=34984)를 네이버플러스 멤버십 사용자 대상으로 출시했어요. 최수연 대표는 발표에서 *"AI탭은 탐색에서 실행으로 자연스럽게 확장되는 네이버 검색 패러다임의 전환점"*이라고 짚었습니다. AI탭은 <em>통합검색·쇼핑·플레이스·블로그·카페</em>를 연결한 <em>대화형 AI 검색 서비스</em>로 정의되고, 2026년 상반기 내 전체 사용자로 확대될 계획이에요.
 
-함께 짚어야 할 것이 **AI 브리핑**입니다. 네이버는 [공식 서비스 소개](https://www.navercorp.com/service/search)에서 AI 브리핑을 *"생성형 AI를 활용하여 사용자의 검색 의도와 맥락을 이해하여, 요약된 답변과 출처 정보, 관련 질문 등을 함께 확인할 수 있도록 검색 결과를 제공"*한다고 정의해요. _Google AIO와 구조적으로 비교 가능한 한국형 검색 레이어_라고 볼 수 있습니다.
+함께 짚어야 할 것이 **AI 브리핑**입니다. 네이버는 [공식 서비스 소개](https://www.navercorp.com/service/search)에서 AI 브리핑을 *"생성형 AI를 활용하여 사용자의 검색 의도와 맥락을 이해하여, 요약된 답변과 출처 정보, 관련 질문 등을 함께 확인할 수 있도록 검색 결과를 제공"*한다고 정의해요. <em>Google AIO와 구조적으로 비교 가능한 한국형 검색 레이어</em>라고 볼 수 있습니다.
 
 <figure class="author-figure">
   <img src="/assets/img/blog/ai-overview-and-seo/naver_ai_briefing.png" alt="네이버에서 'GEO란?' 검색 시 노출되는 AI 브리핑 — 요약 답변, 출처 정보, 관련 질문">
@@ -320,11 +333,11 @@ AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mo
   </div>
 </div>
 
-한국어로 사업하는 브랜드 입장에서 이건 _Google AIO가 한국 SERP에 얼마나 노출되는가_라는 좁은 질문보다 훨씬 큰 변화예요. **이미 한국인 절반이 _기존 검색 외에 AI 답변 엔진을 일상적으로_ 쓴다는 뜻**이거든요. GEO·AEO 전략을 짤 때 _4 AI 답변 엔진_(ChatGPT · Perplexity · Gemini · Claude)을 함께 고려해야 하는 이유가 여기 있습니다.
+한국어로 사업하는 브랜드 입장에서 이건 <em>Google AIO가 한국 SERP에 얼마나 노출되는가</em>라는 좁은 질문보다 훨씬 큰 변화예요. **이미 한국인 절반이 <em>기존 검색 외에 AI 답변 엔진을 일상적으로</em> 쓴다는 뜻**이거든요. GEO·AEO 전략을 짤 때 <em>4 AI 답변 엔진</em>(ChatGPT · Perplexity · Gemini · Claude)을 함께 고려해야 하는 이유가 여기 있습니다.
 
 ## 우리 브랜드 SEO, 오늘부터 어떻게 조정할까요?
 
-**우리 브랜드 SEO는 _기존 기본기를 유지하면서, 청크 단위로 다시 쓰고, 4 AI 답변 엔진을 동시에 추적_하는 5단계로 조정하면 됩니다.** 페이지 100장을 새로 만드는 게 아니라 _측정·작성 단위_만 바꿔도 절반은 시작돼요.
+**우리 브랜드 SEO는 <em>기존 기본기를 유지하면서, 청크 단위로 다시 쓰고, 4 AI 답변 엔진을 동시에 추적</em>하는 5단계로 조정하면 됩니다.** 페이지 100장을 새로 만드는 게 아니라 <em>측정·작성 단위</em>만 바꿔도 절반은 시작돼요.
 
 <figure class="gm-infographic gm-i14">
   <h4 class="gm-i14__title">AI 검색 시대 SEO 조정 — 5단계 체크리스트</h4>
@@ -379,13 +392,13 @@ AI 시대 SEO의 시작점은 그래서 _'우리 페이지가 AI Overview·AI Mo
   </div>
 </figure>
 
-다섯 단계 모두 _측정과 작성 단위 재정렬_이지 _콘텐츠 폐기와 재작성_이 아니에요. 첫 페이지 한 장을 위 단계 그대로 다시 써 보면 _내 페이지가 왜 AI 답변에 안 들어갔는지_가 손에 잡히기 시작합니다.
+다섯 단계 모두 <em>측정과 작성 단위 재정렬</em>이지 <em>콘텐츠 폐기와 재작성</em>이 아니에요. 첫 페이지 한 장을 위 단계 그대로 다시 써 보면 <em>내 페이지가 왜 AI 답변에 안 들어갔는지</em>가 손에 잡히기 시작합니다.
 
-직접 적용 결과가 궁금하시면 [GeoMoment 무료 진단](/geo-diagnose.html)을 통해 4 AI 답변 엔진에서 우리 브랜드가 어떻게 인용되는지 동시에 측정하고, 청크 단위 점수와 처방 카드를 받아 보실 수 있어요. ChatGPT · Perplexity · Gemini · Claude 네 모델에서 _같은 질의가 던져졌을 때 어떤 페이지가 인용되는지_까지 짚어 드립니다.
+직접 적용 결과가 궁금하시면 [GeoMoment 무료 진단](/geo-diagnose.html)을 통해 4 AI 답변 엔진에서 우리 브랜드가 어떻게 인용되는지 동시에 측정하고, 청크 단위 점수와 처방 카드를 받아 보실 수 있어요. ChatGPT · Perplexity · Gemini · Claude 네 모델에서 <em>같은 질의가 던져졌을 때 어떤 페이지가 인용되는지</em>까지 짚어 드립니다.
 
 다음 글에서는 한 발 더 들어가서 — **4 AI 답변 엔진(ChatGPT · Perplexity · Gemini · Claude)의 인용 행태 비교** — 같은 질문을 네 엔진에 던지면 어떤 콘텐츠를 어떻게 인용하는지, 우리 브랜드는 어떤 엔진을 우선 측정·최적화해야 하는지 결정 가이드를 정리하겠습니다.
 
-SEO는 죽지 않았어요. _답변 단위로 다시 쓰여야_ 할 뿐입니다. 첫 페이지 한 장 — 이 글의 5단계 그대로 — 다시 써 보는 것이 AI 검색 시대 SEO의 출발점이에요.
+SEO는 죽지 않았어요. <em>답변 단위로 다시 쓰여야</em> 할 뿐입니다. 첫 페이지 한 장 — 이 글의 5단계 그대로 — 다시 써 보는 것이 AI 검색 시대 SEO의 출발점이에요.
 
 <script type="application/ld+json">
 {
