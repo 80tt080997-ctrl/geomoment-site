@@ -300,17 +300,6 @@ AI 시대 SEO의 시작점은 그래서 <em>'우리 페이지가 AI Overview·AI
   <p class="gm-i13__source">출처: <a href="https://www.sistrix.com/blog/top-domains-in-the-new-ai-mode-usa/" target="_blank" rel="noopener">SISTRIX — Top domains in the new AI Mode (USA)</a> (2025-07-02)</p>
 </figure>
 
-**한국에서는 이런 1차 데이터가 아직 없어요.** Google AI Overview · AI Mode의 한국어 SERP 인용 도메인을 산업 측정사가 공개한 리포트가 (이 글 작성 시점 기준) 부재합니다. 다만 미국 패턴을 한국 검색 생태계로 옮겨 보면 아래처럼 매핑할 수 있어요.
-
-| 미국 AI Mode 상위 (SISTRIX) | 한국 대응 후보 |
-|---|---|
-| Wikipedia · Britannica (권위 백과) | 나무위키 · 한국민족문화대백과 · 두산백과 |
-| YouTube · Reddit (플랫폼 · UGC) | YouTube · 네이버 카페 · 디시인사이드 · 클리앙 |
-| Quora (Q&A) | 지식iN · 아하 |
-| IMDb · Yelp (비교 · 평판) | 왓챠피디아 · 다음 영화 · 카카오맵 리뷰 |
-
-이건 <em>실측이 아닌 패턴 유추</em>예요. 다음 글(시리즈 5번 — 4 AI 답변 엔진 비교)에서 한국어 질의로 직접 측정한 결과를 함께 공개할 예정입니다. 지금 짚을 핵심은 <em>한국 시장에서도 같은 종류의 도메인 — 권위 백과 + 플랫폼 UGC + 비교·평판형 — 이 답변 블록 구조를 가장 잘 갖췄다</em>는 점이에요. 한국 시장의 전체 풍경(네이버 AI탭 · AI 브리핑 · 한국 AI 앱 사용률)은 아래 H2-5에서 따로 정리했으니 함께 보시면 좋아요.
-
 마케터 입장에서 이 분석은 <em>안도와 압박</em>을 동시에 줍니다. 안도 — 새 비밀 SEO가 따로 있는 게 아니라 <em>구조와 명확성</em>이라는 같은 원리예요. 압박 — <em>페이지 한 장을 통째로 잘 쓴 것</em>으로는 부족하고 <em>그 안의 모든 청크가 답변 후보로 완성</em>되어 있어야 한다는 점입니다.
 
 ## SEO는 죽었나요, 진화하는 건가요?
