@@ -401,19 +401,6 @@ Google AI Studio가 같은 grounding 기능을 어떻게 발표했는지 공식 
 
 마케터에게 이 분석의 의미를 한 줄로 모으면 이렇습니다 — **같은 페이지를 만들어도 어떤 엔진에서 인용될지는 엔진마다 다르고, 그 차이는 <em>우리 페이지가 어떤 카테고리(Brand · Media · Institution · Social)에 속하는지</em>에 크게 좌우돼요.** 자사몰 페이지(Brand)에 집중한 브랜드는 Gemini에 강하고, 권위 매체 PR을 잘 쌓은 브랜드는 ChatGPT에 강하고, Reddit·커뮤니티에 노출 잘 되는 브랜드는 Perplexity에 강합니다.
 
-같은 차이가 한국어 질의에서도 그대로 보이는지, 직접 측정해봤어요.
-
-<div class="callout callout--tip">
-  <div class="callout-title">🇰🇷 GeoMoment 자체 측정 — <em>"서울 강북에서 50인 회의실 어디가 좋아?"</em> 한 질문, 4 엔진 답변 (2026-05-15)</div>
-  <div class="callout-body">
-    <p><strong>ChatGPT (Plus, 56초 추론):</strong> <em>제일 무난한 추천 TOP 5</em> 표 — 그래이프라운지(중구) · 스페이스쉐어 DDP · 시립강북청소년센터 '난나' · 스페이스쉐어 서울역센터. <strong>산업 표준 회의실 + 행정시설 혼합형</strong>, 인라인 chip 인용.</p>
-    <p><strong>Perplexity (Pro):</strong> <em>26개 출처</em>로 강북청년창업마루(공공·무료) · 강북50플러스센터 · 수유 다담 · 강북구 자치회관. <strong>공공기관·UGC 중심</strong>, <code>gangbuk · 50plus · spacecloud · naver</code> 다층 chip.</p>
-    <p><strong>Gemini (빠른 모델, Google Search grounding):</strong> 전문 회의·컨벤션(스페이스쉐어 서울중부 · 대한상공회의소 · 회의실닷컴) + 호텔 연회장 카테고리. <strong>비즈니스·Brand 중심</strong>, Google Search 외 1개 소스.</p>
-    <p><strong>Claude (Opus 4.7 적응형):</strong> <em>"강북" 범위를 사용자에게 다시 묻고</em> 강북구 안(강북50플러스센터) + 한강 이북 비즈니스 대관(HJ 광화문 · 토즈마이스 · 서울비즈센터)으로 양분. <strong>의도 재확인 + Brand+Media 혼합형</strong>.</p>
-    <p style="margin-top:8px;"><strong>관찰:</strong> 같은 한국어 질의 1개로도 <em>출처 카테고리 분포 차이</em>가 그대로 재현됐어요. 본문 i17·i16 데이터(Profound·Peec)와 같은 방향성이 한국어 시장에서도 확인됩니다.</p>
-  </div>
-</div>
-
 ## 한국 시장에서 우리 브랜드는 어떤 엔진을 우선 측정해야 하나요?
 
 **한국에서 우선순위는 분명해요 — ChatGPT가 압도적 1위입니다.** 와이즈앱이 2026년 2월 기준으로 측정한 한국 4사 사용자 수가 결정적인 증거예요.
